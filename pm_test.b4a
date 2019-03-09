@@ -1,0 +1,3127 @@
+﻿Build1=Default,com.no3dlauncher,Ads
+File1=act_add.png
+File10=ic_info_outline_white_24dp.png
+File11=ic_search_white_24dp.png
+File12=izbornik.png
+File13=izbornik_pressed.png
+File14=kontakti.bal
+File15=launcher.png
+File16=mejn.bal
+File17=na1.png
+File18=na2.png
+File19=naprijed.png
+File2=act_add_pressed.png
+File20=natrag.png
+File21=nema_slike.png
+File22=notifikacije.png
+File23=opt.bal
+File24=opt_kontakti.bal
+File25=panel.bal
+File26=papir1_bijela.jpg
+File27=papir2_bez.jpg
+File28=papir3_siva.jpg
+File29=scvdock_otvori.png
+File3=arrow.png
+File30=scvdock_zatvori.png
+File31=settings.png
+File32=sms.png
+File33=stavka_kontakt.bal
+File34=tabs.bal
+File35=trazi.bal
+File36=wheelpicker.bal
+File37=widget.png
+File38=widget_panel.bal
+File39=widget_pressed.png
+File4=clv_stavka.bal
+File40=Xanadu.ttf
+File41=Xcelsion Italic.ttf
+File42=Xcelsion.ttf
+File43=Xenotron.ttf
+File44=Xeron.ttf
+File45=Xerox Sans Serif Narrow Bold Oblique.ttf
+File46=Xerox Sans Serif Narrow Bold.ttf
+File47=Xerox Sans Serif Narrow Oblique.ttf
+File48=Xerox Sans Serif Narrow.ttf
+File49=Xerox Sans Serif Wide Bold Oblique.ttf
+File5=clv1.bal
+File50=Xerox Sans Serif Wide Bold.ttf
+File51=Xerox Sans Serif Wide Oblique.ttf
+File52=Xerox Sans Serif Wide.ttf
+File53=Xerox Serif Narrow Bold Italic.ttf
+File54=Xerox Serif Narrow Bold.ttf
+File55=Xerox Serif Narrow Italic.ttf
+File56=Xerox Serif Narrow.ttf
+File57=Xerox Serif Wide Bold Italic.ttf
+File58=Xerox Serif Wide Bold.ttf
+File59=Xerox Serif Wide Italic.ttf
+File6=colors.png
+File60=Xerox Serif Wide.ttf
+File61=X-Files.ttf
+File62=Xhume (BRK).ttf
+File63=Xipital -BRK-.ttf
+File64=XLines.ttf
+File65=Xoxoxa.ttf
+File66=XPED Bold.ttf
+File67=XPED Condensed.ttf
+File68=XPED Distressed.ttf
+File69=XPED Expanded.ttf
+File7=email_dlg.bal
+File70=XPED Italic.ttf
+File71=XPED Light.ttf
+File72=XPED Shadow.ttf
+File73=XPED.ttf
+File74=Xpressive Bold.ttf
+File75=Xpressive Regular.ttf
+File76=XpressiveBlack Regular.ttf
+File77=Xray Ted [skew].ttf
+File78=Xray Ted.ttf
+File79=Xtraflexidisc.ttf
+File8=foun.png
+File80=Xtraordinary.ttf
+File81=Xtrusion (BRK).ttf
+File82=XXRaytid.ttf
+File9=ic_email_white_24dp.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup54=Default Group
+FileGroup55=Default Group
+FileGroup56=Default Group
+FileGroup57=Default Group
+FileGroup58=Default Group
+FileGroup59=Default Group
+FileGroup6=Default Group
+FileGroup60=Default Group
+FileGroup61=Default Group
+FileGroup62=Default Group
+FileGroup63=Default Group
+FileGroup64=Default Group
+FileGroup65=Default Group
+FileGroup66=Default Group
+FileGroup67=Default Group
+FileGroup68=Default Group
+FileGroup69=Default Group
+FileGroup7=Default Group
+FileGroup70=Default Group
+FileGroup71=Default Group
+FileGroup72=Default Group
+FileGroup73=Default Group
+FileGroup74=Default Group
+FileGroup75=Default Group
+FileGroup76=Default Group
+FileGroup77=Default Group
+FileGroup78=Default Group
+FileGroup79=Default Group
+FileGroup8=Default Group
+FileGroup80=Default Group
+FileGroup81=Default Group
+FileGroup82=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library10=reflection
+Library11=id
+Library12=xui
+Library13=viewanimations
+Library14=rssmartwidgets
+Library15=notificationlistener
+Library16=tabstripviewpager
+Library17=contentresolver
+Library18=customgridview
+Library2=phone
+Library3=javaobject
+Library4=wheelpicker
+Library5=b4xencryption
+Library6=sql
+Library7=randomaccessfile
+Library8=stringutils
+Library9=dialogs
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddActivityText(main, <intent-filter >~\n~'        <action android:name="android.intent.action.MAIN" />~\n~'        <category android:name="android.intent.category.HOME" />~\n~'        <category android:name="android.intent.category.DEFAULT" />~\n~'    </intent-filter>)~\n~AddPermission(android.permission.SET_WALLPAPER)~\n~AddPermission(android.permission.SET_WALLPAPER_HINTS)~\n~SetActivityAttribute(main, android:theme, @android:style/Theme.Wallpaper)~\n~'********* TabStrip ***********************~\n~'CreateResource(drawable, background_tab.xml,~\n~'<selector xmlns:android="http://schemas.android.com/apk/res/android"~\n~'   android:exitFadeDuration="@android:integer/config_shortAnimTime">~\n~'  <item android:state_pressed="true" android:drawable="@color/background_tab_pressed" />~\n~'  <item android:state_focused="true" android:drawable="@color/background_tab_pressed"/>~\n~'  <item android:drawable="@android:color/transparent"/>~\n~'</selector>)~\n~'CreateResource(values, colors.xml,~\n~'<resources>~\n~'  <color name="background_tab_pressed">#6633B5E5</color>~\n~'</resources>)~\n~~\n~AddApplicationText(~\n~<service android:name="anywheresoftware.b4a.objects.NotificationListenerWrapper"~\n~	android:label="Notification Listener"~\n~          android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">~\n~     <intent-filter>~\n~         <action android:name="android.service.notification.NotificationListenerService" />~\n~     </intent-filter>~\n~ </service>)~\n~~\n~' za kontakte klasu ~\n~AddPermission(android.permission.READ_CONTACTS)~\n~'AddPermission(android.permission.WRITE_CONTACTS) 'if write access is required~\n~AddPermission(android.permission.READ_SMS)~\n~AddPermission(android.permission.CALL_PHONE)~\n~'AddPermission(android.permission.READ_CALL_LOG)~\n~'******************************************~\n~~\n~'SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~'~\n~'CreateResource(values, theme.xml,~\n~'<resources>~\n~'    <style name="MyAppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">~\n~'        <item name="colorPrimary">#FF2196F3</item>~\n~'        <item name="colorPrimaryDark">#007CF5</item>~\n~'        <item name="colorAccent">#FFFF3D00</item>~\n~'        <item name="windowNoTitle">true</item>~\n~'        <item name="windowActionBar">false</item>~\n~'        <item name="windowActionModeOverlay">true</item>~\n~'    </style>~\n~'</resources>~\n~')~\n~'~\n~'AddPermission(android.permission.READ_EXTERNAL_STORAGE)~\n~'AddPermission(android.permission.WRITE_EXTERNAL_STORAGE)~\n~'AddApplicationText(<activity~\n~'            android:name="com.rarepebble.colorpickerdemo.ViewDemoActivity"~\n~'            android:label="@string/title_activity_main"~\n~'            android:windowSoftInputMode="stateHidden">~\n~'        </activity>)
+Module1=Starter
+Module10=ColorWheelDialog
+Module11=CustomListView
+Module2=pnlmeni_postavke
+Module3=search
+Module4=NotificationService
+Module5=postavke_kontakti
+Module6=ContactsUtils
+Module7=f
+Module8=KeyValueStore
+Module9=provjera
+NumberOfFiles=82
+NumberOfLibraries=18
+NumberOfModules=11
+Version=8
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: 1No3DLauncher
+	#VersionCode: 1
+	#VersionName: 1.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+#AdditionalRes: ..\wheelpicker_resource
+'#Extends: de.amberhome.materialdialogs.MaterialDialogsActivity
+'#AdditionalRes: ..\resource
+'#AdditionalRes: ..\res
+'#AdditionalRes: ..\resource
+'#AdditionalRes: ..\LibRes
+'#AdditionalRes: ..\DemoRes
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Dim nativeMe As JavaObject
+'	Dim MyHostID As Int = 1234567890 'for widgets
+'	Type HostedWidget(SmartWidgets As RSSmartWidgets, Dest As Panel, HostView As RSWidgetHostView, ID As Int)
+	Dim SmartWidgets As RSSmartWidgets
+'	Dim currentPanelBeforePaused As Int
+'	Dim tmrAnimation As Timer
+'	Dim animacije As AnimationComposer
+	Dim tajmer1 As Timer
+	Dim cu As ContactsUtils
+'	Type SMSType (Msgid As Int,Msgdt As String,MsgFrom As String,MsgBody As String)
+'	Public SMSList As List
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Private pnlDock As Panel
+	Private btnDock As Button
+	Private scvDock As HorizontalScrollView
+'	Private scvDock As ScrollView
+	Dim pnl_dock_vidljiv As Boolean = True
+	Private btnMeni As Button
+	Private btnWidgeti As Button
+	Private pnlMeni As Panel
+'	Dim pnlMeni_vidljiv As Boolean = False
+	Dim zadnja_oznacena_app As Int = 0
+	Private wp1 As WheelPicker
+'	Dim lv As ListView
+	Dim l, l1 As List
+'	Private ivPostavke As ImageView
+	Dim clv As CustomListView
+	Private lblImeApp As Label
+	Private ivApp As ImageView
+	Private ivDodaj, ivWheelDodaj As ImageView
+	Dim iv_size As List
+	Dim listaFavorita As List	' imena paketa
+	Dim lbl As Label
+'	Dim sd As SlidingData 'The object that holds the data for SlidingPanels
+'	Dim SlidingDuration As Int = 500
+'	Dim startX, startY As Float
+'	Dim lblStr As Label
+'	Dim prethodniOdabir As Int
+'	Dim Time0 As Long
+'	Dim x0, y0 As Float
+'	Dim LongClickTime = 500 As Long
+	Private btnSearch As Button
+'	Private scvLadicaLijevo As ScrollView
+'	Dim ladicaPanel As Panel
+	Private btnPostavke As Button
+	Private btnNotify As Button
+'	Dim animacije As AnimationComposer
+'	Dim mapaAnimacija As Map
+	Dim sv As ScrollView
+'	Dim pnls(10) As Panel
+	Private TabStrip1 As TabStrip
+'	Private mejnPanel As Panel
+'	Dim HostedWidgets As List
+	Dim topW As Int = 40dip
+'	Private ScrollView1 As ScrollView
+'	Dim visinaPanela As Int
+'	Dim razmak As Int = 10'dip
+	Private CustomListView1 As CustomListView
+	Private Panel1 As Panel
+	Dim ipsilon As Int
+'	Private btnDodajWidget As Button
+'	Private ScrollView1 As ScrollView
+	Private btnDodajWidget As Button
+	Private btnDodajStr As Button
+	Private btnNatrag As Button
+	Private btnNaprijed As Button
+'	Private pnlKontakti As Panel
+'	Private scvKontakti As ScrollView
+'	Private Button1 As Button
+	Private Label1 As Label
+'	Private Label2 As Label
+'	Private ImageView1 As ImageView
+'	Private btnKontaktInfo As Button
+'	Private btnKontaktPoziv As Button
+'	Private btnKontaktSMS As Button
+'	Private pnlStavka As Panel
+'	Private btnKontaktEmail As Button
+'	Dim email_dlg As CustomLayoutDialog
+'	Private lblEmailAdresa As Label
+	Dim cr As ContentResolver
+	Private btnPostavkeKontakti As Button
+'	Private lblZadnjiSMS As Label
+'	Private lblSMSDatum As Label
+'	Private ExpandedHeight As Int = 130dip
+'	Private CollapsedHeight As Int = 60dip
+'	Dim ajdi_stavka As Long
+'	Private pnlExpanded As Panel
+'	Private xui As XUI
+'	Dim kontaktMeni As MenuOnAnyView
+'	Dim imgMeni As ImageView
+	Private pnlKontakti As Panel
+	Private grid As CustomGridView
+'	Private Spotlightmenu As SpotLight
+'	Dim gridItem As Object
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("tabs")
+
+	If FirstTime Then
+		cu.Initialize
+	End If
+
+'	Activity.LoadLayout("mejn")
+'	ScrollView1.Panel.Height = 1000dip
+
+	TabStrip1.LoadLayout("mejn", "Main")
+	TabStrip1.LoadLayout("kontakti", "Contacts")
+	TabStrip1.LoadLayout("widget_panel", "Widgets")
+
+	Dim reflect As Reflector
+	reflect.Target = scvDock.Panel
+	reflect.SetOnTouchListener("scvPanel_Touch")
+'	reflect.Target = ScrollView1
+'	reflect.SetOnLongClickListener("ScrollView1_LongClick")
+'	reflect.SetOnTouchListener("ScrollView1_Touch")
+'	Panel1.Initialize("")
+'	Panel1.Color = Colors.Transparent
+'	ScrollView1.Panel.AddView(Panel1, 0, 0, ScrollView1.Width, ScrollView1.Height)
+'	ScrollView1.Visible = False
+'	reflect.Target = Panel1
+'	reflect.SetOnTouchListener("Panel1_Touch")
+
+'	CustomListView1.sv.Visible = False
+
+	nativeMe.InitializeContext
+
+	f.UcitajVrijednostiOpt
+
+	Log("f.animStr: " & f.animStr)
+'	mapaAnimacija = animacije.Techniques
+
+	Log("f.brStranica: " & f.brStranica)
+'	Dim panels(f.brStranica) As Panel
+'	Dim panels(1) As Panel
+'	For i = 1 To panels.Length
+'		TabStrip1.LoadLayout("mejn", "")
+'	Next
+'	For Each lbl As Label In GetAllTabLabels(TabStrip1)
+'		lbl.Typeface = Typeface.MONOSPACE
+'		lbl.Typeface = Typeface.DEFAULT_BOLD
+'		lbl.TextSize = 28
+'	Next
+	TabStrip1_PageSelected(0)
+'	For i = 0 To panels.Length - 1
+'		panels(i).Initialize("panels")
+'		Activity.AddView(panels(i), 100%x, 0, 100%x, 100%y - 60dip) 'add the panel to the layout
+'	Next
+'	lblStr.Initialize("")
+'	Activity.AddView(lblStr, 100%x - 50dip, 0, 50dip, 50dip)
+
+	'Initialize the SlidingData object and set the array of panels.
+	'Then we call SlidingPanels.Initialize to prepare the animation objects.
+	'The last call to ChangePanel brings the first panel.
+'	sd.Initialize
+'	sd.panels = panels
+'	SlidingPanels.Initialize(sd, SlidingDuration)
+'	sd.targetPanel = -1
+'	sd.currentPanel = currentPanelBeforePaused - 1
+'	ChangePanel(True) 'Current code expects the first call to be with Left = True.
+'
+'	lblStr.TextSize = 42.0
+'	lblStr.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+'	lblStr.TextColor = Colors.Green
+'	lblStr.Text = sd.currentPanel
+
+	pnlMeni.Visible = False
+	
+	If Starter.mapa.IsInitialized Then
+		If Starter.mapa.Size = 0 Then
+			CallSub(Starter, "GetInstalledApps")
+		End If
+	Else
+		CallSub(Starter, "GetInstalledApps")
+	End If
+
+'	If f.showApps = 0 Then
+'		f.fontzSize = 55
+'	PrikaziKotac
+''	Else if f.showApps = 1 Then
+''		PrikaziListu2
+''		PrikaziListu
+'	else if f.showApps = 1 Then
+'	PrikaziListuSaIkonamaAplikacije
+'	else if f.showApps = 2 Then
+'	PrikaziLijevuLadicu
+'	End If
+
+	Dim cd As ColorDrawable
+	Dim res(4) As Int
+	res = getARGB(f.bojaPozadine)
+	res(0) = f.trans
+	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+	pnlMeni.Background = cd
+
+	iv_size.Initialize
+	listaFavorita.Initialize
+
+	ViewsBringToFront
+
+	ShowFavoriteApps
+	btnDock_Click
+
+	tajmer1.Initialize("tajmer", 5000)
+	tajmer1.Enabled = True
+
+'	CallSubDelayed(Starter, "FindContacts")
+'	SMSList.Initialize
+	cr.Initialize("cr")
+End Sub
+
+'Sub ScrollView1_LongClick
+'	CreateSmartWidget(1)
+'End Sub
+'Sub ScrollView1_Touch(vt_iv As Object, Action As Int, X As Float, Y As Float, MotionEvent As Object) As Boolean
+'	Return True
+'End Sub
+'
+'Sub Panel1_Touch(vt_iv As Object, Action As Int, X As Float, Y As Float, MotionEvent As Object) As Boolean
+'Sub Panel1_LongClick
+'	CreateSmartWidget(1)
+'End Sub
+
+Public Sub GetAllTabLabels (tabstrip As TabStrip) As List
+	Dim jo As JavaObject = tabstrip
+	Dim r As Reflector
+	r.Target = jo.GetField("tabStrip")
+	Dim tc As Panel = r.GetField("tabsContainer")
+	Dim res As List
+	res.Initialize
+	For Each v As View In tc
+		If v Is Label Then res.Add(v)
+	Next
+
+	Return res
+End Sub
+
+'**** These two subs are requred for handling the sliding ***
+'Sub ChangePanel(Left As Boolean)
+'	'disable the buttons during the animation
+''	btnLeft.Enabled = False
+''	btnRight.Enabled = False
+'	'Call SlidingPanels.ChangePanel to actually change the panels.
+'	SlidingPanels.ChangePanel(sd, Left)
+'	lblStr.Text = sd.currentPanel
+'End Sub
+'
+'Sub Animation1_AnimationEnd
+'	SlidingPanels.Anim_AnimationEnd(sd)
+'	If sd.targetPanel >= 0 Then
+'		tmrAnimation.Enabled = True
+'		Return 'we are still animating...
+'	End If
+'	'Enable the Left and Right buttons (unless there are no more panels).
+'	'If sd.currentPanel = sd.panels.Length - 1 Then btnLeft.Enabled = False Else btnLeft.Enabled = True
+'	'If sd.currentPanel = 0 Then btnRight.Enabled = False Else btnRight.Enabled = True
+''	btnLeft.Enabled = True
+''	btnRight.Enabled = True
+'End Sub
+'
+''Sub Animation1_AnimationEnd
+''	'This event is raised when the animation finishes. You should call SlidingPanels.AnimationEnd from this sub.
+''	SlidingPanels.AnimationEnd(sd)
+''	If sd.targetPanel >= 0 Then
+''		tmrAnimation.Enabled = True
+''		Return 'we are still animating...
+''	End If
+''	'Enable the Left and Right buttons (unless there are no more panels).
+''	'If sd.currentPanel = sd.panels.Length - 1 Then btnLeft.Enabled = False Else btnLeft.Enabled = True
+''	'If sd.currentPanel = 0 Then btnRight.Enabled = False Else btnRight.Enabled = True
+'''	btnLeft.Enabled = True
+'''	btnRight.Enabled = True
+''End Sub
+'Sub tmrAnimation_Tick
+'	tmrAnimation.Enabled = False
+'	ContinueJumping
+'End Sub
+
+'JumpToPanel can be used to navigate to a different panel which is not adjacent to the current one.
+'Sub JumpToPanel (Target As Int)
+'	sd.targetPanel = Target
+'	For i = 0 To 1
+'		sd.leftAnimations(i).Duration = SlidingDuration / 2
+'		sd.rightAnimations(i).Duration = SlidingDuration / 2
+'	Next
+'	ContinueJumping
+'End Sub
+
+'Sub ContinueJumping
+'	If sd.targetPanel < 0 Or sd.targetPanel = sd.currentPanel Then
+'		sd.targetPanel = -1
+'		Animation1_AnimationEnd
+'		For i = 0 To 1
+'			sd.leftAnimations(i).Duration = SlidingDuration
+'			sd.rightAnimations(i).Duration = SlidingDuration
+'		Next
+'		Return
+'	End If
+'	SlidingPanels.ChangePanel(sd, sd.targetPanel > sd.currentPanel)
+'End Sub
+'
+'Sub panels_Touch (Action As Int, X As Float, Y As Float)
+'	Select Action
+'		Case Activity.ACTION_DOWN
+'			startX = X
+'			startY = Y
+'		Case Activity.ACTION_UP
+'			If Abs(Y - startY) > 20%y Then Return
+'			If X - startX > 30%x Then'And btnRight.Enabled = True Then
+'				ChangePanel(False)
+'			Else If startX - X > 30%x Then'And btnLeft.Enabled = True Then
+'				ChangePanel(True)
+'			End If
+'	End Select
+'End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+'	If UserClosed = False Then
+'		currentPanelBeforePaused = sd.currentPanel
+'	Else
+'		currentPanelBeforePaused = 0
+'	End If
+End Sub
+
+Private Sub ShowFavoriteApps
+	Dim iv As ImageView
+	Dim pm As PackageManager
+
+'	TipIkone
+
+	File.Delete(File.DirInternal, "favorit_app")
+	Dim cd As ColorDrawable
+	cd.Initialize(Colors.ARGB(0, 211, 211, 211), 0)
+	If File.Exists(File.DirInternal, "favorit_app") Then
+		listaFavorita = File.ReadList(File.DirInternal, "favorit_app")
+		For i = 0 To listaFavorita.Size - 1
+'			Dim bdw As BitmapDrawable = pm.GetApplicationIcon(listaFavorita.Get(i))
+'			Dim bmp As Bitmap = bdw.Bitmap
+'			bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'			Dim iv As ImageView
+'			iv.Initialize("")
+'			iv.Bitmap = bdw.Bitmap
+'			iv.Tag = i
+'			scvDock.Panel.AddView(iv, iv.Width*i, 4dip, iv.Width, iv.Height)
+'			Dim lbl As Label
+'			lbl.Initialize("")
+''			lbl.Text = pkg2.Get(i*5+j)
+'			lbl.TextColor = Colors.White
+''			lbl.Background = cd
+'			lbl.TextSize = 12.0
+'			lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+'			lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+
+			iv.Initialize("ivDokPokreniApp")
+'			iv.Initialize("")
+			iv.Tag = i
+			iv.Width = 48dip
+			iv.Height = 48dip
+			iv.Gravity = Gravity.FILL
+			'
+			'
+			' što kada je app deinstalirana?!
+			' launcher se ruši!
+			' ispraviti
+			'
+			'
+			'
+			Dim bdw As BitmapDrawable = pm.GetApplicationIcon(listaFavorita.Get(i))
+			Dim bmp As Bitmap = bdw.Bitmap
+			bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+			iv.Bitmap = bdw.Bitmap
+'			bm1 = nativeMe.RunMethod("getHexagonShape",Array(bdw.Bitmap))
+'			bm1 = nativeMe.RunMethod("getRoundBitmap", Array(bdw.Bitmap))
+'			bm1 = nativeMe.RunMethod("getJollyPatrolly",Array(bdw.Bitmap))
+'			bm1 = nativeMe.RunMethod("drawRing2", Array(bdw.Bitmap, 48dip, Colors.Transparent, Colors.White))
+'			If f.tipIkone = 0 Then
+'				bm1 = nativeMe.RunMethod("getRoundBitmap",Array(bdw.Bitmap))
+'			Else if f.tipIkone = 1 Then
+'				bm1 = nativeMe.RunMethod("getHexagonShape",Array(bdw.Bitmap))
+'			else if f.tipIkone = 2 Then	' triangle
+'				bm1 = nativeMe.RunMethod("getTriangleShape",Array(bdw.Bitmap))
+'			else if f.tipIkone = 3 Then	' star
+'				bm1 = nativeMe.RunMethod("getStarBitmap",Array(bdw.Bitmap, f.brTocaka))   'second parameter is number of point that the star should have
+'			else if f.tipIkone = 4 Then	' heart
+'				bm1 = nativeMe.RunMethod("getHeartBitmap",Array(bdw.Bitmap))
+'			else if f.tipIkone = 5 Then	' bubble
+'				bm1 = nativeMe.RunMethod("getBubbleBitmap",Array(bdw.Bitmap))
+'			else if f.tipIkone = 6 Then	' cone
+'				bm1 = nativeMe.RunMethod("getConeBitmap",Array(bdw.Bitmap))
+'			End If
+			scvDock.Panel.AddView(iv, iv.Width*i + i*10dip, 4dip, iv.Width, iv.Height)
+'			scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+		Next
+		scvDock.Panel.Width = scvDock.Panel.NumberOfViews * 48dip + scvDock.Panel.NumberOfViews*10dip
+	Else
+		'
+		lbl.Initialize("")
+		lbl.Text = "Add some apps here (long click on app icon in search window -> 'Add to favorites' or tap '+' in list of all applications)"
+		lbl.TextColor = Colors.yellow'Red
+		lbl.TextSize = 12.0
+		scvDock.Panel.AddView(lbl, 0, 0, scvDock.Width, scvDock.Height)
+		scvDock.Panel.Width = 100%x
+	End If
+
+'	scvDock.Panel.Width = scvDock.Panel.NumberOfViews * 48dip
+End Sub
+
+Sub btnDock_Click
+	If pnl_dock_vidljiv Then
+		btnDock.SendToBack
+		pnlDock.SendToBack
+		pnl_dock_vidljiv = False
+		btnDock.SetBackgroundImage(LoadBitmap(File.DirAssets, "scvdock_otvori.png"))
+		pnlDock.SetLayoutAnimated(500, 15%x, 100%y - pnlDock.Height + 65dip, pnlDock.Width, pnlDock.Height)
+	Else
+		btnDock.BringToFront
+		pnlDock.BringToFront
+		pnlMeni.Visible = False
+		pnl_dock_vidljiv = True
+		btnDock.SetBackgroundImage(LoadBitmap(File.DirAssets, "scvdock_zatvori.png"))
+		pnlDock.SetLayoutAnimated(500, 15%x, 100%y - pnlDock.Height, pnlDock.Width, pnlDock.Height)
+	End If
+End Sub
+
+Sub btnSearch_Click
+	StartActivity(search)
+End Sub
+
+Sub btnMeni_Click
+	If pnl_dock_vidljiv Then
+		pnlDock.SendToBack
+		pnl_dock_vidljiv = False
+		btnDock.SetBackgroundImage(LoadBitmap(File.DirAssets, "scvdock_otvori.png"))
+		pnlDock.SetLayoutAnimated(500, 15%x, 100%y - pnlDock.Height + 65dip, pnlDock.Width, pnlDock.Height)
+	End If
+
+	If f.showApps = 0 Then
+'		scvLadicaLijevo.RemoveView
+'		scvLadicaLijevo.Visible = False
+'		If pnlMeni.Visible = True Then
+'			pnlMeni.Visible = False
+'		Else
+'			pnlMeni.Visible = True
+'		End If
+'		pnlMeni.RemoveViewAt(2)
+'		If pnlMeni.NumberOfViews >=1 Then
+'			pnlMeni.RemoveViewAt(1)
+'		End If
+		DodajListuAppUKotac
+	else if f.showApps = 1 Then
+'		scvLadicaLijevo.RemoveView
+'		scvLadicaLijevo.Visible = False
+'		If pnlMeni.Visible = True Then
+'			pnlMeni.Visible = False
+'		Else
+'			pnlMeni.Visible = True
+'		End If
+'		If pnlMeni.NumberOfViews >=2 Then
+'			pnlMeni.RemoveViewAt(2)
+'			pnlMeni.RemoveViewAt(1)
+'		End If
+		DodajListuSaIkonamaAppULAdicu
+	else if f.showApps = 2 Then
+		DodajAppULadicu
+	End If
+End Sub
+
+Sub btnInfo_Click
+	Log("btnInfo klik!")
+End Sub
+
+Sub btnPostavke_Click
+	StartActivity(pnlmeni_postavke)
+End Sub
+
+Sub btnWidgeti_Click
+	TabStrip1.ScrollTo(2, True)
+'	If CustomListView1.GetSize = 0 Then
+'		UbaciKontakte
+'	End If
+
+	Log("widgeti klik!")
+	File.Delete(File.DirInternal, "theappid.txt")
+	File.Delete(File.DirInternal, "theid.txt")
+	File.Delete(File.DirInternal, "thehost.txt")
+'	If mejnPanel.Visible Then
+'		mejnPanel.Visible = False
+'	If ScrollView1.Visible Then
+'		ScrollView1.Visible = False
+'	If CustomListView1.sv.Visible Then
+'		CustomListView1.sv.Visible = False
+'		If CustomListView1.GetSize > 0 Then
+'			SmartWidgets.StopListening
+'		End If
+'	If Panel1.Visible = False Then
+'		TabStrip1.LoadLayout("widget_panel", "")
+'		Activity.LoadLayout("widget_panel")
+'		Panel1.Visible = False
+'		If CustomListView1.GetSize > 0 Then
+'			SmartWidgets.StopListening
+'		End If
+'	Else
+	'
+	'
+	'
+	'
+	'
+	' dodati tabstrip!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	'
+	'
+	'
+	'
+	'
+	'
+'		CustomListView1.sv.Visible = True
+'		CustomListView1.sv.Color = Colors.Transparent
+'		If CustomListView1.GetSize > 0 Then
+'			SmartWidgets.StartListening
+'		End If
+'		Panel1.Visible = True
+'		CustomListView1.sv.Color = Colors.Transparent
+'		If CustomListView1.GetSize > 0 Then
+'			SmartWidgets.StartListening
+'		End If
+'		ScrollView1.Visible = True
+'		mejnPanel.Visible = True
+'	If File.Exists(File.DirInternal, "theappid.txt") Then
+'		SmartWidgets.Initialize("SmartWidgets", 1)
+'		SmartWidgets.AppToStart = File.ReadString(File.DirInternal, "theappid.txt")
+'		SmartWidgets.getAppWidgetInfo(File.ReadString(File.DirInternal, "theappid.txt"))
+'		SmartWidgets.HostId = File.ReadString(File.DirInternal, "theid.txt")
+'		''		widginform.Initialize("widginform")
+'		''		SmartWidgets.CreateSmartWidget(File.ReadString(File.DirInternal, "theappid.txt"))
+'		''		widginform = SmartWidgets.HostView
+''			'
+'		''		SmartWidgets.AddView(widg1, widginform, 0, 0)
+'		''		widginform.BringToFront
+''		SmartWidgets.OnLongClickListener = SmartWidgets.HostView
+'		SmartWidgets.StartListening
+'		''		widg2.Visible = False
+'		''		widg2.Enabled = False
+'		'End If
+'	End If
+End Sub
+
+Sub scvPanel_LongClick
+	Log("scvDock long klik")
+End Sub
+
+Sub scvPanel_Touch(vt_iv As Object, Action As Int, X As Float, Y As Float, MotionEvent As Object) As Boolean
+	Select Action
+		Case Activity.ACTION_DOWN
+			If lbl.IsInitialized = False Then
+				Dim NumLab As Int = (X / 48dip)	' if labels are 48dip
+				Dim iv1 As ImageView = scvDock.Panel.getview(NumLab)
+				Dim Tag As String = iv1.Tag
+				Log(Tag)
+				Log(listaFavorita.Get(Tag))
+			End If
+			Return True
+	End Select
+
+	Return False
+End Sub
+
+Sub wp1_index_changed (currentindex As Int)
+	'YOU NEED TO ADD CODE HERE TO TEST FOR AN OVERSCROLL WHEN CYCLIC IS SET TO FALSE
+	'eg if currentindex = 0 at present and the immediate next value is for eg 6 then the user is dragging down too far
+	'eg if currentindex = 6 at present and the immediate next value is for eg 0 the the used is dragging up too far
+	'correct scrolling sequence should be currentindex values changing from 0 to number of items -1 or from number of items -1 to 0
+	'HOPE YOU FOLLOW WHAT I AM TRYING TO EXPLAIN HERE
+	If zadnja_oznacena_app <> currentindex Then
+'		Log("wp1 current index = " & currentindex)
+		zadnja_oznacena_app = currentindex
+	End If
+End Sub
+
+Sub wp1_index_clicked(position As Int)
+	Dim in As Intent
+	Dim pm As PackageManager
+
+	in = pm.GetApplicationIntent(l1.Get(zadnja_oznacena_app))
+	If in.IsInitialized Then
+		Log(f.animStr)
+'		animacije.Initialize("Anim", f.animStr)
+'		animacije.delay(500).duration(2500).playOn(wp1)
+		StartActivity(in)
+	End If
+End Sub
+
+'Sub ivPostavke_Click
+'	StartActivity(pnlmeni_postavke)
+'End Sub
+
+'Sub PrikaziLijevuLadicu
+'	pnlMeni.Visible = False
+'	scvLadicaLijevo.Visible = True
+'	ladicaPanel.Initialize("")
+'	scvLadicaLijevo.Panel.AddView(ladicaPanel, 0, 0, scvLadicaLijevo.Width, scvLadicaLijevo.Height)
+'	DodajSlovauLadicu
+'End Sub
+
+'Sub ladicaPnl_Click
+'	
+'End Sub
+Sub DodajListuSaIkonamaAppULAdicu
+	Dim pm As PackageManager
+
+	FiltrirajImenaAppIImenaPaketa
+
+	Private dlgDrawer As CustomLayoutDialog
+	Dim sf As Object = dlgDrawer.ShowAsync("All applications", "", "", "", Null, True)
+	dlgDrawer.SetSize(100%x, 90%y)
+	Wait For (sf) Dialog_Ready(pnl As Panel)
+
+	pnl.LoadLayout("clv1")
+
+	Dim cd As ColorDrawable
+	Dim res(4) As Int
+	res = getARGB(f.bojaPozadine)
+	res(0) = f.trans
+	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+'	clv.AsView.Background = cd
+	clv.AsView.Color = cd
+'	clv.AsView.SetBitmap(cd)
+
+	For i = 0 To Starter.mapa.Size - 1
+		Dim pckg1, pckg2 As String
+		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+		Dim drawable As Object = pm.GetApplicationIcon(pckg1)
+		If drawable Is BitmapDrawable Then
+			Dim bdw As BitmapDrawable = drawable
+			Dim bmp As Bitmap = bdw.Bitmap
+			bdw.Initialize(bmp.Resize(32dip, 32dip, True))
+			pckg2 = pckg.SubString2(0, pckg.IndexOf(";"))
+			clv.Add(KreirajStavku(bdw.Bitmap, pckg2, pnlMeni.Width, 40dip), "")
+		End If
+	Next
+	
+	Wait For clv_ItemClick (Index As Int, Value As Object)
+	Log("Selected item: " & Value)
+'	dlgDrawer.CloseDialog(DialogResponse.POSITIVE)
+	Wait For ivClvDodaj_Click
+'	dlgDrawer.CloseDialog(DialogResponse.POSITIVE)
+	
+End Sub
+
+Sub DodajAppULadicu
+	Private dlgDrawer As CustomLayoutDialog
+	Dim sf As Object = dlgDrawer.ShowAsync("All applications", "", "", "", Null, True)
+	dlgDrawer.SetSize(100%x, 90%y)
+	Wait For (sf) Dialog_Ready(pnl As Panel)
+
+	FiltrirajImenaAppIImenaPaketa
+
+	sv.Initialize(1000dip)
+	pnl.AddView(sv, 0, 0, pnl.Width, pnl.Height)
+	Dim pm As PackageManager
+	Dim cd As ColorDrawable
+	cd.Initialize(Colors.ARGB(0, 211, 211, 211), 0)
+	Dim x As Int
+	x = Activity.Width / 5'pkg1.Size
+	x = x - 10dip
+'	x = 48dip
+	For i = 0 To Starter.mapa.Size - 1
+		For j = 0 To 4
+			If (i*5+j) < Starter.mapa.Size Then
+				Dim s As String = Starter.mapa.GetKeyAt(i*5+j)
+				' ime paketa
+				Dim s1 As String = s.SubString2(s.IndexOf(";")+1, s.Length)
+				Dim drawable As Object = pm.GetApplicationIcon(s1)
+				If drawable Is BitmapDrawable Then
+					Dim bdw As BitmapDrawable = drawable
+					Dim bmp As Bitmap = bdw.Bitmap
+					bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+					Dim iv As ImageView
+					iv.Initialize("ivAppMain")
+					iv.Bitmap = bdw.Bitmap
+					iv.Tag = s1'Starter.mapa.GetKeyAt(i*5+j)
+					sv.Panel.AddView(iv, x*j + j*2dip, x*i + 10dip + i*30dip, x, x)
+					Dim lbl As Label
+					lbl.Initialize("")
+					' ime aplikacije
+					Dim s2 As String = s.SubString2(0, s.IndexOf(";"))
+					lbl.Text = s2
+					lbl.TextColor = Colors.White
+					lbl.Background = cd
+					lbl.TextSize = 10.0
+					lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+					lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+					sv.Panel.AddView(lbl, x*j + j*2dip, x*i + x + i*30dip + 4dip, x, 30dip)
+				End If
+			Else
+				Exit
+			End If
+		Next
+	Next
+	sv.Panel.Height = sv.Panel.Height + 12dip
+	dlgDrawer.GetButton(DialogResponse.POSITIVE).Enabled = False
+	Wait for (sf) ivAppMain_Click
+	Wait For (sf) ivApp_LongClick
+End Sub
+
+Sub ivAppMain_LongClick
+	Log("ivapp long klik!")
+	Dim iv As ImageView
+	iv = Sender
+	Log(iv.Tag)
+	Dim ll As List
+	ll.Initialize
+	ll.AddAll(Array As String("Add to favorites", "Uninstall"))
+	Dim x As id
+	Dim m As Int = x.InputList1(ll, "")
+	Select m
+		Case 0
+			ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
+			DodajAppUFavorite
+		Case 1
+			UninstallApp(iv.Tag)
+	End Select
+End Sub
+
+Sub UninstallApp(pkg As String)
+	If IsPaused(provjera) = True Then StartService(provjera)
+
+	Dim i As Intent
+
+	Log("package:" & pkg)
+	i.Initialize("android.intent.action.DELETE", "package:" & pkg)
+
+	StartActivity(i)
+
+'	pnlAppPodSlovom.Visible = False
+'	pnlAppPodSlovom.RemoveAllViews
+'	pnlSlova.Visible = True
+'	pnlSlova.RemoveAllViews
+'	DodajSlova
+End Sub
+
+Sub ivAppMain_Click
+	Dim in As Intent
+	Dim iv As ImageView
+	Dim pm As PackageManager
+
+	iv = Sender
+	Log(iv.Tag)
+	in = pm.GetApplicationIntent(iv.Tag)
+	If in.IsInitialized Then
+'		animacije.Initialize("Anim", f.animStr)
+'		animacije.delay(500).duration(1500).playOn(sv.Panel)
+		StartActivity(in)
+	End If
+End Sub
+
+'Sub btnSlovo_Click
+'	Log("btnSlovo klik!")
+'	Dim b As Button
+'	Dim pm As PackageManager
+'	Dim pkg1, pkg2 As List
+''
+'	b = Sender
+'	Log(b.Tag)
+''	pnlSlova.Visible = False
+''	pnlAppPodSlovom.Initialize("")
+''	Activity.AddView(pnlAppPodSlovom, 0, 46dip, 100%x, 100%y)
+''	Dim ukupno1, ukupno2 As Int = 0
+''	pkg1.Initialize
+''	pkg2.Initialize
+''	' prikaži sve aplikacije pod izabranim slovom
+''	For i = 0 To Starter.mapa.Size - 1
+''		Dim s As String = Starter.mapa.GetKeyAt(i)
+''		If s.StartsWith(b.Tag) Then
+''			ukupno1 = ukupno1 + 1
+''			Dim pckg As String = Starter.mapa.GetKeyAt(i)
+''			' ime paketa
+''			pkg1.Add(pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length))
+''			' ime aplikacije
+''			pkg2.Add(pckg.SubString2(0, pckg.IndexOf(";")))
+''		End If
+''	Next
+''
+''	Dim cd As ColorDrawable
+''	cd.Initialize(Colors.ARGB(0, 211, 211, 211), 0)
+''	Dim x As Int
+''	x = Activity.Width / 5'pkg1.Size
+''	For i = 0 To pkg1.Size - 1
+''		For j = 0 To 4
+''			If ukupno2 < ukupno1 Then'pkg1.Size - 1 Then
+''				Dim drawable As Object = pm.GetApplicationIcon(pkg1.Get(i*5+j))
+''				If drawable Is BitmapDrawable Then
+''					Dim bdw As BitmapDrawable = drawable
+''					Dim bmp As Bitmap = bdw.Bitmap
+''					bdw.Initialize(bmp.Resize(64dip, 64dip, True))
+''					Dim iv As ImageView
+''					iv.Initialize("ivApp")
+''					iv.Bitmap = bdw.Bitmap
+''					iv.Tag = pkg1.Get(i*5+j)
+''					pnlAppPodSlovom.AddView(iv, x*j + j*2dip, x*i + 10dip + i*30dip, x, x)
+'''					pnlAppPodSlovom.AddView(iv, 64dip*j + 10dip, 64dip*i + 10dip + i*30dip, 64dip, 64dip)
+''					Dim lbl As Label
+''					lbl.Initialize("")
+''					lbl.Text = pkg2.Get(i*5+j)
+''					lbl.TextColor = Colors.White
+''					lbl.Background = cd
+''					lbl.TextSize = 12.0
+''					lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+''					lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+''					pnlAppPodSlovom.AddView(lbl, x*j, x*i + x + i*30dip + 4dip, x, 30dip)
+'''					pnlAppPodSlovom.AddView(lbl, 64dip*j + 10dip, 64dip*i + 64dip + i*30dip + 4dip, 64dip, 30dip)
+''				End If
+''				ukupno2 = ukupno2 + 1
+''			Else
+''				Exit
+''			End If
+''		Next
+''	Next
+'End Sub
+
+Sub FiltrirajImenaAppIImenaPaketa
+	l1.Initialize
+	Dim l As List
+	l.Initialize
+	For i = 0 To Starter.mapa.Size - 1
+		Dim pckg1 As String
+		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)'pckg.LastIndexOf("="))
+		' dodaj imena paketa u listu
+		l1.Add(pckg1)
+		pckg1 = pckg.SubString2(0, pckg.IndexOf(";"))
+		' dodaj imena aplikacija u listu
+		l.Add(pckg1)
+	Next
+End Sub
+
+Sub DodajListuAppUKotac
+	Private dlgDrawer As CustomLayoutDialog
+	Dim sf As Object = dlgDrawer.ShowAsync("All applications", "", "", "", Null, True)
+	dlgDrawer.SetSize(80%x, 62%y)
+	Wait For (sf) Dialog_Ready(pnl As Panel)
+
+	FiltrirajImenaAppIImenaPaketa
+
+	wp1.Initialize("wp1")
+	pnl.AddView(wp1, 0, btnPostavke.Height, pnlMeni.Width - 10%x, pnlMeni.Height)
+'	pnlMeni.AddView(wp1, 0, btnPostavke.Height, pnlMeni.Width - 10%x, pnlMeni.Height)
+	Dim mylist As List
+	mylist.Initialize
+	mylist.Add(LoadBitmap(File.DirAssets, "act_add.png"))
+
+	wp1.Tag = "kotac"
+	wp1.Curved = True
+	wp1.Cyclic = True
+	wp1.ItemTextColor = f.bojaFonta
+	wp1.Atmospheric = True
+	wp1.ItemAlign = 0                        '0 = center, 1 = left, 2 = right
+	wp1.ItemTextSize = f.fontzSize'55
+'	wp1.SelectedItemPosition = zadnja_oznacena_app
+	wp1.VisibleItemCount = 10
+	wp1.Indicator = True
+	wp1.ItemSpace = 20
+	wp1.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+	Dim cd As ColorDrawable
+	Dim res(4) As Int
+	res = getARGB(f.bojaPozadine)
+	res(0) = f.trans
+	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+	wp1.Background = cd
+	wp1.Data = l
+'	pnlMeni.Background = cd
+
+	ivWheelDodaj.Initialize("ivWheelDodaj")
+	ivWheelDodaj.Tag = "kotac_dodaj"
+	ivWheelDodaj.Bitmap = LoadBitmap(File.DirAssets, "act_add.png")
+	ivWheelDodaj.Gravity = Gravity.FILL
+	pnl.AddView(ivWheelDodaj, wp1.Width, (pnlMeni.Height / 2) + (btnPostavke.Height / 2), 10%x, 10%x)
+'	pnlMeni.AddView(ivWheelDodaj, wp1.Width, (pnlMeni.Height / 2) + (btnPostavke.Height / 2), 10%x, 10%x)
+
+	Wait For ivWheelDodaj_Click
+'	dlgDrawer.CloseDialog(DialogResponse.POSITIVE)
+	Wait For wp1_index_clicked(position As Int)
+'	dlgDrawer.CloseDialog(DialogResponse.POSITIVE)
+End Sub
+
+'Sub PrikaziKotac
+''	pnlMeni.Visible = True
+''	scvLadicaLijevo.Visible = False
+'	l1.Initialize
+'	Dim l As List
+'	l.Initialize
+'	For i = 0 To Starter.mapa.Size - 1
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)'pckg.LastIndexOf("="))
+'		' dodaj imena paketa u listu
+'		l1.Add(pckg1)
+'		pckg1 = pckg.SubString2(0, pckg.IndexOf(";"))
+'		' dodaj imena aplikacija u listu
+'		l.Add(pckg1)
+'	Next
+'
+'	wp1.Initialize("wp1")
+'	pnlMeni.AddView(wp1, 0, btnPostavke.Height, pnlMeni.Width - 10%x, pnlMeni.Height)
+'	Dim mylist As List
+'	mylist.Initialize
+'	mylist.Add(LoadBitmap(File.DirAssets, "act_add.png"))
+'
+'	wp1.Tag = "kotac"
+'	wp1.Curved = True
+'	wp1.Cyclic = True
+'	wp1.ItemTextColor = f.bojaFonta
+'	wp1.Atmospheric = True
+'	wp1.ItemAlign = 0                        '0 = center, 1 = left, 2 = right
+'	wp1.ItemTextSize = f.fontzSize'55
+''	wp1.SelectedItemPosition = zadnja_oznacena_app
+'	wp1.VisibleItemCount = 10
+'	wp1.Indicator = True
+'	wp1.ItemSpace = 20
+'	wp1.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+'	Dim cd As ColorDrawable
+'	Dim res(4) As Int
+'	res = getARGB(f.bojaPozadine)
+'	res(0) = f.trans
+'	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+'	wp1.Background = cd
+'	wp1.Data = l
+''	pnlMeni.Background = cd
+'
+'	ivWheelDodaj.Initialize("ivWheelDodaj")
+'	ivWheelDodaj.Tag = "kotac_dodaj"
+'	ivWheelDodaj.Bitmap = LoadBitmap(File.DirAssets, "act_add.png")
+'	ivWheelDodaj.Gravity = Gravity.FILL
+'	pnlMeni.AddView(ivWheelDodaj, wp1.Width, (pnlMeni.Height / 2) + (btnPostavke.Height / 2), 10%x, 10%x)
+'
+'	pnlMeni.BringToFront
+'End Sub
+
+'Sub TipIkone
+'	Dim iv As ImageView
+'	Dim pm As PackageManager
+'
+'	If lbl.IsInitialized Then lbl.RemoveView
+'
+'	iv.Initialize("ivDokPokreniApp")
+'	iv.Tag = scvDock.Panel.NumberOfViews
+'	iv.Width = 48dip
+'	iv.Height = 48dip
+'	iv.Gravity = Gravity.FILL
+'
+'	If f.tipIkone = 0 Then	' round
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getRoundBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else If f.tipIkone = 1 Then	' hexagon
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHexagonShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else if f.tipIkone = 2 Then	' triangle
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getTriangleShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else if f.tipIkone = 3 Then	' star
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getStarBitmap",Array(bdw.Bitmap, f.brTocaka))   'second parameter is number of point that the star should have
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else if f.tipIkone = 4 Then	' heart
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHeartBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else if f.tipIkone = 5 Then	' bubble
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getBubbleBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	else if f.tipIkone = 6 Then	' cone
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getConeBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 0, iv.Width, iv.Height)
+'	End If
+'End Sub
+
+Sub DodajAppUFavorite
+	Dim iv As ImageView
+	Dim pm As PackageManager
+
+	Dim pckg1 As String
+	Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+
+	ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
+
+	iv.Initialize("")
+	iv.Tag = scvDock.Panel.NumberOfViews
+	iv.Width = 48dip
+	iv.Height = 48dip
+	iv.Gravity = Gravity.FILL
+
+	pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+	Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+	Dim bmp As Bitmap = bdw.Bitmap
+	bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+	listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'	Dim bm1 As Bitmap
+'	bm1 = nativeMe.RunMethod("drawRing2", Array(bdw.Bitmap, 48dip, Colors.Transparent, Colors.White))
+	iv.Bitmap = bdw.Bitmap'bm1
+	scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + scvDock.Panel.NumberOfViews*10dip, 10dip, iv.Width, iv.Height)
+
+	ToastMessageShow("App added to favorites!", True)
+End Sub
+
+Sub ivWheelDodaj_Click
+	Log("vil dodaj klik!")
+
+	ivWheelDodaj.BringToFront
+
+'	Dim iv As ImageView
+'	Dim pm As PackageManager
+
+	If lbl.IsInitialized Then lbl.RemoveView
+
+'	iv.Initialize("")
+'	iv.Tag = scvDock.Panel.NumberOfViews
+'	iv.Width = 48dip
+'	iv.Height = 48dip
+'	iv.Gravity = Gravity.FILL
+
+'	Dim pckg1 As String
+'	Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+
+	ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
+	DodajAppUFavorite
+
+'	pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'	Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'	Dim bmp As Bitmap = bdw.Bitmap
+'	bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'	listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'	Dim bm1 As Bitmap
+'	bm1 = nativeMe.RunMethod("drawRing2", Array(bdw.Bitmap, 48dip, Colors.Transparent, Colors.White))
+'	iv.Bitmap = bm1
+'	scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+	
+'	If f.tipIkone = 0 Then	' round
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getRoundBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else If f.tipIkone = 1 Then	' hexagon
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHexagonShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 2 Then	' triangle
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getTriangleShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 3 Then	' star
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getStarBitmap",Array(bdw.Bitmap, f.brTocaka))   'second parameter is number of point that the star should have
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 4 Then	' heart
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHeartBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 5 Then	' bubble
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getBubbleBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 6 Then	' cone
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(zadnja_oznacena_app)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getConeBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews + 4dip, 4dip, iv.Width, iv.Height)
+'	End If
+
+	File.WriteList(File.DirInternal, "favorit_app", listaFavorita)
+End Sub
+
+'Sub ivInfo_Click
+'	Log("ivInfo klik!")
+'End Sub
+'Sub PrikaziListu
+'	l1.Initialize
+'	Dim l As List
+'	l.Initialize
+'	lv.Initialize("lv")
+'	Dim cd As ColorDrawable
+'	Dim res(4) As Int
+'	res = getARGB(f.bojaPozadine)
+'	res(0) = f.trans
+'	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+'	lv.SingleLineLayout.Background = cd
+'	lv.SingleLineLayout.Label.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+'	lv.SingleLineLayout.Label.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+'	lv.SingleLineLayout.Label.Height = 48dip
+'	lv.SingleLineLayout.Label.TextColor = f.bojaFonta
+'	lv.SingleLineLayout.Label.TextSize = f.fontzSize
+'	pnlMeni.AddView(lv, 0, ivPostavke.Height, pnlMeni.Width, pnlMeni.Height)
+'	For i = 0 To Starter.mapa.Size - 1
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)'pckg.LastIndexOf("="))
+'		' dodaj imena paketa u listu
+'		l1.Add(pckg1)
+'		pckg1 = pckg.SubString2(0, pckg.IndexOf(";"))
+'		' dodaj imena aplikacija u listu
+'		l.Add(pckg1)
+'		lv.AddSingleLine(pckg1)
+'	Next
+'End Sub
+'
+'Sub PrikaziListu2
+'	Dim pm As PackageManager
+'	Dim l As List
+'	Dim cd As ColorDrawable
+'	Dim res(4) As Int
+'	
+'	l1.Initialize
+'	l.Initialize
+'	lv.Initialize("lv")
+'	res = getARGB(f.bojaPozadine)
+'	res(0) = f.trans
+'	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+'	lv.TwoLinesAndBitmap.Background = cd
+'	lv.TwoLinesAndBitmap.Label.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+'	lv.TwoLinesAndBitmap.Label.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+'	lv.TwoLinesAndBitmap.Label.Height = 48dip
+'	lv.TwoLinesAndBitmap.Label.TextColor = f.bojaFonta
+'	lv.TwoLinesAndBitmap.Label.TextSize = f.fontzSize
+'	lv.TwoLinesAndBitmap.SecondLabel.Visible = False
+'	pnlMeni.AddView(lv, 0, ivPostavke.Height, pnlMeni.Width, pnlMeni.Height)
+'	For i = 0 To Starter.mapa.Size - 1
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim drawable As Object = pm.GetApplicationIcon(pckg1)
+'		If drawable Is BitmapDrawable Then
+'			Dim bdw As BitmapDrawable = drawable
+'			Dim bmp As Bitmap = bdw.Bitmap
+'			bdw.Initialize(bmp.Resize(28dip, 28dip, True))
+'			' dodaj imena paketa u listu
+'			l1.Add(pckg1)
+'			pckg1 = pckg.SubString2(0, pckg.IndexOf(";"))
+'			' dodaj imena aplikacija u listu
+'			l.Add(pckg1)
+'			lv.AddTwoLinesAndBitmap(pckg1, "", bdw.Bitmap)
+'		End If
+'	Next
+'End Sub
+
+'Sub PrikaziListuSaIkonamaAplikacije
+'	Dim pm As PackageManager
+'
+''	pnlMeni.Visible = True
+''	scvLadicaLijevo.Visible = False
+'
+'	pnlMeni.LoadLayout("clv1")
+'	clv.AsView.Width = pnlMeni.Width' - 10%x
+'	clv.AsView.Height = pnlMeni.Height
+'	clv.AsView.Top = btnPostavke.Height
+'	Dim cd As ColorDrawable
+'	Dim res(4) As Int
+'	res = getARGB(f.bojaPozadine)
+'	res(0) = f.trans
+'	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+'	clv.AsView.Background = cd
+'
+'	For i = 0 To Starter.mapa.Size - 1
+'		Dim pckg1, pckg2 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(i)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim drawable As Object = pm.GetApplicationIcon(pckg1)
+'		If drawable Is BitmapDrawable Then
+'			Dim bdw As BitmapDrawable = drawable
+'			Dim bmp As Bitmap = bdw.Bitmap
+'			bdw.Initialize(bmp.Resize(32dip, 32dip, True))
+'			pckg2 = pckg.SubString2(0, pckg.IndexOf(";"))
+'			clv.Add(KreirajStavku(bdw.Bitmap, pckg2, pnlMeni.Width, 48dip), 48dip, "")
+'		End If
+'	Next
+'End Sub
+
+Sub KreirajStavku(b As Bitmap, imeApp As String, Width As Int, Height As Int) As Panel
+	Dim p As Panel
+
+	p.Initialize("")
+	p.Color = Colors.Transparent
+	p.SetLayout(0, btnPostavke.Height, Width, Height)
+	p.LoadLayout("clv_stavka")
+
+	ivApp.Bitmap = b
+	lblImeApp.TextSize = f.fontzSize
+	lblImeApp.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+	lblImeApp.Text = imeApp
+	lblImeApp.TextColor = f.bojaFonta
+
+	Return p
+End Sub
+
+Sub clv_ItemClick (Index As Int, Value As Object)
+	Dim in As Intent
+	Dim pm As PackageManager
+
+	zadnja_oznacena_app = Index
+	in = pm.GetApplicationIntent(l1.Get(Index))
+	If in.IsInitialized Then
+'		animacije.Initialize("Anim", f.animStr)
+'		animacije.delay(500).duration(1500).playOn(
+		StartActivity(in)
+	End If
+End Sub
+
+Sub ViewsBringToFront
+	btnSearch.BringToFront
+	btnNotify.BringToFront
+	btnPostavke.BringToFront
+End Sub
+
+Sub Osvjezi
+	f.UcitajVrijednostiOpt
+
+	ViewsBringToFront
+
+	If scvDock.IsInitialized Then scvDock.Panel.RemoveAllViews
+
+'	f.UcitajVrijednostiOpt
+'
+'	If Starter.mapa.Size = 0 Then CallSubDelayed(Starter, "GetInstalledApps")
+'
+	ShowFavoriteApps
+'
+'	If f.showApps = 0 Then
+''		scvLadicaLijevo.RemoveView
+''		scvLadicaLijevo.Visible = False
+''		If pnlMeni.Visible = True Then
+''			pnlMeni.Visible = False
+''		Else
+''			pnlMeni.Visible = True
+''		End If
+''		pnlMeni.RemoveViewAt(2)
+'		pnlMeni.RemoveViewAt(1)
+'		PrikaziKotac
+'	else if f.showApps = 1 Then
+''		scvLadicaLijevo.RemoveView
+''		scvLadicaLijevo.Visible = False
+''		If pnlMeni.Visible = True Then
+''			pnlMeni.Visible = False
+''		Else
+''			pnlMeni.Visible = True
+''		End If
+'		pnlMeni.RemoveViewAt(2)
+'		pnlMeni.RemoveViewAt(1)
+'		PrikaziListuSaIkonamaAplikacije
+'	else if f.showApps = 2 Then
+''		pnlMeni.Visible = False
+''		If scvLadicaLijevo.Visible = True Then
+''			scvLadicaLijevo.Visible = False
+''		Else
+''			scvLadicaLijevo.Visible = True
+''		End If
+''		PrikaziLijevuLadicu
+'		DodajSlovauLadicu
+'	End If
+'
+''	prethodniOdabir = f.showApps
+End Sub
+
+'Sub lv_ItemClick (Position As Int, Value As Object)
+'	Dim in As Intent
+'	Dim pm As PackageManager
+'
+'	zadnja_oznacena_app = Position
+'
+'	in = pm.GetApplicationIntent(l1.Get(Position))
+'	If in.IsInitialized Then
+'		StartActivity(in)
+'	End If
+'End Sub
+
+Sub lblImeApp_LongClick
+	Log("lblimeapp long klik!")
+End Sub
+
+Sub getARGB(Color As Int) As Int()
+	Dim res(4) As Int
+
+	res(0) = Bit.UnsignedShiftRight(Bit.And(Color, 0xff000000), 24)
+	res(1) = Bit.UnsignedShiftRight(Bit.And(Color, 0xff0000), 16)
+	res(2) = Bit.UnsignedShiftRight(Bit.And(Color, 0xff00), 8)
+	res(3) = Bit.And(Color, 0xff)
+
+	Return res
+End Sub
+
+Sub ivClvDodaj_Click
+	Dim iv As ImageView
+	Dim pm As PackageManager
+
+	If lbl.IsInitialized Then lbl.RemoveView
+
+	Private imgV As ImageView = Sender
+	Private Index As Int = clv.GetItemFromView(Sender)
+
+	ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(Index))
+
+	iv.Initialize("ivMainApp")
+	iv.Tag = scvDock.Panel.NumberOfViews
+	iv.Width = 48dip
+	iv.Height = 48dip
+	iv.Gravity = Gravity.FILL
+
+	Dim pckg1 As String
+	Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+	pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+	Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+	Dim bmp As Bitmap = bdw.Bitmap
+	bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+	listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'	Dim bm1 As Bitmap
+'	bm1 = nativeMe.RunMethod("drawRing2", Array(bdw.Bitmap, 48dip, Colors.Transparent, Colors.White))
+	iv.Bitmap = bdw.Bitmap'bm1
+	scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+
+'	If f.tipIkone = 0 Then	' round
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getRoundBitmap",Array(bdw.Bitmap))
+''		bm1 = nativeMe.RunMethod("toRoundCorner",Array(bdw.Bitmap, Colors.White))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else If f.tipIkone = 1 Then	' hexagon
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHexagonShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 2 Then	' triangle
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getTriangleShape",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 3 Then	' star
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getStarBitmap",Array(bdw.Bitmap, f.brTocaka))   'second parameter is number of point that the star should have	
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 4 Then	' heart
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getHeartBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 5 Then	' bubble
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getBubbleBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	else if f.tipIkone = 6 Then	' cone
+'		Dim pckg1 As String
+'		Dim pckg As String = Starter.mapa.GetKeyAt(Index)
+'		pckg1 = pckg.SubString2(pckg.IndexOf(";")+1, pckg.Length)
+'		Dim bdw As BitmapDrawable = pm.GetApplicationIcon(pckg1)
+'		Dim bmp As Bitmap = bdw.Bitmap
+'		bdw.Initialize(bmp.Resize(48dip, 48dip, True))
+'		listaFavorita.Add(pckg1)	' dodaj ime paketa aplikacije
+'		Dim bm1 As Bitmap
+'		bm1 = nativeMe.RunMethod("getConeBitmap",Array(bdw.Bitmap))
+'		iv.Bitmap = bm1
+'		scvDock.Panel.AddView(iv, iv.Width*scvDock.Panel.NumberOfViews, 4dip, iv.Width, iv.Height)
+'	End If
+
+	imgV.Bitmap = LoadBitmap(File.DirAssets, "act_add_pressed.png")
+
+	File.WriteList(File.DirInternal, "favorit_app", listaFavorita)
+
+	ToastMessageShow("Application added to favorites.", True)
+End Sub
+
+Sub ProvjeraAppUFavoritima(mapavrijednost As String)
+	Dim brAppUDoku As Int = scvDock.Panel.NumberOfViews
+
+	For i = 0 To brAppUDoku - 1
+		Dim s As String = listaFavorita.Get(i)
+		If mapavrijednost.Contains(s) = True Then
+			ToastMessageShow("App already in favorites!", False)
+		End If
+	Next
+End Sub
+
+Sub ivDokPokreniApp_Click
+	Log("klik!")
+	Dim in As Intent
+	Dim iv As ImageView
+	Dim pm As PackageManager
+
+	iv = Sender
+	Log(iv.Tag)
+
+	Log(listaFavorita.Get(iv.Tag))
+	in = pm.GetApplicationIntent(listaFavorita.Get(iv.Tag))
+	If in.IsInitialized Then
+'		animacije.Initialize("Anim", f.animStr)
+'		animacije.delay(500).duration(1500).playOn(sv.Panel)
+		StartActivity(in)
+	End If
+End Sub
+
+'/*import android.graphics.Bitmap;
+'import android.graphics.Canvas;
+'import android.graphics.Path;
+'import android.graphics.Rect;
+'import android.graphics.RectF;
+'import android.graphics.drawable.BitmapDrawable;
+'import android.graphics.drawable.Drawable;
+'import android.graphics.Path.FillType;
+'import android.graphics.Paint;
+'import android.graphics.Color;*/
+'
+'import java.io.BufferedOutputStream;
+'import java.io.File;
+'import java.io.FileOutputStream;
+'import java.io.IOException;
+'import java.io.InputStream;
+
+#If Java
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Path;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.Path.FillType;
+import android.graphics.Paint;
+import android.graphics.Color;
+
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.BitmapFactory;
+import android.graphics.BitmapFactory.Options;
+import android.graphics.BlurMaskFilter;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.media.ExifInterface;
+import android.media.ThumbnailUtils;
+import android.os.Build;
+import android.os.Build.VERSION;
+import android.os.Build.VERSION_CODES;
+import android.provider.MediaStore.Images;
+import android.text.TextUtils;
+import android.view.Gravity;
+import android.content.res.Resources;
+import android.util.TypedValue;
+import android.util.DisplayMetrics;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.Path.FillType;
+import android.graphics.Path;
+
+public Bitmap getHexagonShape(Bitmap scaleBitmapImage) {
+
+// TODO Auto-generated method stub
+
+    int targetWidth = 32;
+    int targetHeight = 32;
+
+	Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight,Bitmap.Config.ARGB_8888);
+    Canvas canvas = new Canvas(targetBitmap);
+    Path path = new Path();
+    float stdW = 32;
+    float stdH = 32;
+    float w3 =stdW / 2;
+    float h2 = stdH / 2;
+    path.moveTo(0, (float) (h2*Math.sqrt(3)/2));
+    path.rLineTo(w3/2, -(float) (h2*Math.sqrt(3)/2)); path.rLineTo(w3, 0);   path.rLineTo(w3/2, (float) (h2*Math.sqrt(3)/2));
+    path.rLineTo(-w3/2, (float) (h2*Math.sqrt(3)/2)); path.rLineTo(-w3, 0); path.rLineTo(-w3/2, -(float) (h2*Math.sqrt(3)/2));
+    canvas.clipPath(path);
+    Bitmap sourceBitmap = scaleBitmapImage;
+    canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+    sourceBitmap.getHeight()),new Rect(0, 0, targetWidth, targetHeight), null);
+    return targetBitmap;
+}
+
+public static Bitmap getRoundBitmap(Bitmap scaleBitmapImage) {
+	int targetWidth = 32;
+	int targetHeight = 32;
+	Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight,
+			Bitmap.Config.ARGB_8888);
+
+	Canvas canvas = new Canvas(targetBitmap);
+	Path path = new Path();
+	path.addCircle(((float) targetWidth - 1) / 2,
+			((float) targetHeight - 1) / 2,
+			(Math.min(((float) targetWidth), ((float) targetHeight)) / 2),
+			Path.Direction.CCW);
+
+	canvas.clipPath(path);
+	Bitmap sourceBitmap = scaleBitmapImage;
+	canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+		sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+		targetHeight), null);
+	return targetBitmap;
+}
+	
+public static Drawable getRoundDrawable(Drawable d){
+	Bitmap b=getRoundBitmap(((BitmapDrawable) d).getBitmap());
+	return new BitmapDrawable(b);
+}
+
+public Bitmap getTriangleShape(Bitmap scaleBitmapImage) {
+
+      // TODO Auto-generated method stub
+
+        int targetWidth = 32;
+        int targetHeight = 32;
+
+        Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight,Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(targetBitmap);
+        Path path = new Path();
+        float stdW = 32;
+        float stdH = 32;
+        float w3 =stdW;
+        float h2 = stdH;
+		
+        path.moveTo((float) w3/2, (float) 0.0);
+        path.lineTo(w3, (float) h2); 
+		path.lineTo((float)0.0, h2);   
+		path.lineTo(w3/2, (float) 0.0);
+
+        canvas.clipPath(path);
+        Bitmap sourceBitmap = scaleBitmapImage;
+        canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+        sourceBitmap.getHeight()),new Rect(0, 0, targetWidth, targetHeight), null);
+        return targetBitmap;
+     }
+
+public static Bitmap getStarBitmap (Bitmap scaleBitmapImage, int steps) {
+	  int targetWidth = 32;
+	  int targetHeight = 32;
+
+	  Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+	  Canvas canvas = new Canvas(targetBitmap);
+	  Path path = new Path();
+
+      float halfWidth = targetWidth / 2.0F;
+      float bigRadius = halfWidth;
+      float radius = halfWidth / 2.0F;
+      float degreesPerStep = (float) Math.toRadians(360.0F / (float) steps);
+      float halfDegreesPerStep = degreesPerStep / 2.0F;
+	  
+      Path ret = new Path();
+      ret.setFillType(FillType.EVEN_ODD);
+      float max = (float) (2.0F* Math.PI);
+      ret.moveTo(targetWidth, halfWidth);
+      for (double step = 0; step < max; step += degreesPerStep) {
+        ret.lineTo((float)(halfWidth + bigRadius * Math.cos(step)), (float)(halfWidth + bigRadius * Math.sin(step)));
+        ret.lineTo((float)(halfWidth + radius * Math.cos(step + halfDegreesPerStep)), (float)(halfWidth + radius * Math.sin(step + halfDegreesPerStep)));
+      }
+      ret.close();
+	  canvas.clipPath(ret);
+	
+	  Bitmap sourceBitmap = scaleBitmapImage;
+	  canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+			sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+			targetHeight), null);
+	  return targetBitmap;
+}
+
+public static Bitmap getHeartBitmap (Bitmap scaleBitmapImage) {
+	  int targetWidth = 32;
+	  int targetHeight = 32;
+	  
+
+	  Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+	  
+	  Canvas canvas = new Canvas(targetBitmap);
+	  Path path = new Path();
+      RectF oval = new RectF();
+	  
+	  oval.set(0, 0, targetWidth/2, targetHeight/2);
+	  path.moveTo((float) 0.0, (float) oval.height()/2);
+      path.addArc(oval, 0, 360);  //from point 180 degree(9 o' clock position), go 180 degrees clockwise (to 3 o' clock position)
+      
+      oval.set(targetWidth/2, 0, targetWidth, targetHeight/2);
+	  path.moveTo((float) 0.0, (float) oval.height()/2);
+      path.addArc(oval, 0, 360);  //from point 180 degree(9 o' clock position), go 180 degrees clockwise (to 3 o' clock position)
+	  
+	  path.moveTo((float) targetWidth-11, (float) (targetHeight*0.34));
+      path.lineTo((float) targetWidth/2, (float) targetHeight); 
+	  path.lineTo((float) 11, (float) (targetHeight*0.34)); 
+	  
+	  path.moveTo((float) 0.0, (float) (targetHeight*0.25));
+	  path.lineTo((float) targetWidth, (float) (targetHeight*0.25));
+	  path.lineTo((float) targetWidth/2, (float) targetHeight); 
+	  path.lineTo((float) 0.0, (float) (targetHeight*0.25));
+	  
+	  
+	  canvas.clipPath(path);
+	
+	  Bitmap sourceBitmap = scaleBitmapImage;
+	  canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+			sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+			targetHeight), null);
+	  return targetBitmap;
+}
+
+public static Bitmap getBubbleBitmap(Bitmap scaleBitmapImage, int targetWidth, int targetHeight) {
+//      int targetWidth = 400;
+//      int targetHeight = 400;
+
+      Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+
+      Canvas canvas = new Canvas(targetBitmap);
+      Path path = new Path();
+
+      path.moveTo((float) targetWidth/2, (float) 0.0);
+      path.lineTo(targetWidth, (float) 0.0);
+      path.lineTo((float)targetWidth, targetHeight/2);  
+
+      RectF oval = new RectF();
+      oval.set(0, 0, targetWidth, targetHeight);
+      path.addArc(oval, 0, 270);
+      canvas.clipPath(path);
+   
+      Bitmap sourceBitmap = scaleBitmapImage;
+      canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+            sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+            targetHeight), null);
+      return targetBitmap;
+}
+
+/*public static Bitmap getBubbleBitmap(Bitmap scaleBitmapImage) {
+	  int targetWidth = 20;
+	  int targetHeight = 20;
+
+	  Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+
+	  Canvas canvas = new Canvas(targetBitmap);
+	  Path path = new Path();
+
+      path.moveTo((float) targetWidth/2, (float) 0.0);
+      path.lineTo(targetWidth, (float) 0.0); 
+	  path.lineTo((float)targetWidth, targetHeight/2);   
+
+      RectF oval = new RectF();
+	  oval.set(0, 0, targetWidth, targetHeight);
+	  path.addArc(oval, 0, 270);
+	  canvas.clipPath(path);
+	
+	  Bitmap sourceBitmap = scaleBitmapImage;
+	  canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+			sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+			targetHeight), null);
+	  return targetBitmap;
+}*/
+
+public static Bitmap getConeBitmap(Bitmap scaleBitmapImage) {
+	  int targetWidth = 32;
+	  int targetHeight = 32;
+
+	  Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+
+	  Canvas canvas = new Canvas(targetBitmap);
+	  Path path = new Path();
+
+      path.moveTo((float) targetWidth, (float) targetHeight/2);
+      path.lineTo(targetWidth/2, (float) targetHeight); 
+	  path.lineTo((float)0.0, targetHeight/2);   
+
+      RectF oval = new RectF();
+	  oval.set(0, 0, targetWidth, targetHeight);
+	  path.addArc(oval, 180, 180);  //from point 180 degree(9 o' clock position), go 180 degrees clockwise (to 3 o' clock position)
+	  canvas.clipPath(path);
+	
+	  Bitmap sourceBitmap = scaleBitmapImage;
+	  canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+			sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+			targetHeight), null);
+	  return targetBitmap;
+}
+
+public static Bitmap getJollyPatrolly (Bitmap scaleBitmapImage) {
+
+	int targetWidth = 32; // 1000
+	int targetHeight = 32; // 1000
+
+	Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, targetHeight, Bitmap.Config.ARGB_8888);
+	  
+	Canvas canvas = new Canvas(targetBitmap);
+	Path path = new Path();
+    RectF oval = new RectF();
+
+    Paint paint = new Paint();
+    paint.setColor(Color.BLUE);
+    paint.setAntiAlias(true);
+    paint.setStyle(Paint.Style.STROKE);
+
+    float mid = targetWidth / 2;
+    float min = targetWidth;
+    float fat = min / 17;
+    float half = min / 2;
+    float rad = half - fat;
+    mid = mid - half;
+
+    paint.setStrokeWidth(fat);
+    paint.setStyle(Paint.Style.STROKE);
+
+    canvas.drawCircle(mid + half, half, rad, paint);
+
+    path.reset();
+
+    paint.setStyle(Paint.Style.FILL);
+
+    // top left
+    path.moveTo(mid + half * 0.5f, half * 0.84f);
+    // top right
+    path.lineTo(mid + half * 1.5f, half * 0.84f);
+    // bottom left
+    path.lineTo(mid + half * 0.68f, half * 1.45f);
+    // top tip
+    path.lineTo(mid + half * 1.0f, half * 0.5f);
+    // bottom right
+    path.lineTo(mid + half * 1.32f, half * 1.45f);
+    // top left
+    path.lineTo(mid + half * 0.5f, half * 0.84f);
+
+    path.close();
+    canvas.clipPath(path);
+      
+	Bitmap sourceBitmap = scaleBitmapImage;
+	canvas.drawBitmap(sourceBitmap, new Rect(0, 0, sourceBitmap.getWidth(),
+		sourceBitmap.getHeight()), new Rect(0, 0, targetWidth,
+		targetHeight), null);
+	return targetBitmap;
+}
+
+public Bitmap drawRing2(Bitmap bitmap, int deltaRadius,	int color, int bordercolor) {
+	bitmap = squareImage(bitmap);		
+	bitmap = toRoundCorner(bitmap,bordercolor);	
+	int w = bitmap.getWidth();
+	int dia = deltaRadius * 2 + w;
+	float radius = (float) dia / 2;
+	Bitmap resultBitmap = Bitmap.createBitmap(dia, dia, Config.ARGB_8888);
+	Paint paint = new Paint();
+	paint.setColor(color);
+	paint.setAlpha(128);
+	paint.setAntiAlias(true);
+	Canvas canvas = new Canvas(resultBitmap);
+	canvas.drawCircle(radius, radius, radius, paint);
+	canvas.drawBitmap(bitmap, deltaRadius, deltaRadius, null);
+	return resultBitmap;
+}
+
+public Bitmap squareImage(Bitmap bitmap) {
+	if (bitmap == null) {
+		return null;
+	}
+	int width = bitmap.getWidth();
+	int height = bitmap.getHeight();
+	if (width == height) {
+		BA.Log("no need to square image");
+		return bitmap;
+	}
+	int x = (height < width) ? ((width - height) / 2) : 0;
+	int y = (width < height) ? ((height - width) / 2) : 0;
+	int pixels = width < height ? width : height;
+	Bitmap square = Bitmap.createBitmap(bitmap, x, y, pixels, pixels);
+
+	return square;
+}
+
+public Bitmap toRoundCorner(Bitmap bitmap, int color) {
+	try {
+		int w = bitmap.getWidth();
+		int h = bitmap.getHeight();
+		final int delta = dp2px(10);
+		final float roundPx = dp2px(28);
+		final Paint paint = new Paint();
+		paint.setAntiAlias(true);
+
+		/* draw round foreground */
+		int foreW = w - 2 * delta;
+		int foreH = h - 2 * delta;
+		Bitmap foreBmp = Bitmap.createBitmap(foreW, foreH, Config.ARGB_8888);
+		Rect rect = new Rect(0, 0, foreW, foreH);
+		RectF rectF = new RectF(rect);
+		Canvas canvas0 = new Canvas(foreBmp);
+		canvas0.drawRoundRect(rectF, roundPx, roundPx, paint);
+		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+		canvas0.drawBitmap(bitmap, null, rect, paint);
+
+		/* draw round background */
+		Drawable drawable = getDrawbale(color, (int) (delta + roundPx));
+		drawable.setBounds(0, 0, w, h);
+		Bitmap result = Bitmap.createBitmap(w, h, Config.ARGB_8888);
+		Canvas canvas = new Canvas(result);
+		drawable.draw(canvas);
+		canvas.drawBitmap(foreBmp, delta, delta, null);
+
+		return result;
+	} catch (Exception e) {
+		e.printStackTrace();
+		return bitmap;
+	}
+}
+
+	public int dp2px(int dip) {
+		Resources resources = getResources();
+		int px = Math
+				.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+						dip, resources.getDisplayMetrics()));
+		return px;
+	}
+
+	public GradientDrawable getDrawbale(int argb, int radius) {
+		GradientDrawable drawable = new GradientDrawable();
+		drawable.setCornerRadius(radius);
+		drawable.setColor(argb);
+		return drawable;
+	}
+
+#End If
+
+Sub TabStrip1_PageSelected (Position As Int)
+	Log($"Current page: ${Position}"$)
+	Dim i As Int
+	For Each lbl As Label In GetAllTabLabels(TabStrip1)
+		If i = Position Then lbl.TextColor = Colors.Blue Else lbl.TextColor = Colors.Red
+		i = i + 1
+	Next
+	If TabStrip1.CurrentPage = 1 And pnlKontakti.NumberOfViews = 0 Then 
+		UbaciKontakte2
+	End If
+End Sub
+
+Sub CreateSmartWidget(id As Int)
+	SmartWidgets.Initialize("SmartWidgets", id)
+	SmartWidgets.SelectWidget
+End Sub
+
+'Sub DblToDIP(dbl As Int) As Int
+'	Dim DIP As Int
+'	DIP = dbl * 1dip
+'
+'	Return DIP
+'End Sub
+
+'
+'' ! --------------- ! WIDGET EVENTS ! --------------- ! '
+'
+''After a widgets has been selected, this gets called.
+
+'Sub CreateListItem(pnl As Object, Width As Int, Height As Int) As Panel
+'	Dim p As Panel
+'	p.Initialize("")
+''	p.SetLayout(0, 0, Width, Height) 'set the panel size before you load the layout.
+'	Activity.AddView(p, 0, 0, Width, Height)
+'	'The above line will fail on B4A < v7.30. You should instead add the panel to the Activity with Activity.AddView and remove
+'	'it after calling LoadLayout with p.RemoveView.
+''	p.LoadLayout("CellItem")
+'	SmartWidgets.AddView(p, pnl, 0, 0)
+'	p.RemoveView
+'	'label1 and button1 will point to the last added views.
+''	Label1.Text = Text
+''	Button1.Text = "Click"
+'	Return p
+'End Sub
+
+Sub SmartWidgets_WidgetCreated (HostId As Int, HostView As Object, WidgetId As Int, widgetinfo As Object)
+	Dim widget_panel As Panel
+'	Dim ipsilon As Int
+	Dim Info As RSWidgetProviderInfo = widgetinfo
+	Dim hw As RSWidgetHostView = HostView
+
+'	Dim panel0 As Panel = ScrollView1.Panel
+'	If p.IsInitialized Then
+'		p.RemoveView
+'		SmartWidgets.RemoveWidget(p)
+'	End If
+
+	Log(hw)
+	Log(HostId)
+	Log(WidgetId)
+	widget_panel.Initialize("")
+	widget_panel = hw'HostView' SmartWidgets.HostView
+	Log(hw)
+	Log(HostId)
+	Log(WidgetId)
+	If DipToCurrent(Info.MinWidth) > GetDeviceLayoutValues.Width Then
+		widget_panel.Width = Info.MinWidth
+	Else
+		widget_panel.Width = DipToCurrent(Info.MinWidth)
+	End If
+
+	If DipToCurrent(Info.MinHeight) > GetDeviceLayoutValues.Height Then
+		widget_panel.Height = Info.MinHeight
+	Else
+		widget_panel.Height = DipToCurrent(Info.MinHeight)
+	End If
+
+	ipsilon = widget_panel.Height
+	SmartWidgets.AddView(Panel1, widget_panel, 0, topW)
+	topW = topW + ipsilon
+'	Dim p As Panel
+'	p.Initialize("")
+'	Activity.AddView(p, 0, 0, p.Width, p.Height)
+'	SmartWidgets.AddView(p, widget_panel, 0, 0)
+'	p.RemoveView
+
+'	CustomListView1.Add(CreateListItem(widget_panel, CustomListView1.AsView.Width, widget_panel.Height), widget_panel.Height, "")
+'	SmartWidgets.AddView(Panel1, widget_panel, 0, ipsilon)
+'	ipsilon = ipsilon + widget_panel.Height
+	Log(hw)
+	SmartWidgets.StartListening
+
+'	top = top + ipsilon
+
+'	SmartWidgets.AddView(CustomListView1, p, 0, top)
+'	ScrollView1.Panel.Height = ipsilon'top + 10dip
+'	SmartWidgets.AddView(panel0, p, 0, top)
+'	CustomListView1.AsView.Height = top
+'	ScrollView1.Panel.Height = top' + 10dip
+'	p.Top = p.Height * mejnPanel.NumberOfViews'ScrollView1.Panel.NumberOfViews
+'	
+'	top = p.Top
+'	Log(ScrollView1.Panel.NumberOfViews)
+'	Log(p.Height)
+'	Log(ScrollView1.Panel.NumberOfViews * p.Height)
+'	If ScrollView1.Panel.NumberOfViews = 0 Then
+'		ScrollView1.Panel.Height = p.Height
+'	Else
+'		ScrollView1.Panel.Height = ScrollView1.Panel.NumberOfViews * p.Height
+'		top = ScrollView1.Panel.Height
+'	End If
+'	If mejnPanel.NumberOfViews = 0 Then
+'		mejnPanel.Height = p.Height + 50dip
+'	Else
+'		mejnPanel.Height = mejnPanel.NumberOfViews * p.Height + 50dip
+'		top = mejnPanel.Height
+'	End If
+
+'	SmartWidgets.AddView(mejnPanel, p, 0, top)
+
+'	Dim count, spacing As Int
+'	count = ScrollView1.Panel.NumberOfViews
+'	spacing = 1
+'
+''	ScrollView1.Panel.LoadLayout("ScrollViewTemplate")
+'	p.Top = (p.Height + spacing) * count
+''	Panel1.Top=(Panel1.Height+spacing)*i
+''	Panel1.Width=100%x
+''	Panel1.Tag=i
+'	Log((count * p.Height) + (count * spacing) + p.Height)
+'	ScrollView1.Panel.Height = (count * p.Height) + (count * spacing)' + p.Height
+'
+'	SmartWidgets.AddView(ScrollView1.Panel, p, 0, ScrollView1.Panel.Height)
+	
+'	Activity.AddView(ScrollView1, 0, 0, 100%x, 100%y)
+'	ScrollView1.Panel.Height = (count * p.Height) + (count * spacing)
+'	ScrollView1.Panel.Height=(i*Panel1.Height)+(i*spacing)
+
+'	Log("top1: " & top)
+'	p.Top = top'(p.Height + razmak) * ScrollView1.Panel.NumberOfViews
+'	If ScrollView1.Panel.NumberOfViews = 0 Then
+'		ScrollView1.Panel.Height = p.Height' + razmak
+''		top = 0
+'	Else
+'		ScrollView1.Panel.Height = ScrollView1.Panel.NumberOfViews * p.Height + ScrollView1.Panel.NumberOfViews * 10dip
+'		top = ScrollView1.Panel.Height
+'	End If
+'	visinaPanela = p.Height
+'	SmartWidgets.AddView(ScrollView1.Panel, p, 0, top)
+'	p.BringToFront
+'	ScrollView1.SendToBack
+'	Log(ScrollView1.Panel.Height)
+'	top = top + visinaPanela' + razmak
+
+	File.WriteString(File.DirInternal, "thehost.txt", HostView)
+	File.writestring(File.DirInternal, "theid.txt", HostId)
+	File.WriteString(File.DirInternal, "theappid.txt", SmartWidgets.AppWidgetId)
+End Sub
+'
+
+Sub SmartWidgets_BackPressed (WidgetId As Int)
+	Log("Back pressed")
+End Sub
+
+' ! --------------- ! WIDGET EVENTS ! --------------- ! '
+'http://www.b4x.com/android/forum/threads/getting-started-with-a-homescreen-launcher.34068/#post-302486
+'http://www.b4x.com/android/forum/threads/rssmartwidgets-host-widgets-in-app.32807/
+
+'Sub SmartWidgets_LoadWidgets(Load As Boolean)
+''	Dim temp As Int, tempWidget As HostedWidget, LCARSwidget As Widget, WidgetID As Int
+'	Dim temp As Int, WidgetID As Int
+'	If Load Then
+'		If File.Exists(File.DirInternal, "theappid.txt") Then
+''		If ListSize(HostedWidgets)=0 Then
+''			HostedWidgets.Initialize
+''			For temp = 0 To LCARS.Widgets.Size -1
+''				LCARSwidget = LCARS.Widgets.Get(temp)
+''				If LCARSwidget.ID>-1 Then'isReal
+'
+'					SmartWidgets_MakeRealWidget2(LCARSwidget.ID, "", LCARSwidget.Width,LCARSwidget.Height)
+''				End If
+''			Next
+''		End If
+'	Else
+'		File.WriteString(File.DirInternal, "thehost.txt", HostView)
+'		File.writestring(File.DirInternal, "theid.txt", HostId)
+'		File.WriteString(File.DirInternal, "theappid.txt", SmartWidgets.AppWidgetId)
+'		'insert code to save the widget ID number to your settings file
+'	End If
+'End Sub
+'Sub SmartWidgets_MakeRealWidget As Int
+'	SmartWidgets_LoadWidgets(True)
+'	Dim tempWidget As HostedWidget
+'	tempWidget.Initialize
+'	tempWidget.SmartWidgets.Initialize("SmartWidgets", MyHostID)
+'	HostedWidgets.Add(tempWidget)
+'	tempWidget.SmartWidgets.SelectWidget
+'	Return HostedWidgets.Size - 1
+'End Sub
+'Sub SmartWidgets_MakeRealWidget2(AppWidgetId As Int, PackageName As String, Width As Int, Height As Int)
+'	Dim tempWidget As HostedWidget, Info As RSWidgetProviderInfo, LCARSWidgetID As Int = LCARS.FindWidgetID(AppWidgetId)
+'
+'
+'	'    Dim tempWidget As HostedWidget
+'	'    tempWidget.Initialize
+'	'    tempWidget.SmartWidgets.Initialize("SmartWidgets", MyHostID)
+'	'    tempWidget.SmartWidgets.AppToStart = AppWidgetId
+'	'    tempWidget.SmartWidgets.getAppWidgetInfo(AppWidgetId)
+'	'
+'	'
+'	'
+'	'
+'	'    tempWidget.HostView.Initialize("widginform")
+'	'    tempWidget.HostView = tempWidget.SmartWidgets.HostView
+'	'
+'	'    If PackageName.Length=0 Then
+'	'        tempWidget.SmartWidgets.CreateSmartWidget(AppWidgetId)
+'	'    Else
+'	'        tempWidget.SmartWidgets.CreateSmartWidget2(PackageName)
+'	'    End If
+'	'
+'	'    tempWidget.Dest.Initialize("WidgetPanel")
+'	'    Activity.AddView(tempWidget.Dest, 0,0, Width, Height)
+'	'    tempWidget.Dest.Visible=False
+'	'    tempWidget.HostView = tempWidget.SmartWidgets.HostView
+'	'    tempWidget.SmartWidgets.AddView(tempWidget.Dest, tempWidget.HostView, 0, 0)
+'	'    tempWidget.HostView.SendToBack
+'	'    tempWidget.SmartWidgets.StartListening
+'	'
+'	'
+'	'    HostedWidgets.Add(tempWidget)
+'	'    Log("AppWidgetId: " & tempWidget.SmartWidgets.AppWidgetId)
+'	'    Return
+'    
+'    
+'    
+'	tempWidget.Initialize
+'	tempWidget.SmartWidgets.Initialize("SmartWidgets", MyHostID)
+'	tempWidget.SmartWidgets.AppToStart = AppWidgetId
+'	tempWidget.SmartWidgets.getAppWidgetInfo(AppWidgetId)
+'	tempWidget.SmartWidgets.HostID = MyHostID
+'	tempWidget.HostView.Initialize("SmartWidgets")
+'	Info=tempWidget.SmartWidgets.getAppWidgetInfo(AppWidgetId)
+'    
+'	If PackageName.Length=0 Then
+'		tempWidget.SmartWidgets.CreateSmartWidget(AppWidgetId)
+'		tempWidget.SmartWidgets.AppWidget(AppWidgetId, Info)
+'	Else
+'		tempWidget.SmartWidgets.CreateSmartWidget2(PackageName)
+'	End If
+'	'LCARS.ChangeWidgetID(AppWidgetId, tempWidget.SmartWidgets.AppWidgetId)
+'	tempWidget.HostView = tempWidget.SmartWidgets.HostView
+'    
+'	tempWidget.Dest.Initialize("SmartWidgets")
+'    
+'    
+'	If Width= 0 Then Width = Info.MinWidth
+'	If Height=0 Then Height= Info.MinHeight
+'	'Log("Widget made: (" & AppWidgetId & ") " & Info)
+'	Activity.AddView(tempWidget.Dest, 0,0, Width, Height)
+'	tempWidget.SmartWidgets.OnLongClickListener =  tempWidget.HostView
+'	tempWidget.SmartWidgets.AddView(tempWidget.Dest, tempWidget.HostView, 0, 0)
+'	tempWidget.HostView.BringToFront
+'	tempWidget.SmartWidgets.StartListening
+'	tempWidget.Dest.SendToBack
+'	tempWidget.Dest.Visible = False
+'	tempWidget.Dest.Enabled = True
+'	tempWidget.ID=AppWidgetId
+'    
+'	Log("AppWidgetId: " & tempWidget.SmartWidgets.AppWidgetId)
+'	HostedWidgets.Add(tempWidget)
+'	SmartWidgets_SyncWidgets(True)
+'End Sub
+'Sub SmartWidgets_ChangeListeningState(Listening As Boolean)
+'	Dim temp As Int, tempWidget As HostedWidget
+'	If HostedWidgets.IsInitialized Then
+'		For temp = 0 To HostedWidgets.Size-1
+'			tempWidget = HostedWidgets.Get(temp)
+'			If tempWidget.Dest.IsInitialized Then
+'				If Listening Then
+'					tempWidget.SmartWidgets.StartListening
+'					If tempWidget.Dest.Visible Then tempWidget.Dest.SendToBack
+'				Else
+'					tempWidget.SmartWidgets.StopListening
+'				End If
+'			End If
+'		Next
+'		If Listening Then SmartWidgets_SyncWidgets(True) Else SmartWidgets_LoadWidgets(False)
+'	Else
+'		SmartWidgets_LoadWidgets(True)
+'	End If
+'End Sub
+'Sub SmartWidgets_GetUnchoosenWidget As Int
+'	Dim temp As Int, tempWidget As HostedWidget
+'	If HostedWidgets.IsInitialized Then
+'		For temp = 0 To HostedWidgets.Size-1
+'			tempWidget = HostedWidgets.Get(temp)
+'			If Not(tempWidget.Dest.IsInitialized) Then Return temp
+'		Next
+'	End If
+'	Return SmartWidgets_MakeRealWidget
+'End Sub
+'
+''After a widgets has been selected, this gets called.
+'Sub SmartWidgets_WidgetCreated (HostID As Int, HostView As Object, WidgetId As Int, WidgetInfo As Object)
+'	Dim tempWidget As HostedWidget = HostedWidgets.Get(SmartWidgets_GetUnchoosenWidget), Info As RSWidgetProviderInfo = WidgetInfo
+'	If MyHostID = HostID Then
+'		tempWidget.HostView.Initialize("SmartWidgets")
+'		tempWidget.HostView = tempWidget.SmartWidgets.HostView
+'		tempWidget.ID = WidgetId
+'		tempWidget.Dest.Initialize("SmartWidgets")
+'		Activity.AddView(tempWidget.Dest, 0,0, Info.MinWidth, Info.MinHeight)
+'		tempWidget.Dest.Visible=False
+'		tempWidget.SmartWidgets.OnLongClickListener = tempWidget.HostView
+'		tempWidget.SmartWidgets.AddView(tempWidget.Dest, tempWidget.HostView, 0, 0)
+'		tempWidget.HostView.SendToBack
+'		tempWidget.SmartWidgets.StartListening
+'        
+'		If Not(LCARS.AutoMakeWidget(2,1, WidgetId)) Then MSGBOX1("THERE ISNT ENOUGH ROOM ON THIS PAGE", "ERROR")
+'		SmartWidgets_SyncWidgets(True)
+'	End If
+'	HideList(True)
+'End Sub
+'
+'Sub SmartWidgets_FindWidgetID(WidgetId As Int) As Int
+'	Dim temp As Int, tempWidget As HostedWidget
+'	If HostedWidgets.IsInitialized Then
+'		For temp = 0 To HostedWidgets.Size-1
+'			tempWidget = HostedWidgets.Get(temp)
+'			If tempWidget.ID=WidgetId Then Return temp
+'		Next
+'	End If
+'	Return -1
+'End Sub
+'Sub SmartWidgets_DeleteWidget(WidgetId As Int) As Boolean
+'	Dim tempWidget As HostedWidget, Index As Int = SmartWidgets_FindWidgetID(WidgetId)
+'	If Index>-1 Then
+'		tempWidget = HostedWidgets.Get(Index)
+'		tempWidget.SmartWidgets.RemoveWidget(tempWidget.SmartWidgets.HostView)
+'		HostedWidgets.RemoveAt(Index)
+'		SmartWidgets_LoadWidgets(False)
+'		Return True
+'	End If
+'End Sub
+'
+'Sub SmartWidgets_SyncWidgets(Visible As Boolean)
+'	Dim temp As Int, tempHostedWidget As HostedWidget, tempLCARSwidget As Widget ,temp2 As Int
+'	If Not(HostedWidgets.IsInitialized) Then SmartWidgets_LoadWidgets(True)' Return
+'	For temp = 0 To HostedWidgets.Size-1' LCARS.Widgets.Size-1
+'		tempHostedWidget = HostedWidgets.Get(temp)
+'		'Log("Widget ID: " & tempHostedWidget.ID )
+'		temp2 = LCARS.FindWidgetID(tempHostedWidget.ID )
+'		If temp2=-1 Then
+'			SmartWidgets_DeleteWidget(tempHostedWidget.ID )
+'		Else
+'			tempLCARSwidget = LCARS.Widgets.get(temp2)
+'			tempHostedWidget.Dest.Visible = tempLCARSwidget.Visible
+'			If tempLCARSwidget.Visible Then
+'				tempHostedWidget.Dest.SendToBack
+'				tempHostedWidget.dest.Left = tempLCARSwidget.X
+'				tempHostedWidget.dest.Top = tempLCARSwidget.Y
+'				If tempHostedWidget.dest.Width <> tempLCARSwidget.Width Or tempHostedWidget.dest.Height <> tempLCARSwidget.Height Then
+'					tempHostedWidget.dest.Width = tempLCARSwidget.Width
+'					tempHostedWidget.dest.Height = tempLCARSwidget.Height
+'				End If
+'			End If
+'		End If
+'	Next
+'End Sub
+'Sub SmartWidgets_LongClick
+'	Log("widget Long click")
+'End Sub
+
+'Sub ListSize(Items As List) As Int
+'	If Items.IsInitialized Then Return Items.Size
+'End Sub
+
+'Sub mejnPanel_LongClick
+'	Log("long klik!!")
+'	If mejnPanel.Visible  Then
+'		CreateSmartWidget(1)
+'	End If
+'End Sub
+
+'Sub ScrollView1Panel_LongClick(vt_iv As Object, Action As Int, X As Float, Y As Float, MotionEvent As Object) As Boolean
+'	Log("skrol vju long klik!")
+'	Dim touchstart, touchduration As Long
+'
+'	Select Action
+'		Case Activity.ACTION_DOWN ' ili ACTION_UP?!
+'			touchstart = DateTime.Now
+''			CreateSmartWidget(1)
+''			Log("ekšn daun!")
+'			Return True
+'		Case Activity.ACTION_UP
+'			touchduration = DateTime.Now - touchstart     ' calculate touch duration
+'			If touchduration > 3500 Then ' long click
+'				CreateSmartWidget(1)
+'			End If
+'			Return True
+'	End Select
+'
+'	Return False
+'End Sub
+
+'Sub Listener_NotificationPosted (SBN As StatusBarNotification)
+'	Dim p As Phone
+'	If p.SdkVersion >= 19 Then
+'		Dim jno As JavaObject = SBN.Notification
+'		Dim extras As JavaObject = jno.GetField("extras")
+'		extras.RunMethod("size", Null)
+'		Dim title As String = extras.RunMethod("getString", Array As Object("android.title"))
+'		Dim text As String = extras.RunMethod("getString", Array As Object("android.text"))
+''		If SBN.PackageName.Contains("whatsapp") Then
+''			Dim title As String = extras.RunMethod("getString", Array As Object("android.title"))
+''			LogColor("Name = " & title, Colors.Blue)
+''			Dim cu As Contacts
+''			For Each c As Contact In cu.FindByName(title,True)
+''				Dim loc_Phones As Map
+''				loc_Phones.Initialize
+''				loc_Phones = c.GetPhones
+''				Dim loc_NumberFrom As String = ""
+''				Dim x As Int=0
+''				For x=0 To loc_Phones.Size-1
+''					If loc_Phones.GetValueAt(x) = c.PHONE_MOBILE Then
+''						loc_NumberFrom = loc_Phones.GetKeyAt(x)
+''						loc_NumberFrom = loc_NumberFrom.Replace(" ","")
+''						loc_NumberFrom = loc_NumberFrom.Replace("-","")
+''						LogColor("Number = " & loc_NumberFrom, Colors.Blue)
+''					End If
+''				Next
+''			Next
+''			Dim text As String = extras.RunMethod("getString", Array As Object("android.text"))
+''			'LogColor("text = " & text, Colors.Blue)
+''			Dim loc_message As String = text
+''			If text = "null" Then
+''				Try
+''					Dim lines() As Object = extras.RunMethod("getCharSequenceArray", Array("android.textLines"))
+''					For Each line As Object In lines
+''						'Log(line)
+''						loc_message = line
+''					Next
+''				Catch
+''					LogColor("Error!" & title, Colors.Red)
+''				End Try
+''			End If
+''			LogColor("Message = " & loc_message, Colors.Blue)
+''			listener.ClearNotification(SBN)
+''		End If
+'	End If
+'End Sub
+
+Sub btnClearAll_Click
+	CallSubDelayed(NotificationService, "ClearAll")
+End Sub
+
+'Sub btnGetActive_Click
+'	CallSubDelayed(NotificationService, "GetActive")
+'End Sub
+
+Sub tajmer_Tick
+	NotificationService.brojNotifikacija = 0
+	CallSubDelayed(NotificationService, "GetActive")
+	Log(NotificationService.brojNotifikacija)
+End Sub
+
+Sub btnNotify_Click
+	Dim p As Phone
+	Log(p.GetSettings("enabled_notification_listeners"))
+	If p.GetSettings("enabled_notification_listeners").Contains("com.no3dlauncher") = False Then
+		Dim In As Intent
+		In.Initialize("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS", "")
+		StartActivity(In)
+	End If
+End Sub
+
+Sub btnDodajWidget_Click
+	If Panel1.Visible Then
+'	If CustomListView1.sv.Visible Then
+'	If ScrollView1.Visible Then
+		CreateSmartWidget(1)
+	End If
+End Sub
+
+Sub btnDodajStr_Click
+	Log("btnDodajStr_Click")
+End Sub
+
+Sub btnNatrag_Click
+	If TabStrip1.CurrentPage > 0 Then
+		TabStrip1.ScrollTo(TabStrip1.CurrentPage - 1, True)
+	Else
+		TabStrip1.ScrollTo(2, True)
+	End If
+
+'	If TabStrip1.CurrentPage = 1 And CustomListView1.GetSize = 0 Then
+	If TabStrip1.CurrentPage = 1 And pnlKontakti.NumberOfViews = 0 Then
+		UbaciKontakte2'(c)
+	End If
+End Sub
+
+Sub btnNaprijed_Click
+	If TabStrip1.CurrentPage < 3 Then
+		TabStrip1.ScrollTo(TabStrip1.CurrentPage + 1, True)
+	End If
+End Sub
+
+Sub UbaciKontakte2
+	Dim allContacts As List = cu.FindAllContacts(True)
+'	Dim x As Int = Activity.Width / 5 - 10dip	' 5 slova abecede u retku
+'	Dim y As Int = Activity.Width - x*5 + 8dip
+'	x = 40dip
+
+	If File.Exists (File.DirInternal, "nema_slike.png") = False Then
+		File.Copy(File.DirAssets, "nema_slike.png", File.DirInternal, "nema_slike.png")
+	End If
+	'Initialize the library.
+	grid.Initialize(pnlKontakti, Me, "kontaktiGrid", 4, "S")
+	'Prepare the CustomGridView to receive data.
+	grid.PrepareGridView
+
+'	kontaktMeni.Initialize(Activity, Me, pnlKontakti, Colors.Yellow, Colors.Blue, Colors.White, True, True)
+'	kontaktMeni.AddMenuItem("Call", "glavni_meni")
+'	kontaktMeni.AddMenuItem("SMS", "glavni_meni")
+'	kontaktMeni.AddMenuItem("EMail", "glavni_meni")
+'	kontaktMeni.AddMenuItem("Info", "glavni_meni")
+
+'	pnlSlova.Initialize("")
+'	Activity.AddView(pnlSlova, 0, 46dip, 100%x, 100%y)
+'	Log(DipToCurrent(x))
+'	Dim cd As ColorDrawable
+'	cd.Initialize2(Colors.ARGB(127, 211, 211, 211), x, 4, Colors.White)
+'	Activity.LoadLayout("panel")
+'	pnlKontakti.RemoveAllViews
+'	Dim scv As ScrollView
+'	scv.Initialize(100%y)
+'	scv.Panel.Background = cd
+'	Activity.AddView(scv, 0, 90dip, 100%x, 100%y)
+'	pnlKontakti.AddView(scv, 0, 0, 100%x, 100%y)
+	Dim ukupno, i As Int = 0
+
+	ProgressDialogShow("Building contacts...")
+	Dim l1k, l2k As List
+	l1k.Initialize	' diaply name
+	l2k.Initialize	' id
+	For Each c As cuContact In allContacts'cu.FindAllContacts(True)
+		l1k.Add(c.DisplayName)
+		l2k.Add(c.Id)
+	Next
+
+	Log(l1k)
+	Log(l2k)
+	For i = 0 To allContacts.Size - 1
+		For j = 0 To 4
+			If ukupno < allContacts.Size Then
+'				Log(i*5+j)
+				Dim bmp As Bitmap = cu.GetPhoto(l2k.Get(i*5+j))
+				If bmp.IsInitialized = False Then
+					grid.AddToGridView(File.Combine(File.DirInternal, "nema_slike.png"), l1k.Get(i*5+j), l2k.Get(i*5+j))
+				Else
+					Dim bmp As Bitmap = cu.GetPhoto(l2k.Get(i*5+j))
+					Dim Out As OutputStream
+					Out = File.OpenOutput(File.DirInternal, l1k.Get(i*5+j), False)
+					bmp.WriteToStream(Out, 100, "PNG")
+					Out.Close
+					grid.AddToGridView(File.Combine(File.DirInternal, l1k.Get(i*5+j)), l1k.Get(i*5+j), l2k.Get(i*5+j))
+				End If
+'				Dim bm1 As Bitmap
+'				bm1 = nativeMe.RunMethod("getBubbleBitmap", Array(bmp, 60dip, 60dip))
+				'Add data to the grid, it supports images from URLs or local files.
+				'The "Link" parameter is whatever you need the grid to return.
+
+'				imgMeni.Initialize("")
+'				imgMeni.Tag = c.Id
+'				imgMeni.Gravity = Gravity.FILL
+'				imgMeni.Bitmap = bm1
+''				kontaktMeni.Initialize(Activity, Me, imgMeni, Colors.Yellow, Colors.Blue, Colors.White, True, True)
+''				kontaktMeni.AddMenuItem("Call", "glavni_meni")
+''				kontaktMeni.AddMenuItem("SMS", "glavni_meni")
+''				kontaktMeni.AddMenuItem("EMail", "glavni_meni")
+''				kontaktMeni.AddMenuItem("Info", "glavni_meni")
+'				scv.Panel.AddView(imgMeni, x*j + j * 12dip, x*i + i*28dip, 60dip, 60dip)
+''				pnlKontakti.AddView(imgMeni, x*j + j*2dip, x*i + 10dip + i*28dip, x, x)
+'				Dim lbl As Label
+'				lbl.Initialize("")
+'				lbl.Text = l1k.Get(i*5+j)
+'				lbl.TextColor = Colors.White
+'				lbl.Background = cd
+'				lbl.TextSize = 11.0
+'				lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+'				lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+'				scv.Panel.AddView(lbl, x*j + j * 12dip, x*i + x + i*28dip + 4dip, 60dip, 28dip)
+''				pnlKontakti.AddView(lbl, x*j, x*i + x + i*28dip + 4dip, x, 28dip)
+				ukupno = ukupno + 1
+'				scv.Panel.Height = x*i + 92dip
+			Else
+				Exit
+			End If
+		Next
+	Next
+	'Show the picture titles (optional)
+	grid.TitleBoxVisible = True
+				
+	'Display the grid.
+	grid.ShowGridView
+
+'	ProgressDialogHide
+End Sub
+
+Sub kontaktiGrid_ItemClicked(Item As String)
+	Log(Item)
+	Dim ll As List
+	ll.Initialize
+	ll.AddAll(Array As String("Call", "SMS", "EMail", "Info"))
+	Dim x As id
+	Dim m As Int = x.InputList1(ll, "")
+	Log(m)
+	Select m
+		Case 0
+			btnKontaktPoziv_Click(Item.Replace("file:///", ""))
+		Case 1
+			btnKontaktSMS_Click(Item.Replace("file:///", ""))
+		Case 2
+			btnKontaktEmail_Click(Item.Replace("file:///", ""))
+		Case 3
+			btnKontaktInfo_Click(Item.Replace("file:///", ""))
+	End Select
+End Sub
+
+Sub kontaktiGrid_FinishedLoading
+	ProgressDialogHide
+End Sub
+
+''Sub imgMeni_Click
+'Sub pnlKontakti_Click
+''	Dim iv As ImageView = Sender
+'
+''	Log(iv.Tag)
+'	Log(gridItem)
+''	kontaktMeni.OpenMenu
+'End Sub
+'
+'Sub glavni_meni_Click(MenuName As String)
+'	Select MenuName
+'		Case "Call"
+'			ToastMessageShow("kol kontakt", False)
+'		Case "SMS"
+'			ToastMessageShow("sms kontakt", False)
+'		Case "EMail"
+'			ToastMessageShow("emajl kontakt", False)
+'		Case "Info"
+'			ToastMessageShow("info kontakt", False)
+'	End Select
+'End Sub
+
+'Sub UbaciKontakte
+'	CustomListView1.Clear
+'	
+'	CustomListView1.sv.Color = Colors.ARGB(127, 75, 128, 99)
+'
+'	Dim currentNumberOfItems As Int = CustomListView1.GetSize
+'	Dim brojStavkiNaEkranu As Int = (Activity.Height / 130dip) - 1
+'
+'	ProgressDialogShow("Building contacts...")
+''	Dim ll As List = cu.FindAllContacts(True)
+''	Log(ll.Size)
+''	Log(ll.Get(0))
+'	For Each c As cuContact In cu.FindAllContacts(True)
+''		For i = currentNumberOfItems To Min(currentNumberOfItems + brojStavkiNaEkranu, ll.Size - 1)
+'			Sleep(0)
+'			' slika
+'			Dim bmp As Bitmap = cu.GetPhoto(c.Id)
+'			If bmp.IsInitialized = False Then
+'				bmp.Initialize(File.DirAssets, "nema_slike.png")
+'			End If
+'			Dim bm1 As Bitmap
+'			bm1 = nativeMe.RunMethod("getBubbleBitmap",Array(bmp, 60dip, 60dip))
+''			ajdi_stavka = c.Id
+'			CustomListView1.Add(CreateListItem(c.DisplayName, c.Id, bm1, CustomListView1.AsView.Width, CollapsedHeight), "")
+''			CustomListView1.Add(CreateListItem(Rnd(0xFF000000, 0xFFFFFFFF), c.DisplayName, c.Id, bm1, CustomListView1.AsView.Width, 130dip), 130dip, "")
+''		Next
+'	Next
+'	ProgressDialogHide
+'End Sub
+'
+''Sub ShadeColor(clr As Int) As Int
+''	Dim argb() As Int = getARGB(clr)
+''	Dim factor As Float = 0.75
+''	Return Colors.RGB(argb(1) * factor, argb(2) * factor, argb(3) * factor)
+''End Sub
+'
+''Sub CreateListItem(clr As Int, ime As String, ajdi As Long, slika As Bitmap, Width As Int, Height As Int) As Panel
+'Sub CreateListItem(ime As String, ajdi As Long, slika As Bitmap, Width As Int, Height As Int) As Panel
+''	Dim p As Panel
+''
+''	p.Initialize("")
+'''	p.SetLayout(0, 0, Width, Height) 'set the panel size before you load the layout.
+'''	'The above line will fail on B4A < v7.30. You should instead add the panel to the Activity with Activity.AddView and remove
+'''	'it after calling LoadLayout with p.RemoveView.
+'''	p.LoadLayout("stavka_kontakt")
+''
+''	Activity.AddView(p, 0, 0, 100%x, ExpandedHeight)
+''	p.LoadLayout("stavka_kontakt")
+''	p.RemoveView 'remove from parent
+'	Dim p As B4XView = xui.CreatePanel("")
+'	p.SetLayoutAnimated(0, 0, 0, CustomListView1.AsView.Width, ExpandedHeight)
+'	p.LoadLayout("stavka_kontakt")
+'	p.SetLayoutAnimated(0, 0, 0, p.Width, CollapsedHeight)
+'
+'	Label1.Text = ime
+'	ImageView1.Height = 60dip
+'	ImageView1.Width = 60dip
+'	ImageView1.Bitmap = slika
+'	btnKontaktInfo.Tag = ajdi
+'	btnKontaktPoziv.Tag = ajdi
+'	btnKontaktSMS.Tag = ajdi
+'	btnKontaktEmail.Tag = ajdi
+'
+''	pnlStavka = CustomListView1.GetPanel(index).GetView(0) 'pnlTitle is the first item
+''	Dim gumb As Button = pnlStavka.GetView(2)
+''		Log(gumb.Tag)
+'	Dim jucer As Long
+'	Dim l As List = cu.GetPhones(ajdi)
+'	If l.Size > 0 Then
+'		For Each phone As cuPhone In cu.GetPhones(ajdi)
+'		Next
+'		phone.Number = phone.Number.Replace(" ", "")
+'		Dim p1 As Long = phone.Number
+'
+'		f.UcitajVrijednostiOpt
+'		jucer = DateTime.add(DateTime.Now, 0, 0, f.sms_dani)
+'		Dim sms1 As SmsMessages
+'		Dim sms_lista As List = sms1.GetAllSince(jucer)
+'		For i = 0 To sms_lista.Size - 1
+'			Dim sms2 As Sms
+'			sms2 = sms_lista.Get(i)
+'			If sms2.Address.Contains(p1) Then
+'				DateTime.DateFormat = "dd. MMM"' DateTime.DeviceDefaultDateFormat
+''				Log(DateTime.Date(sms2.Date))
+''				Log(sms2.Body)
+'				lblSMSDatum.Text = DateTime.Date(sms2.Date)
+'				lblZadnjiSMS.Text = sms2.Body
+'				Exit
+''			Else
+''				lblSMSDatum.Text = DateTime.Date(sms2.Date)
+''				Dim s As String = f.sms_dani
+''				s = s.Replace("-", "")
+''				lblZadnjiSMS.Text = "No SMS in last " & s & "days!"
+''				Exit
+'			End If
+''			lblSMSDatum.Text = DateTime.Date(sms2.Date)
+''			Dim s As String = f.sms_dani
+''			s = s.Replace("-", "")
+''			lblZadnjiSMS.Text = "No SMS in last " & s & "days!"
+'		Next
+'	End If
+'
+'	p.Tag = False
+'
+'	Return p
+'End Sub
+
+'Sub ExpandItem (index As Int)
+'	For i = 0 To CustomListView1.GetSize - 1
+'		Dim p As B4XView = CustomListView1.GetPanel(i)
+'		If p.Tag = True Then CollapseItem(i)
+'	Next
+'
+'	CustomListView1.ResizeItem(index, ExpandedHeight)
+'	CustomListView1.GetPanel(index).Tag = True
+'	AnimatedArrow(index, 0, 180)
+'End Sub
+'
+'Sub AnimatedArrow(index As Int, From As Int, ToDegree As Int)
+'	pnlStavka = CustomListView1.GetPanel(index).GetView(0) 'pnlTitle is the first item
+'	Dim iv As B4XView = pnlStavka.GetView(6) 'ImageView1 is the second item
+'	iv.SetRotationAnimated(0, From)
+'	iv.SetRotationAnimated(CustomListView1.AnimationDuration, ToDegree)
+'End Sub
+'
+'Sub CollapseItem(index As Int)
+'	CustomListView1.ResizeItem(index, CollapsedHeight)
+'	CustomListView1.GetPanel(index).Tag = False
+'	AnimatedArrow(index, 180, 0)
+'End Sub
+'
+'Sub CustomListView1_ItemClick (Index As Int, Value As Object)
+'	Dim p As B4XView = CustomListView1.GetPanel(Index)
+'	If p.Tag = True Then
+'		CollapseItem(Index)
+'	Else
+'		ExpandItem(Index)
+'	End If
+'End Sub
+
+Sub btnKontaktInfo_Click(ajtemID As String)
+'	Dim btn As Button = Sender
+
+	Log("GetAccounts: " & cu.GetAccounts(ajtemID))
+	Log("GetEmails: " & cu.GetEmails(ajtemID))
+	Log("GetEvents: " & cu.GetEvents(ajtemID))
+	Log("GetGroups: " & cu.GetGroups(ajtemID))
+	Log("GetNameFromId: " & cu.GetNameFromId(ajtemID))
+	Log("GetNote: " & cu.GetNote(ajtemID))
+	Log("GetOrganization :" & cu.GetOrganization(ajtemID))
+	Log("GetPhones: " & cu.GetPhones(ajtemID))
+	Log("GetStarred: " & cu.GetStarred(ajtemID))
+End Sub
+
+Sub btnKontaktPoziv_Click(ajtemID As String)
+'	Dim btn As Button = Sender
+	Dim pc As PhoneCalls
+
+	Dim lFoun As List
+	lFoun.Initialize
+	Dim allPhones As List = cu.GetPhones(ajtemID)
+	If allPhones.Size > 0 Then
+		For Each phone As cuPhone In cu.GetPhones(ajtemID)
+'			Log(phone.PhoneType)
+			lFoun.Add(phone.Number)
+		Next
+		If lFoun.Size = 1 Then
+			StartActivity(pc.Call(lFoun.Get(0)))
+		Else
+			Dim broj_tel As String = PrikaziListuBrojevaTelefona(lFoun)
+			StartActivity(pc.Call(broj_tel))
+		End If
+	Else
+		ToastMessageShow("No phone!", False)
+	End If
+End Sub
+
+Sub btnKontaktSMS_Click(ajtemID As String)
+'	Dim btn As Button = Sender
+	Dim intent1 As Intent
+
+	Dim l As List = cu.GetPhones(ajtemID)
+	If l.Size > 0 Then
+		For Each phone As cuPhone In cu.GetPhones(ajtemID)
+		Next
+		intent1.Initialize(intent1.ACTION_VIEW, "sms:" & phone.Number)
+		StartActivity(intent1)
+	Else
+		ToastMessageShow("No phone number so no SMS!", False)
+	End If
+End Sub
+
+Sub btnKontaktEmail_Click(ajtemID As String)
+'	Dim btn As Button = Sender
+	Dim msg As Email
+
+	Dim lEmail As List
+	lEmail.Initialize
+	Dim allContactEmails As List = cu.GetEmails(ajtemID)
+	If allContactEmails.Size > 0 Then
+		For Each c As cuEmail In allContactEmails
+			lEmail.Add(c.Email)
+'			Log(c.Email)
+		Next
+		If lEmail.Size = 1 Then
+			msg.To.Add(c.Email)
+			StartActivity(msg.GetIntent)
+		Else
+			' prikaži listu email adresa da korisnik odabere
+			Dim adresa As String = PrikaziListuEmailAdresaUDijalogu(lEmail)
+			If adresa.EqualsIgnoreCase("false") = False Then
+				msg.To.Add(adresa)
+				StartActivity(msg.GetIntent)
+			Else
+				ToastMessageShow("You didn't choose email address!", False)
+			End If
+		End If
+	Else
+		ToastMessageShow("No email address!", False)
+	End If
+End Sub
+
+Sub PrikaziListuEmailAdresaUDijalogu(listaAdresa As List) As String
+	Dim x As id
+	Dim m As Int = x.InputList1(listaAdresa, "")
+'	Log(m)
+
+	If m >= 0 Then
+		Return listaAdresa.Get(m)
+	Else
+		Return False
+	End If
+End Sub
+
+Sub PrikaziListuBrojevaTelefona(listaBrojeva As List) As String
+	Dim x As id
+	Dim m As Int = x.InputList1(listaBrojeva, "")
+'	Log(m)
+
+	If m >= 0 Then
+		Return listaBrojeva.Get(m)
+	Else
+		Return False
+	End If
+End Sub
+
+Sub btnPostavkeKontakti_Click
+	StartActivity(postavke_kontakti)
+End Sub
