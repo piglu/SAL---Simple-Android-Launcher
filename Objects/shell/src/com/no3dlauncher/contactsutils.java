@@ -19,6 +19,7 @@ public static RemoteObject _datauri = RemoteObject.declareNull("anywheresoftware
 public static RemoteObject _contacturi = RemoteObject.declareNull("anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper");
 public static RemoteObject _rawcontacturi = RemoteObject.declareNull("anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper");
 public static RemoteObject _groupsources = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
+public static RemoteObject _rp = RemoteObject.declareNull("anywheresoftware.b4a.objects.RuntimePermissions");
 public static com.no3dlauncher.main _main = null;
 public static com.no3dlauncher.starter _starter = null;
 public static com.no3dlauncher.pnlmeni_postavke _pnlmeni_postavke = null;
@@ -28,6 +29,6 @@ public static com.no3dlauncher.postavke_kontakti _postavke_kontakti = null;
 public static com.no3dlauncher.f _f = null;
 public static com.no3dlauncher.provjera _provjera = null;
 public static Object[] GetGlobals(RemoteObject _ref) throws Exception {
-		return new Object[] {"contactUri",_ref.getField(false, "_contacturi"),"cr",_ref.getField(false, "_cr"),"dataUri",_ref.getField(false, "_datauri"),"eventTypes",_ref.getField(false, "_eventtypes"),"GroupSources",_ref.getField(false, "_groupsources"),"mailTypes",_ref.getField(false, "_mailtypes"),"phoneTypes",_ref.getField(false, "_phonetypes"),"rawContactUri",_ref.getField(false, "_rawcontacturi")};
+		return new Object[] {"contactUri",_ref.getField(false, "_contacturi"),"cr",_ref.getField(false, "_cr"),"dataUri",_ref.getField(false, "_datauri"),"eventTypes",_ref.getField(false, "_eventtypes"),"GroupSources",_ref.getField(false, "_groupsources"),"mailTypes",_ref.getField(false, "_mailtypes"),"phoneTypes",_ref.getField(false, "_phonetypes"),"rawContactUri",_ref.getField(false, "_rawcontacturi"),"rp",_ref.getField(false, "_rp")};
 }
 }

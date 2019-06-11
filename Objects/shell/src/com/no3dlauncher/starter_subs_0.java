@@ -9,7 +9,7 @@ public class starter_subs_0 {
 public static RemoteObject  _application_error(RemoteObject _error,RemoteObject _stacktrace) throws Exception{
 try {
 		Debug.PushSubsStack("Application_Error (starter) ","starter",1,starter.processBA,starter.mostCurrent,33);
-if (RapidSub.canDelegate("application_error")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","application_error", _error, _stacktrace);
+if (RapidSub.canDelegate("application_error")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","application_error", _error, _stacktrace);}
 Debug.locals.put("Error", _error);
 Debug.locals.put("StackTrace", _stacktrace);
  BA.debugLineNum = 33;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
@@ -30,7 +30,7 @@ finally {
 public static RemoteObject  _getinstalledapps() throws Exception{
 try {
 		Debug.PushSubsStack("GetInstalledApps (starter) ","starter",1,starter.processBA,starter.mostCurrent,41);
-if (RapidSub.canDelegate("getinstalledapps")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","getinstalledapps");
+if (RapidSub.canDelegate("getinstalledapps")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","getinstalledapps");}
 RemoteObject _pm = RemoteObject.declareNull("anywheresoftware.b4a.phone.PackageManagerWrapper");
 RemoteObject _packages = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
@@ -58,7 +58,7 @@ Debug.ShouldStop(16384);
 starter._mapa.runVoidMethod ("Clear");
  BA.debugLineNum = 48;BA.debugLine="Log(\"starter: \" & mapa.Size)";
 Debug.ShouldStop(32768);
-starter.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.concat(RemoteObject.createImmutable("starter: "),starter._mapa.runMethod(true,"getSize"))));
+starter.mostCurrent.__c.runVoidMethod ("LogImpl","34063239",RemoteObject.concat(RemoteObject.createImmutable("starter: "),starter._mapa.runMethod(true,"getSize")),0);
  BA.debugLineNum = 49;BA.debugLine="listaSlova.Initialize";
 Debug.ShouldStop(65536);
 starter._listaslova.runVoidMethod ("Initialize");
@@ -166,7 +166,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _service_create() throws Exception{
 try {
 		Debug.PushSubsStack("Service_Create (starter) ","starter",1,starter.processBA,starter.mostCurrent,16);
-if (RapidSub.canDelegate("service_create")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_create");
+if (RapidSub.canDelegate("service_create")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_create");}
  BA.debugLineNum = 16;BA.debugLine="Sub Service_Create";
 Debug.ShouldStop(32768);
  BA.debugLineNum = 19;BA.debugLine="f.InitKVS2";
@@ -191,7 +191,7 @@ finally {
 public static RemoteObject  _service_destroy() throws Exception{
 try {
 		Debug.PushSubsStack("Service_Destroy (starter) ","starter",1,starter.processBA,starter.mostCurrent,37);
-if (RapidSub.canDelegate("service_destroy")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_destroy");
+if (RapidSub.canDelegate("service_destroy")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_destroy");}
  BA.debugLineNum = 37;BA.debugLine="Sub Service_Destroy";
 Debug.ShouldStop(16);
  BA.debugLineNum = 39;BA.debugLine="End Sub";
@@ -207,7 +207,7 @@ finally {
 public static RemoteObject  _service_start(RemoteObject _startingintent) throws Exception{
 try {
 		Debug.PushSubsStack("Service_Start (starter) ","starter",1,starter.processBA,starter.mostCurrent,24);
-if (RapidSub.canDelegate("service_start")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_start", _startingintent);
+if (RapidSub.canDelegate("service_start")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_start", _startingintent);}
 Debug.locals.put("StartingIntent", _startingintent);
  BA.debugLineNum = 24;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
 Debug.ShouldStop(8388608);
@@ -224,7 +224,7 @@ finally {
 public static RemoteObject  _service_taskremoved() throws Exception{
 try {
 		Debug.PushSubsStack("Service_TaskRemoved (starter) ","starter",1,starter.processBA,starter.mostCurrent,28);
-if (RapidSub.canDelegate("service_taskremoved")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_taskremoved");
+if (RapidSub.canDelegate("service_taskremoved")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","service_taskremoved");}
  BA.debugLineNum = 28;BA.debugLine="Sub Service_TaskRemoved";
 Debug.ShouldStop(134217728);
  BA.debugLineNum = 30;BA.debugLine="End Sub";
@@ -240,7 +240,7 @@ finally {
 public static RemoteObject  _sortmapkeys(RemoteObject _m,RemoteObject _sortasc) throws Exception{
 try {
 		Debug.PushSubsStack("SortMapKeys (starter) ","starter",1,starter.processBA,starter.mostCurrent,100);
-if (RapidSub.canDelegate("sortmapkeys")) return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","sortmapkeys", _m, _sortasc);
+if (RapidSub.canDelegate("sortmapkeys")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","sortmapkeys", _m, _sortasc);}
 RemoteObject _keyslist = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _m2 = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 int _i = 0;

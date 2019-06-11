@@ -6,20 +6,9 @@ import anywheresoftware.b4a.BA;
 
 public class LS_kontakti{
 
-public static void LS_320x480_1(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
-anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
-//BA.debugLineNum = 2;BA.debugLine="btnNatrag.Top = pnlKontakti.Bottom"[kontakti/320x480,scale=1]
-views.get("btnnatrag").vw.setTop((int)((views.get("pnlkontakti").vw.getTop() + views.get("pnlkontakti").vw.getHeight())));
-//BA.debugLineNum = 3;BA.debugLine="btnNatrag.Left = 2%x'(100%x - btnNatrag.Width) / 2"[kontakti/320x480,scale=1]
-views.get("btnnatrag").vw.setLeft((int)((2d / 100 * width)));
-//BA.debugLineNum = 4;BA.debugLine="btnNaprijed.Top = pnlKontakti.Bottom"[kontakti/320x480,scale=1]
-views.get("btnnaprijed").vw.setTop((int)((views.get("pnlkontakti").vw.getTop() + views.get("pnlkontakti").vw.getHeight())));
-//BA.debugLineNum = 5;BA.debugLine="btnNaprijed.Right = 98%x"[kontakti/320x480,scale=1]
-views.get("btnnaprijed").vw.setLeft((int)((98d / 100 * width) - (views.get("btnnaprijed").vw.getWidth())));
-
-}
 public static void LS_general(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
+//BA.debugLineNum = 2;BA.debugLine="AutoScaleAll"[kontakti/General script]
 anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
 
 }

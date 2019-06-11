@@ -108,12 +108,17 @@ public class notificationservice extends  android.app.Service{
 	@Override
 	public void onDestroy() {
         super.onDestroy();
-        BA.LogInfo("** Service (notificationservice) Destroy **");
-		processBA.raiseEvent(null, "service_destroy");
-        processBA.service = null;
-		mostCurrent = null;
-		processBA.setActivityPaused(true);
-        processBA.runHook("ondestroy", this, null);
+        if (false) {
+            BA.LogInfo("** Service (notificationservice) Destroy (ignored)**");
+        }
+        else {
+            BA.LogInfo("** Service (notificationservice) Destroy **");
+		    processBA.raiseEvent(null, "service_destroy");
+            processBA.service = null;
+		    mostCurrent = null;
+		    processBA.setActivityPaused(true);
+            processBA.runHook("ondestroy", this, null);
+        }
 	}
 
 @Override
@@ -132,8 +137,8 @@ public com.no3dlauncher.f _f = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _clearall() throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "clearall"))
-	return (String) Debug.delegate(processBA, "clearall", null);
+if (Debug.shouldDelegate(processBA, "clearall", false))
+	 {return ((String) Debug.delegate(processBA, "clearall", null));}
 RDebugUtils.currentLine=6619136;
  //BA.debugLineNum = 6619136;BA.debugLine="Sub ClearAll";
 RDebugUtils.currentLine=6619137;
@@ -145,8 +150,8 @@ return "";
 }
 public static String  _getactive() throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "getactive"))
-	return (String) Debug.delegate(processBA, "getactive", null);
+if (Debug.shouldDelegate(processBA, "getactive", false))
+	 {return ((String) Debug.delegate(processBA, "getactive", null));}
 RDebugUtils.currentLine=6684672;
  //BA.debugLineNum = 6684672;BA.debugLine="Sub GetActive";
 RDebugUtils.currentLine=6684673;
@@ -158,8 +163,8 @@ return "";
 }
 public static String  _listener_notificationposted(anywheresoftware.b4a.objects.NotificationListenerWrapper.StatusBarNotificationWrapper _sbn) throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "listener_notificationposted"))
-	return (String) Debug.delegate(processBA, "listener_notificationposted", new Object[] {_sbn});
+if (Debug.shouldDelegate(processBA, "listener_notificationposted", false))
+	 {return ((String) Debug.delegate(processBA, "listener_notificationposted", new Object[] {_sbn}));}
 anywheresoftware.b4a.phone.Phone _p = null;
 anywheresoftware.b4j.object.JavaObject _jno = null;
 anywheresoftware.b4j.object.JavaObject _extras = null;
@@ -172,7 +177,7 @@ RDebugUtils.currentLine=6488065;
 _brojnotifikacija = (int) (_brojnotifikacija+1);
 RDebugUtils.currentLine=6488066;
  //BA.debugLineNum = 6488066;BA.debugLine="Log(\"NotificationPosted, package = \" & SBN.Packag";
-anywheresoftware.b4a.keywords.Common.Log("NotificationPosted, package = "+_sbn.getPackageName()+", id = "+BA.NumberToString(_sbn.getId())+", text = "+_sbn.getTickerText());
+anywheresoftware.b4a.keywords.Common.LogImpl("36488066","NotificationPosted, package = "+_sbn.getPackageName()+", id = "+BA.NumberToString(_sbn.getId())+", text = "+_sbn.getTickerText(),0);
 RDebugUtils.currentLine=6488067;
  //BA.debugLineNum = 6488067;BA.debugLine="Dim p As Phone";
 _p = new anywheresoftware.b4a.phone.Phone();
@@ -192,13 +197,13 @@ RDebugUtils.currentLine=6488071;
 _extras.RunMethod("size",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
 RDebugUtils.currentLine=6488072;
  //BA.debugLineNum = 6488072;BA.debugLine="Log(extras)";
-anywheresoftware.b4a.keywords.Common.Log(BA.ObjectToString(_extras));
+anywheresoftware.b4a.keywords.Common.LogImpl("36488072",BA.ObjectToString(_extras),0);
 RDebugUtils.currentLine=6488073;
  //BA.debugLineNum = 6488073;BA.debugLine="Dim title As String = extras.RunMethod(\"getStrin";
 _title = BA.ObjectToString(_extras.RunMethod("getString",new Object[]{(Object)("android.title")}));
 RDebugUtils.currentLine=6488074;
  //BA.debugLineNum = 6488074;BA.debugLine="LogColor(\"Title = \" & title, Colors.Blue)";
-anywheresoftware.b4a.keywords.Common.LogColor("Title = "+_title,anywheresoftware.b4a.keywords.Common.Colors.Blue);
+anywheresoftware.b4a.keywords.Common.LogImpl("36488074","Title = "+_title,anywheresoftware.b4a.keywords.Common.Colors.Blue);
 RDebugUtils.currentLine=6488075;
  //BA.debugLineNum = 6488075;BA.debugLine="Dim bmp As Bitmap = jno.GetField(\"largeIcon\")";
 _bmp = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
@@ -210,13 +215,13 @@ return "";
 }
 public static String  _listener_notificationremoved(anywheresoftware.b4a.objects.NotificationListenerWrapper.StatusBarNotificationWrapper _sbn) throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "listener_notificationremoved"))
-	return (String) Debug.delegate(processBA, "listener_notificationremoved", new Object[] {_sbn});
+if (Debug.shouldDelegate(processBA, "listener_notificationremoved", false))
+	 {return ((String) Debug.delegate(processBA, "listener_notificationremoved", new Object[] {_sbn}));}
 RDebugUtils.currentLine=6553600;
  //BA.debugLineNum = 6553600;BA.debugLine="Sub Listener_NotificationRemoved (SBN As StatusBar";
 RDebugUtils.currentLine=6553601;
  //BA.debugLineNum = 6553601;BA.debugLine="Log(\"NotificationRemoved, package = \" & SBN.Packa";
-anywheresoftware.b4a.keywords.Common.Log("NotificationRemoved, package = "+_sbn.getPackageName()+", id = "+BA.NumberToString(_sbn.getId())+", text = "+_sbn.getTickerText());
+anywheresoftware.b4a.keywords.Common.LogImpl("36553601","NotificationRemoved, package = "+_sbn.getPackageName()+", id = "+BA.NumberToString(_sbn.getId())+", text = "+_sbn.getTickerText(),0);
 RDebugUtils.currentLine=6553603;
  //BA.debugLineNum = 6553603;BA.debugLine="brojNotifikacija = brojNotifikacija - 1";
 _brojnotifikacija = (int) (_brojnotifikacija-1);
@@ -226,8 +231,8 @@ return "";
 }
 public static String  _service_create() throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "service_create"))
-	return (String) Debug.delegate(processBA, "service_create", null);
+if (Debug.shouldDelegate(processBA, "service_create", false))
+	 {return ((String) Debug.delegate(processBA, "service_create", null));}
 RDebugUtils.currentLine=6356992;
  //BA.debugLineNum = 6356992;BA.debugLine="Sub Service_Create";
 RDebugUtils.currentLine=6356993;
@@ -239,8 +244,8 @@ return "";
 }
 public static String  _service_destroy() throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "service_destroy"))
-	return (String) Debug.delegate(processBA, "service_destroy", null);
+if (Debug.shouldDelegate(processBA, "service_destroy", false))
+	 {return ((String) Debug.delegate(processBA, "service_destroy", null));}
 RDebugUtils.currentLine=6750208;
  //BA.debugLineNum = 6750208;BA.debugLine="Sub Service_Destroy";
 RDebugUtils.currentLine=6750210;
@@ -249,8 +254,8 @@ return "";
 }
 public static String  _service_start(anywheresoftware.b4a.objects.IntentWrapper _startingintent) throws Exception{
 RDebugUtils.currentModule="notificationservice";
-if (Debug.shouldDelegate(processBA, "service_start"))
-	return (String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent});
+if (Debug.shouldDelegate(processBA, "service_start", false))
+	 {return ((String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent}));}
 RDebugUtils.currentLine=6422528;
  //BA.debugLineNum = 6422528;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
 RDebugUtils.currentLine=6422529;

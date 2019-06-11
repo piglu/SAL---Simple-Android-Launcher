@@ -175,7 +175,9 @@ Library15=notificationlistener
 Library16=tabstripviewpager
 Library17=contentresolver
 Library18=customgridview
+Library19=runtimepermissions
 Library2=phone
+Library20=xcustomlistview
 Library3=javaobject
 Library4=wheelpicker
 Library5=b4xencryption
@@ -183,10 +185,10 @@ Library6=sql
 Library7=randomaccessfile
 Library8=stringutils
 Library9=dialogs
-ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddActivityText(main, <intent-filter >~\n~'        <action android:name="android.intent.action.MAIN" />~\n~'        <category android:name="android.intent.category.HOME" />~\n~'        <category android:name="android.intent.category.DEFAULT" />~\n~'    </intent-filter>)~\n~AddPermission(android.permission.SET_WALLPAPER)~\n~AddPermission(android.permission.SET_WALLPAPER_HINTS)~\n~SetActivityAttribute(main, android:theme, @android:style/Theme.Wallpaper)~\n~'********* TabStrip ***********************~\n~'CreateResource(drawable, background_tab.xml,~\n~'<selector xmlns:android="http://schemas.android.com/apk/res/android"~\n~'   android:exitFadeDuration="@android:integer/config_shortAnimTime">~\n~'  <item android:state_pressed="true" android:drawable="@color/background_tab_pressed" />~\n~'  <item android:state_focused="true" android:drawable="@color/background_tab_pressed"/>~\n~'  <item android:drawable="@android:color/transparent"/>~\n~'</selector>)~\n~'CreateResource(values, colors.xml,~\n~'<resources>~\n~'  <color name="background_tab_pressed">#6633B5E5</color>~\n~'</resources>)~\n~~\n~AddApplicationText(~\n~<service android:name="anywheresoftware.b4a.objects.NotificationListenerWrapper"~\n~	android:label="Notification Listener"~\n~          android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">~\n~     <intent-filter>~\n~         <action android:name="android.service.notification.NotificationListenerService" />~\n~     </intent-filter>~\n~ </service>)~\n~~\n~' za kontakte klasu ~\n~AddPermission(android.permission.READ_CONTACTS)~\n~'AddPermission(android.permission.WRITE_CONTACTS) 'if write access is required~\n~AddPermission(android.permission.READ_SMS)~\n~AddPermission(android.permission.CALL_PHONE)~\n~'AddPermission(android.permission.READ_CALL_LOG)~\n~'******************************************~\n~~\n~'SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~'~\n~'CreateResource(values, theme.xml,~\n~'<resources>~\n~'    <style name="MyAppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">~\n~'        <item name="colorPrimary">#FF2196F3</item>~\n~'        <item name="colorPrimaryDark">#007CF5</item>~\n~'        <item name="colorAccent">#FFFF3D00</item>~\n~'        <item name="windowNoTitle">true</item>~\n~'        <item name="windowActionBar">false</item>~\n~'        <item name="windowActionModeOverlay">true</item>~\n~'    </style>~\n~'</resources>~\n~')~\n~'~\n~'AddPermission(android.permission.READ_EXTERNAL_STORAGE)~\n~'AddPermission(android.permission.WRITE_EXTERNAL_STORAGE)~\n~'AddApplicationText(<activity~\n~'            android:name="com.rarepebble.colorpickerdemo.ViewDemoActivity"~\n~'            android:label="@string/title_activity_main"~\n~'            android:windowSoftInputMode="stateHidden">~\n~'        </activity>)
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddActivityText(main, <intent-filter >~\n~'        <action android:name="android.intent.action.MAIN" />~\n~'        <category android:name="android.intent.category.HOME" />~\n~'        <category android:name="android.intent.category.DEFAULT" />~\n~'    </intent-filter>)~\n~AddPermission(android.permission.SET_WALLPAPER)~\n~AddPermission(android.permission.SET_WALLPAPER_HINTS)~\n~SetActivityAttribute(main, android:theme, @android:style/Theme.Wallpaper)~\n~'********* TabStrip ***********************~\n~'CreateResource(drawable, background_tab.xml,~\n~'<selector xmlns:android="http://schemas.android.com/apk/res/android"~\n~'   android:exitFadeDuration="@android:integer/config_shortAnimTime">~\n~'  <item android:state_pressed="true" android:drawable="@color/background_tab_pressed" />~\n~'  <item android:state_focused="true" android:drawable="@color/background_tab_pressed"/>~\n~'  <item android:drawable="@android:color/transparent"/>~\n~'</selector>)~\n~'CreateResource(values, colors.xml,~\n~'<resources>~\n~'  <color name="background_tab_pressed">#6633B5E5</color>~\n~'</resources>)~\n~~\n~AddApplicationText(~\n~<service android:name="anywheresoftware.b4a.objects.NotificationListenerWrapper"~\n~	android:label="Notification Listener"~\n~          android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">~\n~     <intent-filter>~\n~         <action android:name="android.service.notification.NotificationListenerService" />~\n~     </intent-filter>~\n~ </service>)~\n~~\n~' za kontakte klasu ~\n~AddPermission(android.permission.READ_CONTACTS)~\n~'AddPermission(android.permission.WRITE_CONTACTS) 'if write access is required~\n~AddPermission(android.permission.READ_SMS)~\n~AddPermission(android.permission.CALL_PHONE)~\n~'AddPermission(android.permission.READ_CALL_LOG)~\n~'******************************************~\n~~\n~'SetApplicationAttribute(android:theme, "@style/MyAppTheme")~\n~'~\n~'CreateResource(values, theme.xml,~\n~'<resources>~\n~'    <style name="MyAppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">~\n~'        <item name="colorPrimary">#FF2196F3</item>~\n~'        <item name="colorPrimaryDark">#007CF5</item>~\n~'        <item name="colorAccent">#FFFF3D00</item>~\n~'        <item name="windowNoTitle">true</item>~\n~'        <item name="windowActionBar">false</item>~\n~'        <item name="windowActionModeOverlay">true</item>~\n~'    </style>~\n~'</resources>~\n~')~\n~'~\n~'AddPermission(android.permission.READ_EXTERNAL_STORAGE)~\n~'AddPermission(android.permission.WRITE_EXTERNAL_STORAGE)~\n~'AddApplicationText(<activity~\n~'            android:name="com.rarepebble.colorpickerdemo.ViewDemoActivity"~\n~'            android:label="@string/title_activity_main"~\n~'            android:windowSoftInputMode="stateHidden">~\n~'        </activity>)
 Module1=Starter
 Module10=ColorWheelDialog
-Module11=CustomListView
+Module11=FanMenu
 Module2=pnlmeni_postavke
 Module3=search
 Module4=NotificationService
@@ -196,9 +198,9 @@ Module7=f
 Module8=KeyValueStore
 Module9=provjera
 NumberOfFiles=82
-NumberOfLibraries=18
+NumberOfLibraries=20
 NumberOfModules=11
-Version=8
+Version=8.8
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: 1No3DLauncher
@@ -286,7 +288,7 @@ Sub Globals
 '	Private ScrollView1 As ScrollView
 '	Dim visinaPanela As Int
 '	Dim razmak As Int = 10'dip
-	Private CustomListView1 As CustomListView
+'	Private CustomListView1 As CustomListView
 	Private Panel1 As Panel
 	Dim ipsilon As Int
 '	Private btnDodajWidget As Button
@@ -323,6 +325,8 @@ Sub Globals
 	Private grid As CustomGridView
 '	Private Spotlightmenu As SpotLight
 '	Dim gridItem As Object
+	Private foMenu As FanMenu
+	Private MenuPanel As Panel
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -697,6 +701,8 @@ Sub btnMeni_Click
 		DodajListuSaIkonamaAppULAdicu
 	else if f.showApps = 2 Then
 		DodajAppULadicu
+	else if f.showApps = 3 Then
+		OtvoriFan
 	End If
 End Sub
 
@@ -850,13 +856,13 @@ Sub DodajListuSaIkonamaAppULAdicu
 
 	pnl.LoadLayout("clv1")
 
-	Dim cd As ColorDrawable
+'	Dim cd As ColorDrawable
 	Dim res(4) As Int
 	res = getARGB(f.bojaPozadine)
 	res(0) = f.trans
-	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
-'	clv.AsView.Background = cd
-	clv.AsView.Color = cd
+'	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
+	clv.AsView.SetColorAndBorder(Colors.ARGB(res(0), res(1), res(2), res(3)), 0, Colors.Transparent, 0)
+'	clv.AsView.Color = cd
 '	clv.AsView.SetBitmap(cd)
 
 	For i = 0 To Starter.mapa.Size - 1
@@ -935,6 +941,18 @@ Sub DodajAppULadicu
 	dlgDrawer.GetButton(DialogResponse.POSITIVE).Enabled = False
 	Wait for (sf) ivAppMain_Click
 	Wait For (sf) ivApp_LongClick
+End Sub
+
+Sub OtvoriFan
+	
+	' panel to hold our fan menu, should fill the entire activity and be elevated above of all other views.
+	MenuPanel.Initialize("")
+	Activity.AddView(MenuPanel, 0, 0, Activity.Width, Activity.Height)
+	MenuPanel.Elevation = 25dip  'should be high enough to be on top of all other panels/views
+	MenuPanel.Color = Colors.Transparent
+	MenuPanel.Visible = True
+
+	foMenu.Initialize(Me, "FanMenu", MenuPanel)
 End Sub
 
 Sub ivAppMain_LongClick
@@ -1077,6 +1095,7 @@ Sub DodajListuAppUKotac
 	FiltrirajImenaAppIImenaPaketa
 
 	wp1.Initialize("wp1")
+'	pnl.AddView(wp1, 0, 0, 100%x, pnlMeni.Height)
 	pnl.AddView(wp1, 0, btnPostavke.Height, pnlMeni.Width - 10%x, pnlMeni.Height)
 '	pnlMeni.AddView(wp1, 0, btnPostavke.Height, pnlMeni.Width - 10%x, pnlMeni.Height)
 	Dim mylist As List

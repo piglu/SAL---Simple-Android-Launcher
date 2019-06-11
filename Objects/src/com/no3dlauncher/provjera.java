@@ -108,12 +108,17 @@ public class provjera extends  android.app.Service{
 	@Override
 	public void onDestroy() {
         super.onDestroy();
-        BA.LogInfo("** Service (provjera) Destroy **");
-		processBA.raiseEvent(null, "service_destroy");
-        processBA.service = null;
-		mostCurrent = null;
-		processBA.setActivityPaused(true);
-        processBA.runHook("ondestroy", this, null);
+        if (false) {
+            BA.LogInfo("** Service (provjera) Destroy (ignored)**");
+        }
+        else {
+            BA.LogInfo("** Service (provjera) Destroy **");
+		    processBA.raiseEvent(null, "service_destroy");
+            processBA.service = null;
+		    mostCurrent = null;
+		    processBA.setActivityPaused(true);
+            processBA.runHook("ondestroy", this, null);
+        }
 	}
 
 @Override
@@ -131,13 +136,13 @@ public com.no3dlauncher.postavke_kontakti _postavke_kontakti = null;
 public com.no3dlauncher.f _f = null;
 public static String  _pe_packageremoved(String _package,anywheresoftware.b4a.objects.IntentWrapper _intent) throws Exception{
 RDebugUtils.currentModule="provjera";
-if (Debug.shouldDelegate(processBA, "pe_packageremoved"))
-	return (String) Debug.delegate(processBA, "pe_packageremoved", new Object[] {_package,_intent});
+if (Debug.shouldDelegate(processBA, "pe_packageremoved", false))
+	 {return ((String) Debug.delegate(processBA, "pe_packageremoved", new Object[] {_package,_intent}));}
 RDebugUtils.currentLine=11075584;
  //BA.debugLineNum = 11075584;BA.debugLine="Sub pe_PackageRemoved (Package As String, Intent A";
 RDebugUtils.currentLine=11075586;
  //BA.debugLineNum = 11075586;BA.debugLine="Log(\"uninstall ok\")";
-anywheresoftware.b4a.keywords.Common.Log("uninstall ok");
+anywheresoftware.b4a.keywords.Common.LogImpl("311075586","uninstall ok",0);
 RDebugUtils.currentLine=11075587;
  //BA.debugLineNum = 11075587;BA.debugLine="CallSub(Starter, \"GetInstalledApps\")";
 anywheresoftware.b4a.keywords.Common.CallSubDebug(processBA,(Object)(mostCurrent._starter.getObject()),"GetInstalledApps");
@@ -147,8 +152,8 @@ return "";
 }
 public static String  _service_create() throws Exception{
 RDebugUtils.currentModule="provjera";
-if (Debug.shouldDelegate(processBA, "service_create"))
-	return (String) Debug.delegate(processBA, "service_create", null);
+if (Debug.shouldDelegate(processBA, "service_create", false))
+	 {return ((String) Debug.delegate(processBA, "service_create", null));}
 RDebugUtils.currentLine=10878976;
  //BA.debugLineNum = 10878976;BA.debugLine="Sub Service_Create";
 RDebugUtils.currentLine=10878977;
@@ -160,8 +165,8 @@ return "";
 }
 public static String  _service_destroy() throws Exception{
 RDebugUtils.currentModule="provjera";
-if (Debug.shouldDelegate(processBA, "service_destroy"))
-	return (String) Debug.delegate(processBA, "service_destroy", null);
+if (Debug.shouldDelegate(processBA, "service_destroy", false))
+	 {return ((String) Debug.delegate(processBA, "service_destroy", null));}
 RDebugUtils.currentLine=11010048;
  //BA.debugLineNum = 11010048;BA.debugLine="Sub Service_Destroy";
 RDebugUtils.currentLine=11010050;
@@ -170,8 +175,8 @@ return "";
 }
 public static String  _service_start(anywheresoftware.b4a.objects.IntentWrapper _startingintent) throws Exception{
 RDebugUtils.currentModule="provjera";
-if (Debug.shouldDelegate(processBA, "service_start"))
-	return (String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent});
+if (Debug.shouldDelegate(processBA, "service_start", false))
+	 {return ((String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent}));}
 RDebugUtils.currentLine=10944512;
  //BA.debugLineNum = 10944512;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
 RDebugUtils.currentLine=10944514;

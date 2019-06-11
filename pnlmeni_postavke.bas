@@ -53,7 +53,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	cd.Initialize(Colors.ARGB(res(0), res(1), res(2), res(3)), 0)
 	Label1.Background = cd
 	Label1.TextColor = f.bojaFonta
-	spnApps.AddAll(Array As String("in a wheel", "in a list with app icons", "in drawer"))
+	spnApps.AddAll(Array As String("in a wheel", "in a list with app icons", "in drawer", "in fan"))
 	spnApps.SelectedIndex = f.showApps
 	spnIconType.AddAll(Array As String("Round", "Hexagon", "Triangle", "Star", "Heart", "Bubble", "Cone"))
 	spnIconType.SelectedIndex = f.tipIkone

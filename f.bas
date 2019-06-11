@@ -12,7 +12,7 @@ Sub Process_Globals
 	Private kvs2 As KeyValueStore
 	Dim bojaPozadine As Int = 16776960
 	Dim wheelListFont As String = "xerox sans serif narrow"
-	Dim showApps As Int = 0
+	Dim showApps As Int = 3
 	Dim fontzSize As Int = 55
 	Dim bojaFonta As Int = 255
 	Dim trans As Int = 0

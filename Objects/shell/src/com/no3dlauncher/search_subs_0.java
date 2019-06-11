@@ -9,7 +9,7 @@ public class search_subs_0 {
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Create (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,22);
-if (RapidSub.canDelegate("activity_create")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_create", _firsttime);
+if (RapidSub.canDelegate("activity_create")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 22;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
 Debug.ShouldStop(2097152);
@@ -32,7 +32,7 @@ finally {
 public static RemoteObject  _activity_keypress(RemoteObject _keycode) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_KeyPress (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,200);
-if (RapidSub.canDelegate("activity_keypress")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_keypress", _keycode);
+if (RapidSub.canDelegate("activity_keypress")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_keypress", _keycode);}
 Debug.locals.put("KeyCode", _keycode);
  BA.debugLineNum = 200;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
 Debug.ShouldStop(128);
@@ -69,7 +69,7 @@ finally {
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Pause (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,33);
-if (RapidSub.canDelegate("activity_pause")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_pause", _userclosed);
+if (RapidSub.canDelegate("activity_pause")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 33;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
 Debug.ShouldStop(1);
@@ -86,7 +86,7 @@ finally {
 public static RemoteObject  _activity_resume() throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Resume (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,29);
-if (RapidSub.canDelegate("activity_resume")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_resume");
+if (RapidSub.canDelegate("activity_resume")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","activity_resume");}
  BA.debugLineNum = 29;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(268435456);
  BA.debugLineNum = 31;BA.debugLine="End Sub";
@@ -102,7 +102,7 @@ finally {
 public static RemoteObject  _addtofavorites() throws Exception{
 try {
 		Debug.PushSubsStack("AddToFavorites (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,179);
-if (RapidSub.canDelegate("addtofavorites")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","addtofavorites");
+if (RapidSub.canDelegate("addtofavorites")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","addtofavorites");}
  BA.debugLineNum = 179;BA.debugLine="Sub AddToFavorites";
 Debug.ShouldStop(262144);
  BA.debugLineNum = 180;BA.debugLine="CallSub(Main, \"DodajAppUFavorite\")";
@@ -121,7 +121,7 @@ finally {
 public static RemoteObject  _btnslovo_click() throws Exception{
 try {
 		Debug.PushSubsStack("btnSlovo_Click (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,83);
-if (RapidSub.canDelegate("btnslovo_click")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","btnslovo_click");
+if (RapidSub.canDelegate("btnslovo_click")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","btnslovo_click");}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 RemoteObject _pm = RemoteObject.declareNull("anywheresoftware.b4a.phone.PackageManagerWrapper");
 RemoteObject _pkg1 = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -156,7 +156,7 @@ Debug.ShouldStop(8388608);
 _b.setObject(search.mostCurrent.__c.runMethod(false,"Sender",search.mostCurrent.activityBA));
  BA.debugLineNum = 89;BA.debugLine="Log(b.Tag)";
 Debug.ShouldStop(16777216);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.ObjectToString(_b.runMethod(false,"getTag"))));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","35898246",BA.ObjectToString(_b.runMethod(false,"getTag")),0);
  BA.debugLineNum = 90;BA.debugLine="pnlSlova.Visible = False";
 Debug.ShouldStop(33554432);
 search.mostCurrent._pnlslova.runMethod(true,"setVisible",search.mostCurrent.__c.getField(true,"False"));
@@ -324,12 +324,12 @@ finally {
 public static RemoteObject  _btntrazi_click() throws Exception{
 try {
 		Debug.PushSubsStack("btnTrazi_Click (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,74);
-if (RapidSub.canDelegate("btntrazi_click")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","btntrazi_click");
+if (RapidSub.canDelegate("btntrazi_click")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","btntrazi_click");}
  BA.debugLineNum = 74;BA.debugLine="Sub btnTrazi_Click";
 Debug.ShouldStop(512);
  BA.debugLineNum = 75;BA.debugLine="Log(\"trazi\")";
 Debug.ShouldStop(1024);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.createImmutable("trazi")));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","35767169",RemoteObject.createImmutable("trazi"),0);
  BA.debugLineNum = 76;BA.debugLine="Trazi(traziString)";
 Debug.ShouldStop(2048);
 _trazi(search.mostCurrent._trazistring);
@@ -346,7 +346,7 @@ finally {
 public static RemoteObject  _dodajslova() throws Exception{
 try {
 		Debug.PushSubsStack("DodajSlova (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,37);
-if (RapidSub.canDelegate("dodajslova")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","dodajslova");
+if (RapidSub.canDelegate("dodajslova")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","dodajslova");}
 RemoteObject _x = RemoteObject.createImmutable(0);
 RemoteObject _y = RemoteObject.createImmutable(0);
 RemoteObject _cd = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.ColorDrawable");
@@ -457,7 +457,7 @@ finally {
 public static RemoteObject  _edttrazi_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
 		Debug.PushSubsStack("edtTrazi_TextChanged (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,67);
-if (RapidSub.canDelegate("edttrazi_textchanged")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","edttrazi_textchanged", _old, _new);
+if (RapidSub.canDelegate("edttrazi_textchanged")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","edttrazi_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
  BA.debugLineNum = 67;BA.debugLine="Sub edtTrazi_TextChanged (Old As String, New As St";
@@ -467,7 +467,7 @@ Debug.ShouldStop(8);
 if (RemoteObject.solveBoolean(">",_new.runMethod(true,"length"),BA.numberCast(double.class, 0))) { 
  BA.debugLineNum = 69;BA.debugLine="Log(New)";
 Debug.ShouldStop(16);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(_new));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","35701634",_new,0);
  BA.debugLineNum = 70;BA.debugLine="traziString = New";
 Debug.ShouldStop(32);
 search.mostCurrent._trazistring = _new;
@@ -500,7 +500,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _ivapp_click() throws Exception{
 try {
 		Debug.PushSubsStack("ivApp_Click (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,148);
-if (RapidSub.canDelegate("ivapp_click")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","ivapp_click");
+if (RapidSub.canDelegate("ivapp_click")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","ivapp_click");}
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.IntentWrapper");
 RemoteObject _iv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
 RemoteObject _pm = RemoteObject.declareNull("anywheresoftware.b4a.phone.PackageManagerWrapper");
@@ -520,7 +520,7 @@ Debug.ShouldStop(16777216);
 _iv.setObject(search.mostCurrent.__c.runMethod(false,"Sender",search.mostCurrent.activityBA));
  BA.debugLineNum = 154;BA.debugLine="Log(iv.Tag)";
 Debug.ShouldStop(33554432);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.ObjectToString(_iv.runMethod(false,"getTag"))));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","35963782",BA.ObjectToString(_iv.runMethod(false,"getTag")),0);
  BA.debugLineNum = 155;BA.debugLine="in = pm.GetApplicationIntent(iv.Tag)";
 Debug.ShouldStop(67108864);
 _in = _pm.runMethod(false,"GetApplicationIntent",(Object)(BA.ObjectToString(_iv.runMethod(false,"getTag"))));Debug.locals.put("in", _in);
@@ -544,7 +544,7 @@ finally {
 public static RemoteObject  _ivapp_longclick() throws Exception{
 try {
 		Debug.PushSubsStack("ivApp_LongClick (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,161);
-if (RapidSub.canDelegate("ivapp_longclick")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","ivapp_longclick");
+if (RapidSub.canDelegate("ivapp_longclick")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","ivapp_longclick");}
 RemoteObject _iv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
 RemoteObject _ll = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _x = RemoteObject.declareNull("com.maximus.id.id");
@@ -553,7 +553,7 @@ RemoteObject _m = RemoteObject.createImmutable(0);
 Debug.ShouldStop(1);
  BA.debugLineNum = 162;BA.debugLine="Log(\"long klik!\")";
 Debug.ShouldStop(2);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.createImmutable("long klik!")));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","36029313",RemoteObject.createImmutable("long klik!"),0);
  BA.debugLineNum = 163;BA.debugLine="Dim iv As ImageView";
 Debug.ShouldStop(4);
 _iv = RemoteObject.createNew ("anywheresoftware.b4a.objects.ImageViewWrapper");Debug.locals.put("iv", _iv);
@@ -562,7 +562,7 @@ Debug.ShouldStop(8);
 _iv.setObject(search.mostCurrent.__c.runMethod(false,"Sender",search.mostCurrent.activityBA));
  BA.debugLineNum = 165;BA.debugLine="Log(iv.Tag)";
 Debug.ShouldStop(16);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.ObjectToString(_iv.runMethod(false,"getTag"))));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","36029316",BA.ObjectToString(_iv.runMethod(false,"getTag")),0);
  BA.debugLineNum = 166;BA.debugLine="Dim ll As List";
 Debug.ShouldStop(32);
 _ll = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.List");Debug.locals.put("ll", _ll);
@@ -611,7 +611,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _trazi(RemoteObject _str) throws Exception{
 try {
 		Debug.PushSubsStack("Trazi (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,79);
-if (RapidSub.canDelegate("trazi")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","trazi", _str);
+if (RapidSub.canDelegate("trazi")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","trazi", _str);}
 Debug.locals.put("str", _str);
  BA.debugLineNum = 79;BA.debugLine="Sub Trazi(str As String)";
 Debug.ShouldStop(16384);
@@ -628,7 +628,7 @@ finally {
 public static RemoteObject  _uninstallapp(RemoteObject _pkg) throws Exception{
 try {
 		Debug.PushSubsStack("UninstallApp (search) ","search",3,search.mostCurrent.activityBA,search.mostCurrent,183);
-if (RapidSub.canDelegate("uninstallapp")) return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","uninstallapp", _pkg);
+if (RapidSub.canDelegate("uninstallapp")) { return com.no3dlauncher.search.remoteMe.runUserSub(false, "search","uninstallapp", _pkg);}
 RemoteObject _i = RemoteObject.declareNull("anywheresoftware.b4a.objects.IntentWrapper");
 Debug.locals.put("pkg", _pkg);
  BA.debugLineNum = 183;BA.debugLine="Sub UninstallApp(pkg As String)";
@@ -642,7 +642,7 @@ Debug.ShouldStop(33554432);
 _i = RemoteObject.createNew ("anywheresoftware.b4a.objects.IntentWrapper");Debug.locals.put("i", _i);
  BA.debugLineNum = 188;BA.debugLine="Log(\"package:\" & pkg)";
 Debug.ShouldStop(134217728);
-search.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.concat(RemoteObject.createImmutable("package:"),_pkg)));
+search.mostCurrent.__c.runVoidMethod ("LogImpl","36160389",RemoteObject.concat(RemoteObject.createImmutable("package:"),_pkg),0);
  BA.debugLineNum = 189;BA.debugLine="i.Initialize(\"android.intent.action.DELETE\", \"pac";
 Debug.ShouldStop(268435456);
 _i.runVoidMethod ("Initialize",(Object)(BA.ObjectToString("android.intent.action.DELETE")),(Object)(RemoteObject.concat(RemoteObject.createImmutable("package:"),_pkg)));

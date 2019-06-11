@@ -9,7 +9,7 @@ public class pnlmeni_postavke_subs_0 {
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Create (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,36);
-if (RapidSub.canDelegate("activity_create")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_create", _firsttime);
+if (RapidSub.canDelegate("activity_create")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_create", _firsttime);}
 RemoteObject _cd = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.ColorDrawable");
 RemoteObject _res = null;
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -130,7 +130,7 @@ finally {
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Pause (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,83);
-if (RapidSub.canDelegate("activity_pause")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_pause", _userclosed);
+if (RapidSub.canDelegate("activity_pause")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 83;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
 Debug.ShouldStop(262144);
@@ -139,7 +139,7 @@ Debug.ShouldStop(524288);
 if (_userclosed.<Boolean>get().booleanValue()) { 
  BA.debugLineNum = 85;BA.debugLine="Log(\"juzer klouzed\")";
 Debug.ShouldStop(1048576);
-pnlmeni_postavke.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.createImmutable("juzer klouzed")));
+pnlmeni_postavke.mostCurrent.__c.runVoidMethod ("LogImpl","34456450",RemoteObject.createImmutable("juzer klouzed"),0);
  BA.debugLineNum = 86;BA.debugLine="CallSubDelayed(Main, \"Osvjezi\")";
 Debug.ShouldStop(2097152);
 pnlmeni_postavke.mostCurrent.__c.runVoidMethod ("CallSubDelayed",pnlmeni_postavke.processBA,(Object)((pnlmeni_postavke.mostCurrent._main.getObject())),(Object)(RemoteObject.createImmutable("Osvjezi")));
@@ -157,7 +157,7 @@ finally {
 public static RemoteObject  _activity_resume() throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Resume (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,79);
-if (RapidSub.canDelegate("activity_resume")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_resume");
+if (RapidSub.canDelegate("activity_resume")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","activity_resume");}
  BA.debugLineNum = 79;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(16384);
  BA.debugLineNum = 81;BA.debugLine="End Sub";
@@ -171,9 +171,18 @@ finally {
 			Debug.PopSubsStack();
 		}}
 public static void  _btnbackground_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnBackground_Click (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,130);
+if (RapidSub.canDelegate("btnbackground_click")) { com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","btnbackground_click"); return;}
 ResumableSub_btnBackground_Click rsub = new ResumableSub_btnBackground_Click(null);
 rsub.resume(null, null);
 }
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static class ResumableSub_btnBackground_Click extends BA.ResumableSub {
 public ResumableSub_btnBackground_Click(com.no3dlauncher.pnlmeni_postavke parent) {
 this.parent = parent;
@@ -188,7 +197,6 @@ RemoteObject _success = RemoteObject.createImmutable(false);
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
 		Debug.PushSubsStack("btnBackground_Click (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,130);
-if (RapidSub.canDelegate("btnbackground_click")) return ;
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -213,7 +221,7 @@ Debug.ShouldStop(64);
 _cw.runClassMethod (com.no3dlauncher.colorwheeldialog.class, "_showasync",(Object)(pnlmeni_postavke.getObject()),(Object)(RemoteObject.createImmutable("Select Background Color")));
  BA.debugLineNum = 136;BA.debugLine="Wait For (cw) Color_Result(Success As Boolean)";
 Debug.ShouldStop(128);
-parent.mostCurrent.__c.runVoidMethod ("WaitFor","color_result", pnlmeni_postavke.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this), (_cw));
+parent.mostCurrent.__c.runVoidMethod ("WaitFor","color_result", pnlmeni_postavke.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "pnlmeni_postavke", "btnbackground_click"), (_cw));
 this.state = 5;
 return;
 case 5:
@@ -240,16 +248,16 @@ Debug.ShouldStop(512);
 _res = _getargb(_cw.getField(true,"_colorresult"));Debug.locals.put("res", _res);
  BA.debugLineNum = 139;BA.debugLine="Log(res(0))";
 Debug.ShouldStop(1024);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 0)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34784137",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 0))),0);
  BA.debugLineNum = 140;BA.debugLine="Log(res(1))";
 Debug.ShouldStop(2048);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 1)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34784138",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 1))),0);
  BA.debugLineNum = 141;BA.debugLine="Log(res(2))";
 Debug.ShouldStop(4096);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 2)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34784139",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 2))),0);
  BA.debugLineNum = 142;BA.debugLine="Log(res(3))";
 Debug.ShouldStop(8192);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 3)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34784140",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 3))),0);
  BA.debugLineNum = 143;BA.debugLine="Label1.Color = cw.ColorResult";
 Debug.ShouldStop(16384);
 parent.mostCurrent._label1.runVoidMethod ("setColor",_cw.getField(true,"_colorresult"));
@@ -279,9 +287,18 @@ finally {
 public static void  _color_result(RemoteObject _success) throws Exception{
 }
 public static void  _btnfont_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnFont_Click (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,148);
+if (RapidSub.canDelegate("btnfont_click")) { com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","btnfont_click"); return;}
 ResumableSub_btnFont_Click rsub = new ResumableSub_btnFont_Click(null);
 rsub.resume(null, null);
 }
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static class ResumableSub_btnFont_Click extends BA.ResumableSub {
 public ResumableSub_btnFont_Click(com.no3dlauncher.pnlmeni_postavke parent) {
 this.parent = parent;
@@ -296,7 +313,6 @@ RemoteObject _success = RemoteObject.createImmutable(false);
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
 		Debug.PushSubsStack("btnFont_Click (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,148);
-if (RapidSub.canDelegate("btnfont_click")) return ;
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -321,7 +337,7 @@ Debug.ShouldStop(16777216);
 _cw.runClassMethod (com.no3dlauncher.colorwheeldialog.class, "_showasync",(Object)(pnlmeni_postavke.getObject()),(Object)(RemoteObject.createImmutable("Select Font Color")));
  BA.debugLineNum = 154;BA.debugLine="Wait For (cw) Color_Result(Success As Boolean)";
 Debug.ShouldStop(33554432);
-parent.mostCurrent.__c.runVoidMethod ("WaitFor","color_result", pnlmeni_postavke.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this), (_cw));
+parent.mostCurrent.__c.runVoidMethod ("WaitFor","color_result", pnlmeni_postavke.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "pnlmeni_postavke", "btnfont_click"), (_cw));
 this.state = 5;
 return;
 case 5:
@@ -348,16 +364,16 @@ Debug.ShouldStop(134217728);
 _res = _getargb(_cw.getField(true,"_colorresult"));Debug.locals.put("res", _res);
  BA.debugLineNum = 157;BA.debugLine="Log(res(0))";
 Debug.ShouldStop(268435456);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 0)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34849673",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 0))),0);
  BA.debugLineNum = 158;BA.debugLine="Log(res(1))";
 Debug.ShouldStop(536870912);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 1)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34849674",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 1))),0);
  BA.debugLineNum = 159;BA.debugLine="Log(res(2))";
 Debug.ShouldStop(1073741824);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 2)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34849675",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 2))),0);
  BA.debugLineNum = 160;BA.debugLine="Log(res(3))";
 Debug.ShouldStop(-2147483648);
-parent.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 3)))));
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","34849676",BA.NumberToString(_res.getArrayElement(true,BA.numberCast(int.class, 3))),0);
  BA.debugLineNum = 161;BA.debugLine="Label1.TextColor = cw.ColorResult";
 Debug.ShouldStop(1);
 parent.mostCurrent._label1.runMethod(true,"setTextColor",_cw.getField(true,"_colorresult"));
@@ -387,7 +403,7 @@ finally {
 public static RemoteObject  _dodajfontove() throws Exception{
 try {
 		Debug.PushSubsStack("DodajFontove (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,90);
-if (RapidSub.canDelegate("dodajfontove")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","dodajfontove");
+if (RapidSub.canDelegate("dodajfontove")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","dodajfontove");}
 RemoteObject _list = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 int _i = 0;
 RemoteObject _s = RemoteObject.createImmutable("");
@@ -442,7 +458,7 @@ finally {
 public static RemoteObject  _edtfontsize_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
 		Debug.PushSubsStack("edtFontSize_TextChanged (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,123);
-if (RapidSub.canDelegate("edtfontsize_textchanged")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtfontsize_textchanged", _old, _new);
+if (RapidSub.canDelegate("edtfontsize_textchanged")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtfontsize_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
  BA.debugLineNum = 123;BA.debugLine="Sub edtFontSize_TextChanged (Old As String, New As";
@@ -467,7 +483,7 @@ finally {
 public static RemoteObject  _edtnoofstarpoints_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
 		Debug.PushSubsStack("edtNoOfStarPoints_TextChanged (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,200);
-if (RapidSub.canDelegate("edtnoofstarpoints_textchanged")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtnoofstarpoints_textchanged", _old, _new);
+if (RapidSub.canDelegate("edtnoofstarpoints_textchanged")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtnoofstarpoints_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
  BA.debugLineNum = 200;BA.debugLine="Sub edtNoOfStarPoints_TextChanged (Old As String,";
@@ -492,7 +508,7 @@ finally {
 public static RemoteObject  _edtpages_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
 		Debug.PushSubsStack("edtPages_TextChanged (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,206);
-if (RapidSub.canDelegate("edtpages_textchanged")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtpages_textchanged", _old, _new);
+if (RapidSub.canDelegate("edtpages_textchanged")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","edtpages_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
  BA.debugLineNum = 206;BA.debugLine="Sub edtPages_TextChanged (Old As String, New As St";
@@ -517,7 +533,7 @@ finally {
 public static RemoteObject  _getargb(RemoteObject _color) throws Exception{
 try {
 		Debug.PushSubsStack("getARGB (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,166);
-if (RapidSub.canDelegate("getargb")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","getargb", _color);
+if (RapidSub.canDelegate("getargb")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","getargb", _color);}
 RemoteObject _res = null;
 Debug.locals.put("Color", _color);
  BA.debugLineNum = 166;BA.debugLine="Sub getARGB(Color As Int) As Int()";
@@ -595,7 +611,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _sbtransparent_valuechanged(RemoteObject _value,RemoteObject _userchanged) throws Exception{
 try {
 		Debug.PushSubsStack("sbTransparent_ValueChanged (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,177);
-if (RapidSub.canDelegate("sbtransparent_valuechanged")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","sbtransparent_valuechanged", _value, _userchanged);
+if (RapidSub.canDelegate("sbtransparent_valuechanged")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","sbtransparent_valuechanged", _value, _userchanged);}
 RemoteObject _res = null;
 Debug.locals.put("Value", _value);
 Debug.locals.put("UserChanged", _userchanged);
@@ -636,7 +652,7 @@ finally {
 public static RemoteObject  _spnanim_itemclick(RemoteObject _position,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("spnAnim_ItemClick (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,212);
-if (RapidSub.canDelegate("spnanim_itemclick")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnanim_itemclick", _position, _value);
+if (RapidSub.canDelegate("spnanim_itemclick")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnanim_itemclick", _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 212;BA.debugLine="Sub spnAnim_ItemClick (Position As Int, Value As O";
@@ -657,7 +673,7 @@ finally {
 public static RemoteObject  _spnapps_itemclick(RemoteObject _position,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("spnApps_ItemClick (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,109);
-if (RapidSub.canDelegate("spnapps_itemclick")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnapps_itemclick", _position, _value);
+if (RapidSub.canDelegate("spnapps_itemclick")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnapps_itemclick", _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 109;BA.debugLine="Sub spnApps_ItemClick (Position As Int, Value As O";
@@ -699,7 +715,7 @@ finally {
 public static RemoteObject  _spnfont_itemclick(RemoteObject _position,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("spnFont_ItemClick (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,104);
-if (RapidSub.canDelegate("spnfont_itemclick")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnfont_itemclick", _position, _value);
+if (RapidSub.canDelegate("spnfont_itemclick")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnfont_itemclick", _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 104;BA.debugLine="Sub spnFont_ItemClick (Position As Int, Value As O";
@@ -723,7 +739,7 @@ finally {
 public static RemoteObject  _spnicontype_itemclick(RemoteObject _position,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("spnIconType_ItemClick (pnlmeni_postavke) ","pnlmeni_postavke",2,pnlmeni_postavke.mostCurrent.activityBA,pnlmeni_postavke.mostCurrent,188);
-if (RapidSub.canDelegate("spnicontype_itemclick")) return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnicontype_itemclick", _position, _value);
+if (RapidSub.canDelegate("spnicontype_itemclick")) { return com.no3dlauncher.pnlmeni_postavke.remoteMe.runUserSub(false, "pnlmeni_postavke","spnicontype_itemclick", _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 188;BA.debugLine="Sub spnIconType_ItemClick (Position As Int, Value";

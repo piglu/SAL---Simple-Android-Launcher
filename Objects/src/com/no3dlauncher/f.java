@@ -33,8 +33,8 @@ public com.no3dlauncher.postavke_kontakti _postavke_kontakti = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _ucitajvrijednostiopt(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="f";
-if (Debug.shouldDelegate(null, "ucitajvrijednostiopt"))
-	return (String) Debug.delegate(null, "ucitajvrijednostiopt", new Object[] {_ba});
+if (Debug.shouldDelegate(null, "ucitajvrijednostiopt", false))
+	 {return ((String) Debug.delegate(null, "ucitajvrijednostiopt", new Object[] {_ba}));}
 RDebugUtils.currentLine=9633792;
  //BA.debugLineNum = 9633792;BA.debugLine="Sub UcitajVrijednostiOpt";
 RDebugUtils.currentLine=9633793;
@@ -164,8 +164,8 @@ return "";
 }
 public static String  _initkvs2(anywheresoftware.b4a.BA _ba) throws Exception{
 RDebugUtils.currentModule="f";
-if (Debug.shouldDelegate(null, "initkvs2"))
-	return (String) Debug.delegate(null, "initkvs2", new Object[] {_ba});
+if (Debug.shouldDelegate(null, "initkvs2", false))
+	 {return ((String) Debug.delegate(null, "initkvs2", new Object[] {_ba}));}
 RDebugUtils.currentLine=9568256;
  //BA.debugLineNum = 9568256;BA.debugLine="Sub InitKVS2";
 RDebugUtils.currentLine=9568257;
@@ -177,8 +177,8 @@ return "";
 }
 public static String  _snimiopcije2(anywheresoftware.b4a.BA _ba,String _kljuc,int _i) throws Exception{
 RDebugUtils.currentModule="f";
-if (Debug.shouldDelegate(null, "snimiopcije2"))
-	return (String) Debug.delegate(null, "snimiopcije2", new Object[] {_ba,_kljuc,_i});
+if (Debug.shouldDelegate(null, "snimiopcije2", false))
+	 {return ((String) Debug.delegate(null, "snimiopcije2", new Object[] {_ba,_kljuc,_i}));}
 RDebugUtils.currentLine=9764864;
  //BA.debugLineNum = 9764864;BA.debugLine="Sub SnimiOpcije2(kljuc As String, i As Int)";
 RDebugUtils.currentLine=9764865;
@@ -190,8 +190,8 @@ return "";
 }
 public static String  _snimiopcije(anywheresoftware.b4a.BA _ba,String _kljuc,String _s) throws Exception{
 RDebugUtils.currentModule="f";
-if (Debug.shouldDelegate(null, "snimiopcije"))
-	return (String) Debug.delegate(null, "snimiopcije", new Object[] {_ba,_kljuc,_s});
+if (Debug.shouldDelegate(null, "snimiopcije", false))
+	 {return ((String) Debug.delegate(null, "snimiopcije", new Object[] {_ba,_kljuc,_s}));}
 RDebugUtils.currentLine=9699328;
  //BA.debugLineNum = 9699328;BA.debugLine="Sub SnimiOpcije(kljuc As String, s As String)";
 RDebugUtils.currentLine=9699329;

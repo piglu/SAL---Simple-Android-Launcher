@@ -1,23 +1,23 @@
 com.no3dlauncher
 0
-4
+3
 contactsutils
 keyvaluestore
 colorwheeldialog
-customlistview
-main,activity_create,1,1,126,239
-,tabstrip1,,cu,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,customlistview1,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,,nativeme,f,animstr,f,brstranica,starter,mapa,f,bojapozadine,f,trans,,iv_size,,listafavorita,,tajmer1,,cr,f,kvs2,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,tipikone,f,brtocaka,f,sms_dani,,lbl,,grid,starter,listaslova,,pnl_dock_vidljiv
-,tabstrip1,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,customlistview1,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,lbl,starter,mapa,,listafavorita,,pnl_dock_vidljiv
+0
+main,activity_create,1,0,126,239
+,tabstrip1,,cu,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,,nativeme,f,animstr,f,brstranica,starter,mapa,f,bojapozadine,f,trans,,iv_size,,listafavorita,,tajmer1,,cr,f,kvs2,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,tipikone,f,brtocaka,f,sms_dani,,lbl,,grid,starter,listaslova,,pnl_dock_vidljiv
+,tabstrip1,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,lbl,starter,mapa,,listafavorita,,pnl_dock_vidljiv
 contactsutils,initialize,f,ucitajvrijednostiopt,,tabstrip1_pageselected,starter,getinstalledapps,,getargb,,viewsbringtofront,,showfavoriteapps,,btndock_click,keyvaluestore,containskey,keyvaluestore,get,keyvaluestore,put,,getalltablabels,,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata,starter,sortmapkeys
-main,tabstrip1_pageselected,0,0,2022,2032
+main,tabstrip1_pageselected,0,0,2023,2033
 ,tabstrip1,,lbl,,pnlkontakti,,cu,,grid
 ,lbl
 ,getalltablabels,,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,getargb,0,0,1424,1433
+main,getargb,0,0,1425,1434
 
 
 
-main,viewsbringtofront,0,0,1353,1357
+main,viewsbringtofront,0,0,1354,1358
 ,btnsearch,,btnnotify,,btnpostavke
 
 
@@ -37,19 +37,19 @@ main,activity_resume,0,0,346,348
 
 
 
-main,btnclearall_click,0,0,2474,2476
+main,btnclearall_click,0,0,2475,2477
 
 
 
-main,btndodajstr_click,0,0,2506,2508
+main,btndodajstr_click,0,0,2507,2509
 
 
 
-main,btndodajwidget_click,0,0,2498,2504
+main,btndodajwidget_click,0,0,2499,2505
 ,panel1,,smartwidgets
 
 ,createsmartwidget
-main,createsmartwidget,0,0,2034,2037
+main,createsmartwidget,0,0,2035,2038
 ,smartwidgets
 
 
@@ -57,59 +57,59 @@ main,btninfo_click,0,0,501,503
 
 
 
-main,btnkontaktemail_click,1,0,2869,2897
+main,btnkontaktemail_click,1,0,2870,2898
 ,cu
 
 contactsutils,getemails,,prikazilistuemailadresaudijalogu,contactsutils,getdata
-main,prikazilistuemailadresaudijalogu,1,0,2899,2909
+main,prikazilistuemailadresaudijalogu,1,0,2900,2910
 
 
 
-main,btnkontaktinfo_click,0,0,2817,2829
+main,btnkontaktinfo_click,0,0,2818,2830
 ,cu
 
 contactsutils,getaccounts,contactsutils,getemails,contactsutils,getevents,contactsutils,getgroups,contactsutils,getnamefromid,contactsutils,getnote,contactsutils,getorganization,contactsutils,getphones,contactsutils,getstarred,contactsutils,getdata,contactsutils,fillgroupsources
-main,btnkontaktpoziv_click,1,0,2831,2852
+main,btnkontaktpoziv_click,1,0,2832,2853
 ,cu
 
 contactsutils,getphones,,prikazilistubrojevatelefona,contactsutils,getdata
-main,prikazilistubrojevatelefona,1,0,2911,2921
+main,prikazilistubrojevatelefona,1,0,2912,2922
 
 
 
-main,btnkontaktsms_click,0,0,2854,2867
+main,btnkontaktsms_click,0,0,2855,2868
 ,l,,cu
 ,l
 contactsutils,getphones,contactsutils,getdata
-main,btnmeni_click,1,1,462,499
-,pnl_dock_vidljiv,,pnldock,,btndock,f,showapps,,wp1,,btnpostavke,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,l1,starter,mapa,,clv,,ivapp,,ivdodaj,,lblimeapp,,sv,,lbl
+main,btnmeni_click,1,0,462,499
+,pnl_dock_vidljiv,,pnldock,,btndock,f,showapps,,wp1,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,btnpostavke,,l1,starter,mapa,,clv,,ivapp,,ivdodaj,,lblimeapp,,sv,,lbl
 ,pnl_dock_vidljiv,,l,,clv,,ivapp,,ivdodaj,,lblimeapp,,lbl
-,dodajlistuappukotac,,dodajlistusaikonamaappuladicu,,dodajappuladicu,,filtrirajimenaappiimenapaketa,,getargb,customlistview,asview,customlistview,add,,kreirajstavku,customlistview,insertat,customlistview,insertatimpl,customlistview,createpanel,customlistview,getscrollviewcontentsize,customlistview,getscrollviewoffset,customlistview,getscrollviewvisiblesize,customlistview,setitemoffset,customlistview,setscrollviewcontentsize,customlistview,getrawlistitem,customlistview,updatevisiblerange,customlistview,getsize,customlistview,getfirstvisibleindex,customlistview,getlastvisibleindex,customlistview,findindexfromoffset
-main,dodajlistuappukotac,0,1,869,916
-,wp1,,btnpostavke,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,l1,starter,mapa
+,dodajlistuappukotac,,dodajlistusaikonamaappuladicu,,dodajappuladicu,,filtrirajimenaappiimenapaketa,,getargb,,kreirajstavku
+main,dodajlistuappukotac,0,0,869,917
+,wp1,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,btnpostavke,,l1,starter,mapa
 ,l
 ,filtrirajimenaappiimenapaketa,,getargb
-main,dodajlistusaikonamaappuladicu,1,1,639,680
+main,dodajlistusaikonamaappuladicu,1,0,639,680
 ,clv,f,bojapozadine,f,trans,starter,mapa,,pnlmeni,,l1,,l,,btnpostavke,,ivapp,,ivdodaj,,lblimeapp,f,fontzsize,f,wheellistfont,f,bojafonta
 ,clv,,l,,ivapp,,ivdodaj,,lblimeapp
-,filtrirajimenaappiimenapaketa,,getargb,customlistview,asview,customlistview,add,,kreirajstavku,customlistview,insertat,customlistview,insertatimpl,customlistview,createpanel,customlistview,getscrollviewcontentsize,customlistview,getscrollviewoffset,customlistview,getscrollviewvisiblesize,customlistview,setitemoffset,customlistview,setscrollviewcontentsize,customlistview,getrawlistitem,customlistview,updatevisiblerange,customlistview,getsize,customlistview,getfirstvisibleindex,customlistview,getlastvisibleindex,customlistview,findindexfromoffset
-main,dodajappuladicu,0,1,682,736
+,filtrirajimenaappiimenapaketa,,getargb,,kreirajstavku
+main,dodajappuladicu,0,0,682,736
 ,sv,starter,mapa,,lbl,f,wheellistfont,,l1,,l
 ,lbl,,l
 ,filtrirajimenaappiimenapaketa
-main,btnnaprijed_click,0,0,2523,2527
+main,btnnaprijed_click,0,0,2524,2528
 ,tabstrip1
 
 
-main,btnnatrag_click,0,0,2510,2521
+main,btnnatrag_click,0,0,2511,2522
 ,tabstrip1,,pnlkontakti,,cu,,grid
 
 ,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,ubacikontakte2,0,0,2529,2629
+main,ubacikontakte2,0,0,2530,2630
 ,cu,,grid,,pnlkontakti
 
 contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,btnnotify_click,0,0,2488,2496
+main,btnnotify_click,0,0,2489,2497
 
 
 
@@ -117,7 +117,7 @@ main,btnpostavke_click,0,0,505,507
 
 
 
-main,btnpostavkekontakti_click,0,0,2923,2925
+main,btnpostavkekontakti_click,0,0,2924,2926
 
 
 
@@ -129,15 +129,15 @@ main,btnwidgeti_click,0,0,509,577
 ,tabstrip1
 
 
-main,clv_itemclick,0,0,1340,1351
+main,clv_itemclick,0,0,1341,1352
 ,zadnja_oznacena_app,,l1
 ,zadnja_oznacena_app
 
-main,dodajappufavorite,0,0,1070,1096
+main,dodajappufavorite,0,0,1071,1097
 starter,mapa,,zadnja_oznacena_app,,scvdock,,listafavorita
 
 ,provjeraappufavoritima
-main,provjeraappufavoritima,0,0,1558,1567
+main,provjeraappufavoritima,0,0,1559,1568
 ,scvdock,,listafavorita
 
 
@@ -145,7 +145,7 @@ main,filtrirajimenaappiimenapaketa,0,0,853,867
 ,l1,,l,starter,mapa
 ,l
 
-main,kreirajstavku,1,0,1323,1338
+main,kreirajstavku,1,0,1324,1339
 ,btnpostavke,,ivapp,,ivdodaj,,lblimeapp,f,fontzsize,f,wheellistfont,f,bojafonta
 ,ivapp,,ivdodaj,,lblimeapp
 
@@ -169,31 +169,31 @@ main,uninstallapp,0,0,757,772
 
 
 
-main,ivclvdodaj_click,0,0,1435,1556
+main,ivclvdodaj_click,0,0,1436,1557
 ,lbl,,clv,starter,mapa,,scvdock,,listafavorita
 
-customlistview,getitemfromview,,provjeraappufavoritima
-main,ivdokpokreniapp_click,0,0,1569,1585
+,provjeraappufavoritima
+main,ivdokpokreniapp_click,0,0,1570,1586
 ,listafavorita
 
 
-main,ivwheeldodaj_click,0,0,1098,1217
+main,ivwheeldodaj_click,0,0,1099,1218
 ,ivwheeldodaj,,lbl,starter,mapa,,zadnja_oznacena_app,,listafavorita,,scvdock
 
 ,provjeraappufavoritima,,dodajappufavorite
-main,kontaktigrid_finishedloading,0,0,2651,2653
+main,kontaktigrid_finishedloading,0,0,2652,2654
 
 
 
-main,kontaktigrid_itemclicked,1,0,2631,2649
+main,kontaktigrid_itemclicked,1,0,2632,2650
 ,cu,,l
 ,l
 ,btnkontaktpoziv_click,,btnkontaktsms_click,,btnkontaktemail_click,,btnkontaktinfo_click,contactsutils,getphones,,prikazilistubrojevatelefona,contactsutils,getdata,contactsutils,getemails,,prikazilistuemailadresaudijalogu,contactsutils,getaccounts,contactsutils,getevents,contactsutils,getgroups,contactsutils,getnamefromid,contactsutils,getnote,contactsutils,getorganization,contactsutils,getstarred,contactsutils,fillgroupsources
-main,lblimeapp_longclick,0,0,1420,1422
+main,lblimeapp_longclick,0,0,1421,1423
 
 
 
-main,osvjezi,0,0,1359,1406
+main,osvjezi,0,0,1360,1407
 ,scvdock,f,kvs2,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,btnsearch,,btnnotify,,btnpostavke,,listafavorita,,lbl
 f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,listafavorita
 f,ucitajvrijednostiopt,,viewsbringtofront,,showfavoriteapps,keyvaluestore,containskey,keyvaluestore,get,keyvaluestore,put
@@ -209,15 +209,15 @@ main,scvpanel_touch,0,0,583,597
 ,lbl,,scvdock,,listafavorita
 
 
-main,smartwidgets_backpressed,0,0,2182,2184
+main,smartwidgets_backpressed,0,0,2183,2185
 
 
 
-main,smartwidgets_widgetcreated,0,0,2067,2179
+main,smartwidgets_widgetcreated,0,0,2068,2180
 ,ipsilon,,smartwidgets,,panel1,,topw
 ,ipsilon,,topw
 
-main,tajmer_tick,0,0,2482,2486
+main,tajmer_tick,0,0,2483,2487
 notificationservice,brojnotifikacija
 notificationservice,brojnotifikacija
 
@@ -229,143 +229,143 @@ main,wp1_index_clicked,0,0,611,622
 ,l1,,zadnja_oznacena_app,f,animstr
 
 
-contactsutils,initialize,0,0,15,52
+contactsutils,initialize,0,0,16,56
 
 
 
-contactsutils,getemails,0,0,148,159
-
-
-,getdata
-contactsutils,getaccounts,0,0,336,349
-
-
-
-contactsutils,getevents,0,0,161,172
+contactsutils,getemails,0,0,152,163
 
 
 ,getdata
-contactsutils,getgroups,0,0,364,382
+contactsutils,getaccounts,0,0,340,353
+
+
+
+contactsutils,getevents,0,0,165,176
+
+
+,getdata
+contactsutils,getgroups,0,0,368,386
 
 
 ,fillgroupsources
-contactsutils,getnamefromid,0,0,92,104
+contactsutils,getnamefromid,0,0,96,108
 
 
 
-contactsutils,getnote,0,0,189,194
-
-
-,getdata
-contactsutils,getorganization,0,0,134,145
+contactsutils,getnote,0,0,193,198
 
 
 ,getdata
-contactsutils,getphones,0,0,175,186
+contactsutils,getorganization,0,0,138,149
 
 
 ,getdata
-contactsutils,getstarred,0,0,214,220
+contactsutils,getphones,0,0,179,190
+
+
+,getdata
+contactsutils,getstarred,0,0,218,224
 
 
 
-contactsutils,findallcontacts,0,0,84,86
+contactsutils,findallcontacts,0,0,88,90
 
 
 ,findcontactsidfromdata
-contactsutils,getphoto,0,0,197,211
+contactsutils,getphoto,0,0,201,215
 
 
 ,getdata
-contactsutils,addemail,0,0,261,267
+contactsutils,addemail,0,0,265,271
 
 
 ,getkeyfromvalue,,setdata
-contactsutils,getkeyfromvalue,0,0,289,298
+contactsutils,getkeyfromvalue,0,0,293,302
 
 
 
-contactsutils,setdata,0,0,303,320
+contactsutils,setdata,0,0,307,324
 
 
 
-contactsutils,addnote,0,0,251,256
+contactsutils,addnote,0,0,255,260
 
 
 ,setdata
-contactsutils,addphone,0,0,271,277
+contactsutils,addphone,0,0,275,281
 
 
 ,getkeyfromvalue,,setdata
-contactsutils,class_globals,0,0,3,13
+contactsutils,class_globals,0,0,3,14
 
 
 
-contactsutils,deletecontact,0,0,331,333
+contactsutils,deletecontact,0,0,335,337
 
 
 
-contactsutils,deletedata,0,0,300,302
+contactsutils,deletedata,0,0,304,306
 
 
 
-contactsutils,deleteemail,0,0,284,286
-
-
-,deletedata
-contactsutils,deletephone,0,0,280,282
+contactsutils,deleteemail,0,0,288,290
 
 
 ,deletedata
-contactsutils,fillgroupsources,0,0,351,362
+contactsutils,deletephone,0,0,284,286
+
+
+,deletedata
+contactsutils,fillgroupsources,0,0,355,366
 
 
 
-contactsutils,findcontactsidfromdata,0,0,106,132
+contactsutils,findcontactsidfromdata,0,0,110,136
 
 
 
-contactsutils,findcontactsbymail,0,0,63,65
-
-
-,findcontactsidfromdata
-contactsutils,findcontactsbyname,0,0,58,60
-
-
-,findcontactsidfromdata
-contactsutils,findcontactsbynotes,0,0,68,70
+contactsutils,findcontactsbymail,0,0,67,69
 
 
 ,findcontactsidfromdata
-contactsutils,findcontactsbyphone,0,0,73,75
+contactsutils,findcontactsbyname,0,0,62,64
 
 
 ,findcontactsidfromdata
-contactsutils,findcontactsbystarred,0,0,78,82
+contactsutils,findcontactsbynotes,0,0,72,74
 
 
 ,findcontactsidfromdata
-contactsutils,findcontactswithphotos,0,0,88,90
+contactsutils,findcontactsbyphone,0,0,77,79
 
 
 ,findcontactsidfromdata
-contactsutils,getdata,0,0,223,242
+contactsutils,findcontactsbystarred,0,0,82,86
+
+
+,findcontactsidfromdata
+contactsutils,findcontactswithphotos,0,0,92,94
+
+
+,findcontactsidfromdata
+contactsutils,getdata,0,0,227,246
 
 
 
-contactsutils,insertcontact,0,0,385,412
+contactsutils,insertcontact,0,0,389,416
 
 
 
-contactsutils,printcursor,0,0,415,427
+contactsutils,printcursor,0,0,419,431
 
 
 
-contactsutils,setnote,0,0,244,249
+contactsutils,setnote,0,0,248,253
 
 
 ,setdata
-contactsutils,setstarred,0,0,323,328
+contactsutils,setstarred,0,0,327,332
 
 
 
@@ -421,182 +421,6 @@ starter,service_taskremoved,0,0,28,30
 
 
 
-customlistview,asview,0,0,124,126
-
-
-
-customlistview,add,0,0,371,373
-
-
-,insertat,,insertatimpl,,createpanel,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,getrawlistitem,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,getitemfromview,0,0,464,472
-
-
-
-customlistview,insertat,0,0,205,213
-
-
-,insertatimpl,,createpanel,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,getrawlistitem,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,addtextitem,0,0,182,184
-
-
-,insertattextitem,,createpanel,,createlabel,,insertat,,getrawlistitem,,insertatimpl,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,insertattextitem,0,0,187,202
-
-
-,createpanel,,createlabel,,insertat,,getrawlistitem,,insertatimpl,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,base_resize,0,0,100,122
-
-
-,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getscrollviewoffset,,getrawlistitem,,getscrollviewvisiblesize
-customlistview,updatevisiblerange,0,0,289,298
-
-
-,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getscrollviewoffset,,getrawlistitem,,getscrollviewvisiblesize
-customlistview,class_globals,0,0,13,41
-
-
-
-customlistview,clear,0,0,129,134
-
-
-,setscrollviewcontentsize,,resetvisibles
-customlistview,setscrollviewcontentsize,0,0,332,338
-
-
-
-customlistview,resetvisibles,0,0,54,57
-
-
-
-customlistview,createlabel,0,0,524,534
-
-
-
-customlistview,createpanel,0,0,491,493
-
-
-
-customlistview,createscrollview,0,0,504,514
-
-
-
-customlistview,designercreateview,0,0,65,98
-
-
-,createscrollview,,base_resize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getscrollviewoffset,,getrawlistitem,,getscrollviewvisiblesize
-customlistview,findindexfromoffset,0,0,413,441
-
-
-,getrawlistitem
-customlistview,getrawlistitem,0,0,146,148
-
-
-
-customlistview,finditemoffset,0,0,408,410
-
-
-,getrawlistitem
-customlistview,getbase,0,0,136,138
-
-
-
-customlistview,getdividersize,0,0,495,497
-
-
-
-customlistview,getfirstvisibleindex,0,0,444,446
-
-
-,findindexfromoffset,,getscrollviewoffset,,getrawlistitem
-customlistview,getscrollviewoffset,0,0,308,314
-
-
-
-customlistview,getlastvisibleindex,0,0,449,451
-
-
-,findindexfromoffset,,getscrollviewoffset,,getscrollviewvisiblesize,,getrawlistitem
-customlistview,getscrollviewvisiblesize,0,0,300,306
-
-
-
-customlistview,getmaxscrolloffset,0,0,380,382
-
-
-,getscrollviewcontentsize,,getscrollviewvisiblesize
-customlistview,getscrollviewcontentsize,0,0,324,330
-
-
-
-customlistview,getpanel,0,0,151,153
-
-
-,getrawlistitem
-customlistview,getsize,0,0,141,143
-
-
-
-customlistview,getvalue,0,0,156,158
-
-
-,getrawlistitem
-customlistview,initialize,0,0,43,52
-
-
-,resetvisibles
-customlistview,insertatimpl,0,0,216,287
-
-
-,createpanel,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,getrawlistitem,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,setitemoffset,0,0,340,347
-
-
-
-customlistview,jumptoitem,0,0,376,378
-
-
-,setscrollviewoffset,,getmaxscrolloffset,,finditemoffset,,getscrollviewcontentsize,,getscrollviewvisiblesize,,getrawlistitem
-customlistview,setscrollviewoffset,0,0,316,322
-
-
-
-customlistview,panel_click,1,0,516,518
-
-
-,panelclickhandler,,getrawlistitem
-customlistview,panelclickhandler,1,1,453,461
-
-
-,getrawlistitem
-customlistview,refresh,0,0,60,63
-
-
-,resetvisibles,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getscrollviewoffset,,getrawlistitem,,getscrollviewvisiblesize
-customlistview,removeat,0,0,161,178
-
-
-,getsize,,clear,,setitemoffset,,setscrollviewcontentsize,,getscrollviewcontentsize,,resetvisibles
-customlistview,replaceat,0,0,361,366
-
-
-,insertatimpl,,createpanel,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,getrawlistitem,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,resizeitem,0,0,350,357
-
-
-,getpanel,,getvalue,,replaceat,,getrawlistitem,,insertatimpl,,createpanel,,getscrollviewcontentsize,,getscrollviewoffset,,getscrollviewvisiblesize,,setitemoffset,,setscrollviewcontentsize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset
-customlistview,scrollhandler,1,0,474,489
-
-
-,getscrollviewoffset,,getscrollviewvisiblesize,,getscrollviewcontentsize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getrawlistitem
-customlistview,scrolltoitem,0,0,385,406
-
-
-,getmaxscrolloffset,,finditemoffset,,getscrollviewcontentsize,,getscrollviewvisiblesize,,getrawlistitem
-customlistview,sv_scrollchanged,1,0,520,522
-
-
-,scrollhandler,,getscrollviewoffset,,getscrollviewvisiblesize,,getscrollviewcontentsize,,updatevisiblerange,,getsize,,getfirstvisibleindex,,getlastvisibleindex,,findindexfromoffset,,getrawlistitem
 pnlmeni_postavke,activity_create,1,0,36,77
 ,btnbackground,,btnenablenotifications,,btnfont,,edtfontsize,,edtnoofstarpoints,,edtpages,,label1,,label3,,label7,,sbtransparent,,spnanim,,spnapps,,spnfont,,spnicontype,,mapaanimacija,,animacije,f,trans,f,bojapozadine,f,bojafonta,f,showapps,f,tipikone,f,brtocaka,f,animstr,f,brstranica,f,fontzsize,f,kvs2,f,wheellistfont,f,sms_dani
 ,btnbackground,,btnenablenotifications,,btnfont,,edtfontsize,,edtnoofstarpoints,,edtpages,,label1,,label3,,label7,,sbtransparent,,spnanim,,spnapps,,spnfont,,spnicontype,,mapaanimacija,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani
@@ -617,11 +441,11 @@ pnlmeni_postavke,activity_resume,0,0,79,81
 
 
 
-pnlmeni_postavke,btnbackground_click,1,1,130,146
+pnlmeni_postavke,btnbackground_click,1,0,130,146
 ,label1,f,kvs2
 
 colorwheeldialog,initialize,colorwheeldialog,showasync,,getargb,f,snimiopcije2,keyvaluestore,put
-pnlmeni_postavke,btnfont_click,1,1,148,164
+pnlmeni_postavke,btnfont_click,1,0,148,164
 ,label1,f,kvs2
 
 colorwheeldialog,initialize,colorwheeldialog,showasync,,getargb,f,snimiopcije2,keyvaluestore,put
@@ -669,7 +493,7 @@ colorwheeldialog,initialize,0,0,11,13
 
 
 
-colorwheeldialog,showasync,1,1,15,24
+colorwheeldialog,showasync,1,0,15,24
 
 
 

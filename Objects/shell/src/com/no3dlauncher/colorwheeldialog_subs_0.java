@@ -26,7 +26,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
 		Debug.PushSubsStack("Initialize (colorwheeldialog) ","colorwheeldialog",10,__ref.getField(false, "ba"),__ref,11);
-if (RapidSub.canDelegate("initialize")) return __ref.runUserSub(false, "colorwheeldialog","initialize", __ref, _ba);
+if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "colorwheeldialog","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
  BA.debugLineNum = 11;BA.debugLine="Public Sub Initialize";
@@ -44,7 +44,7 @@ finally {
 public static RemoteObject  _pnlcolors_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
 		Debug.PushSubsStack("pnlColors_Touch (colorwheeldialog) ","colorwheeldialog",10,__ref.getField(false, "ba"),__ref,26);
-if (RapidSub.canDelegate("pnlcolors_touch")) return __ref.runUserSub(false, "colorwheeldialog","pnlcolors_touch", __ref, _action, _x, _y);
+if (RapidSub.canDelegate("pnlcolors_touch")) { return __ref.runUserSub(false, "colorwheeldialog","pnlcolors_touch", __ref, _action, _x, _y);}
 RemoteObject _cx = RemoteObject.createImmutable(0f);
 RemoteObject _cy = RemoteObject.createImmutable(0f);
 Debug.locals.put("Action", _action);
@@ -83,9 +83,18 @@ finally {
 			Debug.PopSubsStack();
 		}}
 public static void  _showasync(RemoteObject __ref,RemoteObject _callback,RemoteObject _title) throws Exception{
+try {
+		Debug.PushSubsStack("ShowAsync (colorwheeldialog) ","colorwheeldialog",10,__ref.getField(false, "ba"),__ref,15);
+if (RapidSub.canDelegate("showasync")) { __ref.runUserSub(false, "colorwheeldialog","showasync", __ref, _callback, _title); return;}
 ResumableSub_ShowAsync rsub = new ResumableSub_ShowAsync(null,__ref,_callback,_title);
 rsub.resume(null, null);
 }
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static class ResumableSub_ShowAsync extends BA.ResumableSub {
 public ResumableSub_ShowAsync(com.no3dlauncher.colorwheeldialog parent,RemoteObject __ref,RemoteObject _callback,RemoteObject _title) {
 this.parent = parent;
@@ -106,7 +115,6 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
 		Debug.PushSubsStack("ShowAsync (colorwheeldialog) ","colorwheeldialog",10,__ref.getField(false, "ba"),__ref,15);
-if (RapidSub.canDelegate("showasync")) return ;
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -128,7 +136,7 @@ Debug.ShouldStop(65536);
 __ref.getField(false,"_dialog").runVoidMethod ("SetSize",(Object)(parent.__c.runMethod(true,"DipToCurrent",(Object)(BA.numberCast(int.class, 300)))),(Object)(parent.__c.runMethod(true,"DipToCurrent",(Object)(BA.numberCast(int.class, 450)))));
  BA.debugLineNum = 18;BA.debugLine="Wait For (sf) Dialog_Ready (DialogPanel As Panel)";
 Debug.ShouldStop(131072);
-parent.__c.runVoidMethod ("WaitFor","dialog_ready", __ref.getField(false, "ba"), anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this), _sf);
+parent.__c.runVoidMethod ("WaitFor","dialog_ready", __ref.getField(false, "ba"), anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 1;
 return;
 case 1:
@@ -147,7 +155,7 @@ Debug.ShouldStop(1048576);
 __ref.getField(false,"_cvsoverlay").runVoidMethod ("Initialize",(Object)((__ref.getField(false,"_pnloverlay").getObject())));
  BA.debugLineNum = 22;BA.debugLine="Wait For (sf) Dialog_Result (Result As Int)";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("WaitFor","dialog_result", __ref.getField(false, "ba"), anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this), _sf);
+parent.__c.runVoidMethod ("WaitFor","dialog_result", __ref.getField(false, "ba"), anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 2;
 return;
 case 2:

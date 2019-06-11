@@ -9,7 +9,7 @@ public class notificationservice_subs_0 {
 public static RemoteObject  _clearall() throws Exception{
 try {
 		Debug.PushSubsStack("ClearAll (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,39);
-if (RapidSub.canDelegate("clearall")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","clearall");
+if (RapidSub.canDelegate("clearall")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","clearall");}
  BA.debugLineNum = 39;BA.debugLine="Sub ClearAll";
 Debug.ShouldStop(64);
  BA.debugLineNum = 40;BA.debugLine="listener.ClearAll";
@@ -28,7 +28,7 @@ finally {
 public static RemoteObject  _getactive() throws Exception{
 try {
 		Debug.PushSubsStack("GetActive (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,43);
-if (RapidSub.canDelegate("getactive")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","getactive");
+if (RapidSub.canDelegate("getactive")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","getactive");}
  BA.debugLineNum = 43;BA.debugLine="Sub GetActive";
 Debug.ShouldStop(1024);
  BA.debugLineNum = 44;BA.debugLine="listener.GetActiveNotifications";
@@ -47,7 +47,7 @@ finally {
 public static RemoteObject  _listener_notificationposted(RemoteObject _sbn) throws Exception{
 try {
 		Debug.PushSubsStack("Listener_NotificationPosted (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,17);
-if (RapidSub.canDelegate("listener_notificationposted")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","listener_notificationposted", _sbn);
+if (RapidSub.canDelegate("listener_notificationposted")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","listener_notificationposted", _sbn);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.phone.Phone");
 RemoteObject _jno = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _extras = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
@@ -61,7 +61,7 @@ Debug.ShouldStop(131072);
 notificationservice._brojnotifikacija = RemoteObject.solve(new RemoteObject[] {notificationservice._brojnotifikacija,RemoteObject.createImmutable(1)}, "+",1, 1);
  BA.debugLineNum = 19;BA.debugLine="Log(\"NotificationPosted, package = \" & SBN.Packag";
 Debug.ShouldStop(262144);
-notificationservice.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.concat(RemoteObject.createImmutable("NotificationPosted, package = "),_sbn.runMethod(true,"getPackageName"),RemoteObject.createImmutable(", id = "),_sbn.runMethod(true,"getId"),RemoteObject.createImmutable(", text = "),_sbn.runMethod(true,"getTickerText"))));
+notificationservice.mostCurrent.__c.runVoidMethod ("LogImpl","36488066",RemoteObject.concat(RemoteObject.createImmutable("NotificationPosted, package = "),_sbn.runMethod(true,"getPackageName"),RemoteObject.createImmutable(", id = "),_sbn.runMethod(true,"getId"),RemoteObject.createImmutable(", text = "),_sbn.runMethod(true,"getTickerText")),0);
  BA.debugLineNum = 20;BA.debugLine="Dim p As Phone";
 Debug.ShouldStop(524288);
 _p = RemoteObject.createNew ("anywheresoftware.b4a.phone.Phone");Debug.locals.put("p", _p);
@@ -81,13 +81,13 @@ Debug.ShouldStop(8388608);
 _extras.runVoidMethod ("RunMethod",(Object)(BA.ObjectToString("size")),(Object)((notificationservice.mostCurrent.__c.getField(false,"Null"))));
  BA.debugLineNum = 25;BA.debugLine="Log(extras)";
 Debug.ShouldStop(16777216);
-notificationservice.mostCurrent.__c.runVoidMethod ("Log",(Object)(BA.ObjectToString(_extras)));
+notificationservice.mostCurrent.__c.runVoidMethod ("LogImpl","36488072",BA.ObjectToString(_extras),0);
  BA.debugLineNum = 26;BA.debugLine="Dim title As String = extras.RunMethod(\"getStrin";
 Debug.ShouldStop(33554432);
 _title = BA.ObjectToString(_extras.runMethod(false,"RunMethod",(Object)(BA.ObjectToString("getString")),(Object)(RemoteObject.createNewArray("Object",new int[] {1},new Object[] {(RemoteObject.createImmutable("android.title"))}))));Debug.locals.put("title", _title);Debug.locals.put("title", _title);
  BA.debugLineNum = 27;BA.debugLine="LogColor(\"Title = \" & title, Colors.Blue)";
 Debug.ShouldStop(67108864);
-notificationservice.mostCurrent.__c.runVoidMethod ("LogColor",(Object)(RemoteObject.concat(RemoteObject.createImmutable("Title = "),_title)),(Object)(notificationservice.mostCurrent.__c.getField(false,"Colors").getField(true,"Blue")));
+notificationservice.mostCurrent.__c.runVoidMethod ("LogImpl","36488074",RemoteObject.concat(RemoteObject.createImmutable("Title = "),_title),notificationservice.mostCurrent.__c.getField(false,"Colors").getField(true,"Blue"));
  BA.debugLineNum = 28;BA.debugLine="Dim bmp As Bitmap = jno.GetField(\"largeIcon\")";
 Debug.ShouldStop(134217728);
 _bmp = RemoteObject.createNew ("anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper");
@@ -106,13 +106,13 @@ finally {
 public static RemoteObject  _listener_notificationremoved(RemoteObject _sbn) throws Exception{
 try {
 		Debug.PushSubsStack("Listener_NotificationRemoved (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,33);
-if (RapidSub.canDelegate("listener_notificationremoved")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","listener_notificationremoved", _sbn);
+if (RapidSub.canDelegate("listener_notificationremoved")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","listener_notificationremoved", _sbn);}
 Debug.locals.put("SBN", _sbn);
  BA.debugLineNum = 33;BA.debugLine="Sub Listener_NotificationRemoved (SBN As StatusBar";
 Debug.ShouldStop(1);
  BA.debugLineNum = 34;BA.debugLine="Log(\"NotificationRemoved, package = \" & SBN.Packa";
 Debug.ShouldStop(2);
-notificationservice.mostCurrent.__c.runVoidMethod ("Log",(Object)(RemoteObject.concat(RemoteObject.createImmutable("NotificationRemoved, package = "),_sbn.runMethod(true,"getPackageName"),RemoteObject.createImmutable(", id = "),_sbn.runMethod(true,"getId"),RemoteObject.createImmutable(", text = "),_sbn.runMethod(true,"getTickerText"))));
+notificationservice.mostCurrent.__c.runVoidMethod ("LogImpl","36553601",RemoteObject.concat(RemoteObject.createImmutable("NotificationRemoved, package = "),_sbn.runMethod(true,"getPackageName"),RemoteObject.createImmutable(", id = "),_sbn.runMethod(true,"getId"),RemoteObject.createImmutable(", text = "),_sbn.runMethod(true,"getTickerText")),0);
  BA.debugLineNum = 36;BA.debugLine="brojNotifikacija = brojNotifikacija - 1";
 Debug.ShouldStop(8);
 notificationservice._brojnotifikacija = RemoteObject.solve(new RemoteObject[] {notificationservice._brojnotifikacija,RemoteObject.createImmutable(1)}, "-",1, 1);
@@ -138,7 +138,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _service_create() throws Exception{
 try {
 		Debug.PushSubsStack("Service_Create (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,9);
-if (RapidSub.canDelegate("service_create")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_create");
+if (RapidSub.canDelegate("service_create")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_create");}
  BA.debugLineNum = 9;BA.debugLine="Sub Service_Create";
 Debug.ShouldStop(256);
  BA.debugLineNum = 10;BA.debugLine="listener.Initialize(\"listener\")";
@@ -157,7 +157,7 @@ finally {
 public static RemoteObject  _service_destroy() throws Exception{
 try {
 		Debug.PushSubsStack("Service_Destroy (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,47);
-if (RapidSub.canDelegate("service_destroy")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_destroy");
+if (RapidSub.canDelegate("service_destroy")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_destroy");}
  BA.debugLineNum = 47;BA.debugLine="Sub Service_Destroy";
 Debug.ShouldStop(16384);
  BA.debugLineNum = 49;BA.debugLine="End Sub";
@@ -173,7 +173,7 @@ finally {
 public static RemoteObject  _service_start(RemoteObject _startingintent) throws Exception{
 try {
 		Debug.PushSubsStack("Service_Start (notificationservice) ","notificationservice",4,notificationservice.processBA,notificationservice.mostCurrent,13);
-if (RapidSub.canDelegate("service_start")) return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_start", _startingintent);
+if (RapidSub.canDelegate("service_start")) { return com.no3dlauncher.notificationservice.remoteMe.runUserSub(false, "notificationservice","service_start", _startingintent);}
 Debug.locals.put("StartingIntent", _startingintent);
  BA.debugLineNum = 13;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
 Debug.ShouldStop(4096);

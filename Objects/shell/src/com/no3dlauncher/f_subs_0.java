@@ -9,7 +9,7 @@ public class f_subs_0 {
 public static RemoteObject  _initkvs2(RemoteObject _ba) throws Exception{
 try {
 		Debug.PushSubsStack("InitKVS2 (f) ","f",7,_ba,f.mostCurrent,21);
-if (RapidSub.canDelegate("initkvs2")) return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","initkvs2", _ba);
+if (RapidSub.canDelegate("initkvs2")) { return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","initkvs2", _ba);}
 ;
  BA.debugLineNum = 21;BA.debugLine="Sub InitKVS2";
 Debug.ShouldStop(1048576);
@@ -58,7 +58,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _snimiopcije(RemoteObject _ba,RemoteObject _kljuc,RemoteObject _s) throws Exception{
 try {
 		Debug.PushSubsStack("SnimiOpcije (f) ","f",7,_ba,f.mostCurrent,99);
-if (RapidSub.canDelegate("snimiopcije")) return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","snimiopcije", _ba, _kljuc, _s);
+if (RapidSub.canDelegate("snimiopcije")) { return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","snimiopcije", _ba, _kljuc, _s);}
 ;
 Debug.locals.put("kljuc", _kljuc);
 Debug.locals.put("s", _s);
@@ -80,7 +80,7 @@ finally {
 public static RemoteObject  _snimiopcije2(RemoteObject _ba,RemoteObject _kljuc,RemoteObject _i) throws Exception{
 try {
 		Debug.PushSubsStack("SnimiOpcije2 (f) ","f",7,_ba,f.mostCurrent,103);
-if (RapidSub.canDelegate("snimiopcije2")) return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","snimiopcije2", _ba, _kljuc, _i);
+if (RapidSub.canDelegate("snimiopcije2")) { return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","snimiopcije2", _ba, _kljuc, _i);}
 ;
 Debug.locals.put("kljuc", _kljuc);
 Debug.locals.put("i", _i);
@@ -102,7 +102,7 @@ finally {
 public static RemoteObject  _ucitajvrijednostiopt(RemoteObject _ba) throws Exception{
 try {
 		Debug.PushSubsStack("UcitajVrijednostiOpt (f) ","f",7,_ba,f.mostCurrent,25);
-if (RapidSub.canDelegate("ucitajvrijednostiopt")) return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","ucitajvrijednostiopt", _ba);
+if (RapidSub.canDelegate("ucitajvrijednostiopt")) { return com.no3dlauncher.f.remoteMe.runUserSub(false, "f","ucitajvrijednostiopt", _ba);}
 ;
  BA.debugLineNum = 25;BA.debugLine="Sub UcitajVrijednostiOpt";
 Debug.ShouldStop(16777216);

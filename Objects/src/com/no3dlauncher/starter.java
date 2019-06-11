@@ -108,12 +108,17 @@ public class starter extends  android.app.Service{
 	@Override
 	public void onDestroy() {
         super.onDestroy();
-        BA.LogInfo("** Service (starter) Destroy **");
-		processBA.raiseEvent(null, "service_destroy");
-        processBA.service = null;
-		mostCurrent = null;
-		processBA.setActivityPaused(true);
-        processBA.runHook("ondestroy", this, null);
+        if (true) {
+            BA.LogInfo("** Service (starter) Destroy (ignored)**");
+        }
+        else {
+            BA.LogInfo("** Service (starter) Destroy **");
+		    processBA.raiseEvent(null, "service_destroy");
+            processBA.service = null;
+		    mostCurrent = null;
+		    processBA.setActivityPaused(true);
+            processBA.runHook("ondestroy", this, null);
+        }
 	}
 
 @Override
@@ -132,8 +137,8 @@ public com.no3dlauncher.f _f = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _getinstalledapps() throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "getinstalledapps"))
-	return (String) Debug.delegate(processBA, "getinstalledapps", null);
+if (Debug.shouldDelegate(processBA, "getinstalledapps", false))
+	 {return ((String) Debug.delegate(processBA, "getinstalledapps", null));}
 anywheresoftware.b4a.phone.PackageManagerWrapper _pm = null;
 anywheresoftware.b4a.objects.collections.List _packages = null;
 anywheresoftware.b4j.object.JavaObject _jo = null;
@@ -161,7 +166,7 @@ RDebugUtils.currentLine=4063238;
 _mapa.Clear();
 RDebugUtils.currentLine=4063239;
  //BA.debugLineNum = 4063239;BA.debugLine="Log(\"starter: \" & mapa.Size)";
-anywheresoftware.b4a.keywords.Common.Log("starter: "+BA.NumberToString(_mapa.getSize()));
+anywheresoftware.b4a.keywords.Common.LogImpl("34063239","starter: "+BA.NumberToString(_mapa.getSize()),0);
 RDebugUtils.currentLine=4063240;
  //BA.debugLineNum = 4063240;BA.debugLine="listaSlova.Initialize";
 _listaslova.Initialize();
@@ -177,7 +182,7 @@ RDebugUtils.currentLine=4063245;
 final int step10 = 1;
 final int limit10 = (int) (_packages.getSize()-1);
 _i = (int) (0) ;
-for (;(step10 > 0 && _i <= limit10) || (step10 < 0 && _i >= limit10) ;_i = ((int)(0 + _i + step10))  ) {
+for (;_i <= limit10 ;_i = _i + step10 ) {
 RDebugUtils.currentLine=4063246;
  //BA.debugLineNum = 4063246;BA.debugLine="Dim p As String = packages.Get(i)";
 _p = BA.ObjectToString(_packages.Get(_i));
@@ -208,7 +213,7 @@ RDebugUtils.currentLine=4063268;
 final int step20 = 1;
 final int limit20 = (int) (_listaslova.getSize()-1);
 _i = (int) (0) ;
-for (;(step20 > 0 && _i <= limit20) || (step20 < 0 && _i >= limit20) ;_i = ((int)(0 + _i + step20))  ) {
+for (;_i <= limit20 ;_i = _i + step20 ) {
 RDebugUtils.currentLine=4063269;
  //BA.debugLineNum = 4063269;BA.debugLine="mTemp.Put(listaSlova.Get(i), i)";
 _mtemp.Put(_listaslova.Get(_i),(Object)(_i));
@@ -223,7 +228,7 @@ RDebugUtils.currentLine=4063272;
 final int step24 = 1;
 final int limit24 = (int) (_mtemp.getSize()-1);
 _i = (int) (0) ;
-for (;(step24 > 0 && _i <= limit24) || (step24 < 0 && _i >= limit24) ;_i = ((int)(0 + _i + step24))  ) {
+for (;_i <= limit24 ;_i = _i + step24 ) {
 RDebugUtils.currentLine=4063273;
  //BA.debugLineNum = 4063273;BA.debugLine="listaSlova.Add(mTemp.GetKeyAt(i))";
 _listaslova.Add(_mtemp.GetKeyAt(_i));
@@ -247,21 +252,21 @@ return "";
 }
 public static boolean  _application_error(anywheresoftware.b4a.objects.B4AException _error,String _stacktrace) throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "application_error"))
-	return (Boolean) Debug.delegate(processBA, "application_error", new Object[] {_error,_stacktrace});
-RDebugUtils.currentLine=3932160;
- //BA.debugLineNum = 3932160;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
-RDebugUtils.currentLine=3932161;
- //BA.debugLineNum = 3932161;BA.debugLine="Return True";
+if (Debug.shouldDelegate(processBA, "application_error", false))
+	 {return ((Boolean) Debug.delegate(processBA, "application_error", new Object[] {_error,_stacktrace}));}
+RDebugUtils.currentLine=589824;
+ //BA.debugLineNum = 589824;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
+RDebugUtils.currentLine=589825;
+ //BA.debugLineNum = 589825;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=3932162;
- //BA.debugLineNum = 3932162;BA.debugLine="End Sub";
+RDebugUtils.currentLine=589826;
+ //BA.debugLineNum = 589826;BA.debugLine="End Sub";
 return false;
 }
 public static anywheresoftware.b4a.objects.collections.Map  _sortmapkeys(anywheresoftware.b4a.objects.collections.Map _m,boolean _sortasc) throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "sortmapkeys"))
-	return (anywheresoftware.b4a.objects.collections.Map) Debug.delegate(processBA, "sortmapkeys", new Object[] {_m,_sortasc});
+if (Debug.shouldDelegate(processBA, "sortmapkeys", false))
+	 {return ((anywheresoftware.b4a.objects.collections.Map) Debug.delegate(processBA, "sortmapkeys", new Object[] {_m,_sortasc}));}
 anywheresoftware.b4a.objects.collections.List _keyslist = null;
 anywheresoftware.b4a.objects.collections.Map _m2 = null;
 int _i = 0;
@@ -289,7 +294,7 @@ RDebugUtils.currentLine=4128772;
 final int step5 = 1;
 final int limit5 = (int) (_m.getSize()-1);
 _i = (int) (0) ;
-for (;(step5 > 0 && _i <= limit5) || (step5 < 0 && _i >= limit5) ;_i = ((int)(0 + _i + step5))  ) {
+for (;_i <= limit5 ;_i = _i + step5 ) {
 RDebugUtils.currentLine=4128773;
  //BA.debugLineNum = 4128773;BA.debugLine="Private key As String = m.GetKeyAt(i)";
 _key = BA.ObjectToString(_m.GetKeyAt(_i));
@@ -307,7 +312,7 @@ RDebugUtils.currentLine=4128779;
 final int step10 = 1;
 final int limit10 = (int) (_keyslist.getSize()-1);
 _x = (int) (0) ;
-for (;(step10 > 0 && _x <= limit10) || (step10 < 0 && _x >= limit10) ;_x = ((int)(0 + _x + step10))  ) {
+for (;_x <= limit10 ;_x = _x + step10 ) {
 RDebugUtils.currentLine=4128780;
  //BA.debugLineNum = 4128780;BA.debugLine="Private key As String = KeysList.Get(x)";
 _key = BA.ObjectToString(_keyslist.Get(_x));
@@ -345,51 +350,51 @@ return null;
 }
 public static String  _service_create() throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "service_create"))
-	return (String) Debug.delegate(processBA, "service_create", null);
-RDebugUtils.currentLine=3735552;
- //BA.debugLineNum = 3735552;BA.debugLine="Sub Service_Create";
-RDebugUtils.currentLine=3735555;
- //BA.debugLineNum = 3735555;BA.debugLine="f.InitKVS2";
+if (Debug.shouldDelegate(processBA, "service_create", false))
+	 {return ((String) Debug.delegate(processBA, "service_create", null));}
+RDebugUtils.currentLine=393216;
+ //BA.debugLineNum = 393216;BA.debugLine="Sub Service_Create";
+RDebugUtils.currentLine=393219;
+ //BA.debugLineNum = 393219;BA.debugLine="f.InitKVS2";
 mostCurrent._f._initkvs2(processBA);
-RDebugUtils.currentLine=3735556;
- //BA.debugLineNum = 3735556;BA.debugLine="f.UcitajVrijednostiOpt";
+RDebugUtils.currentLine=393220;
+ //BA.debugLineNum = 393220;BA.debugLine="f.UcitajVrijednostiOpt";
 mostCurrent._f._ucitajvrijednostiopt(processBA);
-RDebugUtils.currentLine=3735557;
- //BA.debugLineNum = 3735557;BA.debugLine="GetInstalledApps";
+RDebugUtils.currentLine=393221;
+ //BA.debugLineNum = 393221;BA.debugLine="GetInstalledApps";
 _getinstalledapps();
-RDebugUtils.currentLine=3735558;
- //BA.debugLineNum = 3735558;BA.debugLine="End Sub";
+RDebugUtils.currentLine=393222;
+ //BA.debugLineNum = 393222;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_destroy() throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "service_destroy"))
-	return (String) Debug.delegate(processBA, "service_destroy", null);
-RDebugUtils.currentLine=3997696;
- //BA.debugLineNum = 3997696;BA.debugLine="Sub Service_Destroy";
-RDebugUtils.currentLine=3997698;
- //BA.debugLineNum = 3997698;BA.debugLine="End Sub";
+if (Debug.shouldDelegate(processBA, "service_destroy", false))
+	 {return ((String) Debug.delegate(processBA, "service_destroy", null));}
+RDebugUtils.currentLine=655360;
+ //BA.debugLineNum = 655360;BA.debugLine="Sub Service_Destroy";
+RDebugUtils.currentLine=655362;
+ //BA.debugLineNum = 655362;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_start(anywheresoftware.b4a.objects.IntentWrapper _startingintent) throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "service_start"))
-	return (String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent});
-RDebugUtils.currentLine=3801088;
- //BA.debugLineNum = 3801088;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
-RDebugUtils.currentLine=3801090;
- //BA.debugLineNum = 3801090;BA.debugLine="End Sub";
+if (Debug.shouldDelegate(processBA, "service_start", false))
+	 {return ((String) Debug.delegate(processBA, "service_start", new Object[] {_startingintent}));}
+RDebugUtils.currentLine=458752;
+ //BA.debugLineNum = 458752;BA.debugLine="Sub Service_Start (StartingIntent As Intent)";
+RDebugUtils.currentLine=458754;
+ //BA.debugLineNum = 458754;BA.debugLine="End Sub";
 return "";
 }
 public static String  _service_taskremoved() throws Exception{
 RDebugUtils.currentModule="starter";
-if (Debug.shouldDelegate(processBA, "service_taskremoved"))
-	return (String) Debug.delegate(processBA, "service_taskremoved", null);
-RDebugUtils.currentLine=3866624;
- //BA.debugLineNum = 3866624;BA.debugLine="Sub Service_TaskRemoved";
-RDebugUtils.currentLine=3866626;
- //BA.debugLineNum = 3866626;BA.debugLine="End Sub";
+if (Debug.shouldDelegate(processBA, "service_taskremoved", false))
+	 {return ((String) Debug.delegate(processBA, "service_taskremoved", null));}
+RDebugUtils.currentLine=524288;
+ //BA.debugLineNum = 524288;BA.debugLine="Sub Service_TaskRemoved";
+RDebugUtils.currentLine=524290;
+ //BA.debugLineNum = 524290;BA.debugLine="End Sub";
 return "";
 }
 }

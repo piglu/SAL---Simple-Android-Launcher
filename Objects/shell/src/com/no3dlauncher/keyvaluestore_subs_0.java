@@ -18,7 +18,7 @@ return RemoteObject.createImmutable("");
 public static RemoteObject  _close(RemoteObject __ref) throws Exception{
 try {
 		Debug.PushSubsStack("Close (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,111);
-if (RapidSub.canDelegate("close")) return __ref.runUserSub(false, "keyvaluestore","close", __ref);
+if (RapidSub.canDelegate("close")) { return __ref.runUserSub(false, "keyvaluestore","close", __ref);}
  BA.debugLineNum = 111;BA.debugLine="Public Sub Close";
 Debug.ShouldStop(16384);
  BA.debugLineNum = 112;BA.debugLine="sql1.Close";
@@ -37,7 +37,7 @@ finally {
 public static RemoteObject  _containskey(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
 		Debug.PushSubsStack("ContainsKey (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,98);
-if (RapidSub.canDelegate("containskey")) return __ref.runUserSub(false, "keyvaluestore","containskey", __ref, _key);
+if (RapidSub.canDelegate("containskey")) { return __ref.runUserSub(false, "keyvaluestore","containskey", __ref, _key);}
 Debug.locals.put("Key", _key);
  BA.debugLineNum = 98;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
 Debug.ShouldStop(2);
@@ -57,7 +57,7 @@ finally {
 public static RemoteObject  _createtable(RemoteObject __ref) throws Exception{
 try {
 		Debug.PushSubsStack("CreateTable (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,117);
-if (RapidSub.canDelegate("createtable")) return __ref.runUserSub(false, "keyvaluestore","createtable", __ref);
+if (RapidSub.canDelegate("createtable")) { return __ref.runUserSub(false, "keyvaluestore","createtable", __ref);}
  BA.debugLineNum = 117;BA.debugLine="Private Sub CreateTable";
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 118;BA.debugLine="sql1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS mai";
@@ -76,7 +76,7 @@ finally {
 public static RemoteObject  _deleteall(RemoteObject __ref) throws Exception{
 try {
 		Debug.PushSubsStack("DeleteAll (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,104);
-if (RapidSub.canDelegate("deleteall")) return __ref.runUserSub(false, "keyvaluestore","deleteall", __ref);
+if (RapidSub.canDelegate("deleteall")) { return __ref.runUserSub(false, "keyvaluestore","deleteall", __ref);}
  BA.debugLineNum = 104;BA.debugLine="Public Sub DeleteAll";
 Debug.ShouldStop(128);
  BA.debugLineNum = 105;BA.debugLine="sql1.ExecNonQuery(\"DROP TABLE main\")";
@@ -98,7 +98,7 @@ finally {
 public static RemoteObject  _get(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
 		Debug.PushSubsStack("Get (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,22);
-if (RapidSub.canDelegate("get")) return __ref.runUserSub(false, "keyvaluestore","get", __ref, _key);
+if (RapidSub.canDelegate("get")) { return __ref.runUserSub(false, "keyvaluestore","get", __ref, _key);}
 RemoteObject _rs = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.ResultSetWrapper");
 RemoteObject _result = RemoteObject.declareNull("Object");
 Debug.locals.put("Key", _key);
@@ -137,7 +137,7 @@ finally {
 public static RemoteObject  _getbitmap(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
 		Debug.PushSubsStack("GetBitmap (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,68);
-if (RapidSub.canDelegate("getbitmap")) return __ref.runUserSub(false, "keyvaluestore","getbitmap", __ref, _key);
+if (RapidSub.canDelegate("getbitmap")) { return __ref.runUserSub(false, "keyvaluestore","getbitmap", __ref, _key);}
 RemoteObject _b = null;
 RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.InputStreamWrapper");
 RemoteObject _bmp = RemoteObject.declareNull("anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper");
@@ -182,7 +182,7 @@ finally {
 public static RemoteObject  _getdefault(RemoteObject __ref,RemoteObject _key,RemoteObject _defaultvalue) throws Exception{
 try {
 		Debug.PushSubsStack("GetDefault (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,32);
-if (RapidSub.canDelegate("getdefault")) return __ref.runUserSub(false, "keyvaluestore","getdefault", __ref, _key, _defaultvalue);
+if (RapidSub.canDelegate("getdefault")) { return __ref.runUserSub(false, "keyvaluestore","getdefault", __ref, _key, _defaultvalue);}
 RemoteObject _res = RemoteObject.declareNull("Object");
 Debug.locals.put("Key", _key);
 Debug.locals.put("DefaultValue", _defaultvalue);
@@ -211,7 +211,7 @@ finally {
 public static RemoteObject  _getencrypted(RemoteObject __ref,RemoteObject _key,RemoteObject _password) throws Exception{
 try {
 		Debug.PushSubsStack("GetEncrypted (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,48);
-if (RapidSub.canDelegate("getencrypted")) return __ref.runUserSub(false, "keyvaluestore","getencrypted", __ref, _key, _password);
+if (RapidSub.canDelegate("getencrypted")) { return __ref.runUserSub(false, "keyvaluestore","getencrypted", __ref, _key, _password);}
 RemoteObject _cipher = RemoteObject.declareNull("anywheresoftware.b4a.object.B4XEncryption");
 RemoteObject _b = null;
 Debug.locals.put("Key", _key);
@@ -244,7 +244,7 @@ finally {
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
 		Debug.PushSubsStack("Initialize (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,8);
-if (RapidSub.canDelegate("initialize")) return __ref.runUserSub(false, "keyvaluestore","initialize", __ref, _ba, _dir, _filename);
+if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "keyvaluestore","initialize", __ref, _ba, _dir, _filename);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
 Debug.locals.put("Dir", _dir);
@@ -274,7 +274,7 @@ finally {
 public static RemoteObject  _listkeys(RemoteObject __ref) throws Exception{
 try {
 		Debug.PushSubsStack("ListKeys (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,86);
-if (RapidSub.canDelegate("listkeys")) return __ref.runUserSub(false, "keyvaluestore","listkeys", __ref);
+if (RapidSub.canDelegate("listkeys")) { return __ref.runUserSub(false, "keyvaluestore","listkeys", __ref);}
 RemoteObject _c = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.ResultSetWrapper");
 RemoteObject _res = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
  BA.debugLineNum = 86;BA.debugLine="Public Sub ListKeys As List";
@@ -316,7 +316,7 @@ finally {
 public static RemoteObject  _put(RemoteObject __ref,RemoteObject _key,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("Put (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,18);
-if (RapidSub.canDelegate("put")) return __ref.runUserSub(false, "keyvaluestore","put", __ref, _key, _value);
+if (RapidSub.canDelegate("put")) { return __ref.runUserSub(false, "keyvaluestore","put", __ref, _key, _value);}
 Debug.locals.put("Key", _key);
 Debug.locals.put("Value", _value);
  BA.debugLineNum = 18;BA.debugLine="Public Sub Put(Key As String, Value As Object)";
@@ -337,7 +337,7 @@ finally {
 public static RemoteObject  _putbitmap(RemoteObject __ref,RemoteObject _key,RemoteObject _value) throws Exception{
 try {
 		Debug.PushSubsStack("PutBitmap (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,60);
-if (RapidSub.canDelegate("putbitmap")) return __ref.runUserSub(false, "keyvaluestore","putbitmap", __ref, _key, _value);
+if (RapidSub.canDelegate("putbitmap")) { return __ref.runUserSub(false, "keyvaluestore","putbitmap", __ref, _key, _value);}
 RemoteObject _out = RemoteObject.declareNull("anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper");
 Debug.locals.put("Key", _key);
 Debug.locals.put("Value", _value);
@@ -371,7 +371,7 @@ finally {
 public static RemoteObject  _putencrypted(RemoteObject __ref,RemoteObject _key,RemoteObject _value,RemoteObject _password) throws Exception{
 try {
 		Debug.PushSubsStack("PutEncrypted (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,38);
-if (RapidSub.canDelegate("putencrypted")) return __ref.runUserSub(false, "keyvaluestore","putencrypted", __ref, _key, _value, _password);
+if (RapidSub.canDelegate("putencrypted")) { return __ref.runUserSub(false, "keyvaluestore","putencrypted", __ref, _key, _value, _password);}
 RemoteObject _cipher = RemoteObject.declareNull("anywheresoftware.b4a.object.B4XEncryption");
 Debug.locals.put("Key", _key);
 Debug.locals.put("Value", _value);
@@ -397,7 +397,7 @@ finally {
 public static RemoteObject  _remove(RemoteObject __ref,RemoteObject _key) throws Exception{
 try {
 		Debug.PushSubsStack("Remove (keyvaluestore) ","keyvaluestore",8,__ref.getField(false, "ba"),__ref,81);
-if (RapidSub.canDelegate("remove")) return __ref.runUserSub(false, "keyvaluestore","remove", __ref, _key);
+if (RapidSub.canDelegate("remove")) { return __ref.runUserSub(false, "keyvaluestore","remove", __ref, _key);}
 Debug.locals.put("Key", _key);
  BA.debugLineNum = 81;BA.debugLine="Public Sub Remove(Key As String)";
 Debug.ShouldStop(65536);

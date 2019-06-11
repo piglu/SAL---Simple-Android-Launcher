@@ -300,11 +300,14 @@ public class postavke_kontakti extends Activity implements B4AActivity{
     		this.activity = new WeakReference<Activity>(activity);
     	}
 		public void run() {
-			if (mostCurrent == null || mostCurrent != activity.get())
+            postavke_kontakti mc = mostCurrent;
+			if (mc == null || mc != activity.get())
 				return;
 			processBA.setActivityPaused(false);
             BA.LogInfo("** Activity (postavke_kontakti) Resume **");
-		    processBA.raiseEvent(mostCurrent._activity, "activity_resume", (Object[])null);
+            if (mc != mostCurrent)
+                return;
+		    processBA.raiseEvent(mc._activity, "activity_resume", (Object[])null);
 		}
     }
 	@Override
@@ -345,8 +348,8 @@ public com.no3dlauncher.f _f = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
 RDebugUtils.currentLine=6946816;
  //BA.debugLineNum = 6946816;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
 RDebugUtils.currentLine=6946818;
@@ -372,8 +375,8 @@ return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
 RDebugUtils.currentLine=7012352;
  //BA.debugLineNum = 7012352;BA.debugLine="Sub Activity_Resume";
 RDebugUtils.currentLine=7012354;
@@ -382,8 +385,8 @@ return "";
 }
 public static String  _edittext1_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "edittext1_textchanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "edittext1_textchanged", new Object[] {_old,_new});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "edittext1_textchanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edittext1_textchanged", new Object[] {_old,_new}));}
 RDebugUtils.currentLine=7143424;
  //BA.debugLineNum = 7143424;BA.debugLine="Sub EditText1_TextChanged (Old As String, New As S";
 RDebugUtils.currentLine=7143425;

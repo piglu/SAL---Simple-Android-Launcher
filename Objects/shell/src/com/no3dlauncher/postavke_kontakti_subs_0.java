@@ -9,7 +9,7 @@ public class postavke_kontakti_subs_0 {
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Create (postavke_kontakti) ","postavke_kontakti",5,postavke_kontakti.mostCurrent.activityBA,postavke_kontakti.mostCurrent,19);
-if (RapidSub.canDelegate("activity_create")) return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_create", _firsttime);
+if (RapidSub.canDelegate("activity_create")) { return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 19;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
 Debug.ShouldStop(262144);
@@ -35,7 +35,7 @@ finally {
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Pause (postavke_kontakti) ","postavke_kontakti",5,postavke_kontakti.mostCurrent.activityBA,postavke_kontakti.mostCurrent,31);
-if (RapidSub.canDelegate("activity_pause")) return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_pause", _userclosed);
+if (RapidSub.canDelegate("activity_pause")) { return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 31;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
 Debug.ShouldStop(1073741824);
@@ -52,7 +52,7 @@ finally {
 public static RemoteObject  _activity_resume() throws Exception{
 try {
 		Debug.PushSubsStack("Activity_Resume (postavke_kontakti) ","postavke_kontakti",5,postavke_kontakti.mostCurrent.activityBA,postavke_kontakti.mostCurrent,27);
-if (RapidSub.canDelegate("activity_resume")) return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_resume");
+if (RapidSub.canDelegate("activity_resume")) { return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","activity_resume");}
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(67108864);
  BA.debugLineNum = 29;BA.debugLine="End Sub";
@@ -68,7 +68,7 @@ finally {
 public static RemoteObject  _edittext1_textchanged(RemoteObject _old,RemoteObject _new) throws Exception{
 try {
 		Debug.PushSubsStack("EditText1_TextChanged (postavke_kontakti) ","postavke_kontakti",5,postavke_kontakti.mostCurrent.activityBA,postavke_kontakti.mostCurrent,35);
-if (RapidSub.canDelegate("edittext1_textchanged")) return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","edittext1_textchanged", _old, _new);
+if (RapidSub.canDelegate("edittext1_textchanged")) { return com.no3dlauncher.postavke_kontakti.remoteMe.runUserSub(false, "postavke_kontakti","edittext1_textchanged", _old, _new);}
 Debug.locals.put("Old", _old);
 Debug.locals.put("New", _new);
  BA.debugLineNum = 35;BA.debugLine="Sub EditText1_TextChanged (Old As String, New As S";

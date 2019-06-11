@@ -16,6 +16,7 @@ Sub Class_Globals
 	Private cr As ContentResolver
 	Private dataUri, contactUri, rawContactUri As Uri
 	Private GroupSources As Map
+	Private rp As RuntimePermissions
 End Sub
 
 Public Sub Initialize
@@ -55,6 +56,9 @@ Public Sub Initialize
 	eventTypes.Put("1", "anniversary")
 	eventTypes.Put("2", "other")
 	eventTypes.Put("3", "birthday")
+	rp.CheckAndRequest(rp.PERMISSION_READ_CONTACTS)
+	rp.CheckAndRequest(rp.PERMISSION_WRITE_CONTACTS)
+	rp.CheckAndRequest(rp.PERMISSION_CALL_PHONE)
 End Sub
 
 'Returns a List with cuContact items based on the given name.

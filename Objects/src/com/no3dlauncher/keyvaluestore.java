@@ -45,8 +45,8 @@ public String  _initialize(com.no3dlauncher.keyvaluestore __ref,anywheresoftware
 __ref = this;
 innerInitialize(_ba);
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "initialize"))
-	return (String) Debug.delegate(ba, "initialize", new Object[] {_ba,_dir,_filename});
+if (Debug.shouldDelegate(ba, "initialize", false))
+	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_dir,_filename}));}
 RDebugUtils.currentLine=9895936;
  //BA.debugLineNum = 9895936;BA.debugLine="Public Sub Initialize (Dir As String, FileName As";
 RDebugUtils.currentLine=9895937;
@@ -66,8 +66,8 @@ return "";
 public String  _put(com.no3dlauncher.keyvaluestore __ref,String _key,Object _value) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "put"))
-	return (String) Debug.delegate(ba, "put", new Object[] {_key,_value});
+if (Debug.shouldDelegate(ba, "put", false))
+	 {return ((String) Debug.delegate(ba, "put", new Object[] {_key,_value}));}
 RDebugUtils.currentLine=9961472;
  //BA.debugLineNum = 9961472;BA.debugLine="Public Sub Put(Key As String, Value As Object)";
 RDebugUtils.currentLine=9961473;
@@ -80,8 +80,8 @@ return "";
 public boolean  _containskey(com.no3dlauncher.keyvaluestore __ref,String _key) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "containskey"))
-	return (Boolean) Debug.delegate(ba, "containskey", new Object[] {_key});
+if (Debug.shouldDelegate(ba, "containskey", false))
+	 {return ((Boolean) Debug.delegate(ba, "containskey", new Object[] {_key}));}
 RDebugUtils.currentLine=10551296;
  //BA.debugLineNum = 10551296;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
 RDebugUtils.currentLine=10551297;
@@ -94,8 +94,8 @@ return false;
 public Object  _get(com.no3dlauncher.keyvaluestore __ref,String _key) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "get"))
-	return (Object) Debug.delegate(ba, "get", new Object[] {_key});
+if (Debug.shouldDelegate(ba, "get", false))
+	 {return ((Object) Debug.delegate(ba, "get", new Object[] {_key}));}
 anywheresoftware.b4a.sql.SQL.ResultSetWrapper _rs = null;
 Object _result = null;
 RDebugUtils.currentLine=10027008;
@@ -142,8 +142,8 @@ return "";
 public String  _close(com.no3dlauncher.keyvaluestore __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "close"))
-	return (String) Debug.delegate(ba, "close", null);
+if (Debug.shouldDelegate(ba, "close", false))
+	 {return ((String) Debug.delegate(ba, "close", null));}
 RDebugUtils.currentLine=10682368;
  //BA.debugLineNum = 10682368;BA.debugLine="Public Sub Close";
 RDebugUtils.currentLine=10682369;
@@ -156,8 +156,8 @@ return "";
 public String  _createtable(com.no3dlauncher.keyvaluestore __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "createtable"))
-	return (String) Debug.delegate(ba, "createtable", null);
+if (Debug.shouldDelegate(ba, "createtable", false))
+	 {return ((String) Debug.delegate(ba, "createtable", null));}
 RDebugUtils.currentLine=10747904;
  //BA.debugLineNum = 10747904;BA.debugLine="Private Sub CreateTable";
 RDebugUtils.currentLine=10747905;
@@ -170,8 +170,8 @@ return "";
 public String  _deleteall(com.no3dlauncher.keyvaluestore __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "deleteall"))
-	return (String) Debug.delegate(ba, "deleteall", null);
+if (Debug.shouldDelegate(ba, "deleteall", false))
+	 {return ((String) Debug.delegate(ba, "deleteall", null));}
 RDebugUtils.currentLine=10616832;
  //BA.debugLineNum = 10616832;BA.debugLine="Public Sub DeleteAll";
 RDebugUtils.currentLine=10616833;
@@ -187,8 +187,8 @@ return "";
 public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _getbitmap(com.no3dlauncher.keyvaluestore __ref,String _key) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "getbitmap"))
-	return (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) Debug.delegate(ba, "getbitmap", new Object[] {_key});
+if (Debug.shouldDelegate(ba, "getbitmap", false))
+	 {return ((anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) Debug.delegate(ba, "getbitmap", new Object[] {_key}));}
 byte[] _b = null;
 anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _in = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp = null;
@@ -226,8 +226,8 @@ return null;
 public Object  _getdefault(com.no3dlauncher.keyvaluestore __ref,String _key,Object _defaultvalue) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "getdefault"))
-	return (Object) Debug.delegate(ba, "getdefault", new Object[] {_key,_defaultvalue});
+if (Debug.shouldDelegate(ba, "getdefault", false))
+	 {return ((Object) Debug.delegate(ba, "getdefault", new Object[] {_key,_defaultvalue}));}
 Object _res = null;
 RDebugUtils.currentLine=10092544;
  //BA.debugLineNum = 10092544;BA.debugLine="Public Sub GetDefault(Key As String, DefaultValue";
@@ -248,8 +248,8 @@ return null;
 public Object  _getencrypted(com.no3dlauncher.keyvaluestore __ref,String _key,String _password) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "getencrypted"))
-	return (Object) Debug.delegate(ba, "getencrypted", new Object[] {_key,_password});
+if (Debug.shouldDelegate(ba, "getencrypted", false))
+	 {return ((Object) Debug.delegate(ba, "getencrypted", new Object[] {_key,_password}));}
 anywheresoftware.b4a.object.B4XEncryption _cipher = null;
 byte[] _b = null;
 RDebugUtils.currentLine=10223616;
@@ -274,8 +274,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _listkeys(com.no3dlauncher.keyvaluestore __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "listkeys"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "listkeys", null);
+if (Debug.shouldDelegate(ba, "listkeys", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "listkeys", null));}
 anywheresoftware.b4a.sql.SQL.ResultSetWrapper _c = null;
 anywheresoftware.b4a.objects.collections.List _res = null;
 RDebugUtils.currentLine=10485760;
@@ -311,8 +311,8 @@ return null;
 public String  _putbitmap(com.no3dlauncher.keyvaluestore __ref,String _key,anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _value) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "putbitmap"))
-	return (String) Debug.delegate(ba, "putbitmap", new Object[] {_key,_value});
+if (Debug.shouldDelegate(ba, "putbitmap", false))
+	 {return ((String) Debug.delegate(ba, "putbitmap", new Object[] {_key,_value}));}
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
 RDebugUtils.currentLine=10289152;
  //BA.debugLineNum = 10289152;BA.debugLine="Public Sub PutBitmap(Key As String, Value As Bitma";
@@ -338,8 +338,8 @@ return "";
 public String  _putencrypted(com.no3dlauncher.keyvaluestore __ref,String _key,Object _value,String _password) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "putencrypted"))
-	return (String) Debug.delegate(ba, "putencrypted", new Object[] {_key,_value,_password});
+if (Debug.shouldDelegate(ba, "putencrypted", false))
+	 {return ((String) Debug.delegate(ba, "putencrypted", new Object[] {_key,_value,_password}));}
 anywheresoftware.b4a.object.B4XEncryption _cipher = null;
 RDebugUtils.currentLine=10158080;
  //BA.debugLineNum = 10158080;BA.debugLine="Public Sub PutEncrypted (Key As String, Value As O";
@@ -356,8 +356,8 @@ return "";
 public String  _remove(com.no3dlauncher.keyvaluestore __ref,String _key) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="keyvaluestore";
-if (Debug.shouldDelegate(ba, "remove"))
-	return (String) Debug.delegate(ba, "remove", new Object[] {_key});
+if (Debug.shouldDelegate(ba, "remove", false))
+	 {return ((String) Debug.delegate(ba, "remove", new Object[] {_key}));}
 RDebugUtils.currentLine=10420224;
  //BA.debugLineNum = 10420224;BA.debugLine="Public Sub Remove(Key As String)";
 RDebugUtils.currentLine=10420225;

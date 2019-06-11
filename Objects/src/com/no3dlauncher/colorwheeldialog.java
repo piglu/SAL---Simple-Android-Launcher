@@ -49,8 +49,8 @@ public String  _initialize(com.no3dlauncher.colorwheeldialog __ref,anywheresoftw
 __ref = this;
 innerInitialize(_ba);
 RDebugUtils.currentModule="colorwheeldialog";
-if (Debug.shouldDelegate(ba, "initialize"))
-	return (String) Debug.delegate(ba, "initialize", new Object[] {_ba});
+if (Debug.shouldDelegate(ba, "initialize", false))
+	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
 RDebugUtils.currentLine=11206656;
  //BA.debugLineNum = 11206656;BA.debugLine="Public Sub Initialize";
 RDebugUtils.currentLine=11206658;
@@ -58,6 +58,9 @@ RDebugUtils.currentLine=11206658;
 return "";
 }
 public void  _showasync(com.no3dlauncher.colorwheeldialog __ref,Object _callback,String _title) throws Exception{
+RDebugUtils.currentModule="colorwheeldialog";
+if (Debug.shouldDelegate(ba, "showasync", false))
+	 {Debug.delegate(ba, "showasync", new Object[] {_callback,_title}); return;}
 ResumableSub_ShowAsync rsub = new ResumableSub_ShowAsync(this,__ref,_callback,_title);
 rsub.resume(ba, null);
 }
@@ -67,6 +70,7 @@ this.parent = parent;
 this.__ref = __ref;
 this._callback = _callback;
 this._title = _title;
+this.__ref = parent;
 }
 com.no3dlauncher.colorwheeldialog __ref;
 com.no3dlauncher.colorwheeldialog parent;
@@ -79,8 +83,7 @@ int _result = 0;
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
 RDebugUtils.currentModule="colorwheeldialog";
-Debug.delegate(ba, "showasync", new Object[] {_callback,_title});
-if (true) return;
+
     while (true) {
         switch (state) {
             case -1:
@@ -97,7 +100,7 @@ RDebugUtils.currentLine=11272194;
 __ref._dialog.SetSize(parent.__c.DipToCurrent((int) (300)),parent.__c.DipToCurrent((int) (450)));
 RDebugUtils.currentLine=11272195;
  //BA.debugLineNum = 11272195;BA.debugLine="Wait For (sf) Dialog_Ready (DialogPanel As Panel)";
-parent.__c.WaitFor("dialog_ready", ba, this, _sf);
+parent.__c.WaitFor("dialog_ready", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 1;
 return;
 case 1:
@@ -116,7 +119,7 @@ RDebugUtils.currentLine=11272198;
 __ref._cvsoverlay.Initialize((android.view.View)(__ref._pnloverlay.getObject()));
 RDebugUtils.currentLine=11272199;
  //BA.debugLineNum = 11272199;BA.debugLine="Wait For (sf) Dialog_Result (Result As Int)";
-parent.__c.WaitFor("dialog_result", ba, this, _sf);
+parent.__c.WaitFor("dialog_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 2;
 return;
 case 2:
@@ -165,8 +168,8 @@ return "";
 public String  _pnlcolors_touch(com.no3dlauncher.colorwheeldialog __ref,int _action,float _x,float _y) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="colorwheeldialog";
-if (Debug.shouldDelegate(ba, "pnlcolors_touch"))
-	return (String) Debug.delegate(ba, "pnlcolors_touch", new Object[] {_action,_x,_y});
+if (Debug.shouldDelegate(ba, "pnlcolors_touch", false))
+	 {return ((String) Debug.delegate(ba, "pnlcolors_touch", new Object[] {_action,_x,_y}));}
 float _cx = 0f;
 float _cy = 0f;
 RDebugUtils.currentLine=11337728;

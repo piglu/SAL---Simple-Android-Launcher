@@ -8,8 +8,11 @@ public class LS_mejn{
 
 public static void LS_320x480_1(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
+//BA.debugLineNum = 2;BA.debugLine="btnMeni.Left = 2%x"[mejn/320x480,scale=1]
 views.get("btnmeni").vw.setLeft((int)((2d / 100 * width)));
+//BA.debugLineNum = 3;BA.debugLine="btnMeni.Bottom = 100%y - 2%y"[mejn/320x480,scale=1]
 views.get("btnmeni").vw.setTop((int)((100d / 100 * height)-(2d / 100 * height) - (views.get("btnmeni").vw.getHeight())));
+//BA.debugLineNum = 4;BA.debugLine="btnMeni.Width = 12%x"[mejn/320x480,scale=1]
 views.get("btnmeni").vw.setWidth((int)((12d / 100 * width)));
 //BA.debugLineNum = 5;BA.debugLine="btnMeni.Height = 12%x"[mejn/320x480,scale=1]
 views.get("btnmeni").vw.setHeight((int)((12d / 100 * width)));

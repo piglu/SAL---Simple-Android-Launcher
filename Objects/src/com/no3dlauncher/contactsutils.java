@@ -104,6 +104,7 @@ public anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _datauri =
 public anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _contacturi = null;
 public anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _rawcontacturi = null;
 public anywheresoftware.b4a.objects.collections.Map _groupsources = null;
+public anywheresoftware.b4a.objects.RuntimePermissions _rp = null;
 public com.no3dlauncher.main _main = null;
 public com.no3dlauncher.starter _starter = null;
 public com.no3dlauncher.pnlmeni_postavke _pnlmeni_postavke = null;
@@ -116,8 +117,8 @@ public String  _initialize(com.no3dlauncher.contactsutils __ref,anywheresoftware
 __ref = this;
 innerInitialize(_ba);
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "initialize"))
-	return (String) Debug.delegate(ba, "initialize", new Object[] {_ba});
+if (Debug.shouldDelegate(ba, "initialize", false))
+	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
 RDebugUtils.currentLine=7274496;
  //BA.debugLineNum = 7274496;BA.debugLine="Public Sub Initialize";
 RDebugUtils.currentLine=7274497;
@@ -223,14 +224,23 @@ RDebugUtils.currentLine=7274532;
  //BA.debugLineNum = 7274532;BA.debugLine="eventTypes.Put(\"3\", \"birthday\")";
 __ref._eventtypes.Put((Object)("3"),(Object)("birthday"));
 RDebugUtils.currentLine=7274533;
- //BA.debugLineNum = 7274533;BA.debugLine="End Sub";
+ //BA.debugLineNum = 7274533;BA.debugLine="rp.CheckAndRequest(rp.PERMISSION_READ_CONTACTS)";
+__ref._rp.CheckAndRequest(ba,__ref._rp.PERMISSION_READ_CONTACTS);
+RDebugUtils.currentLine=7274534;
+ //BA.debugLineNum = 7274534;BA.debugLine="rp.CheckAndRequest(rp.PERMISSION_WRITE_CONTACTS)";
+__ref._rp.CheckAndRequest(ba,__ref._rp.PERMISSION_WRITE_CONTACTS);
+RDebugUtils.currentLine=7274535;
+ //BA.debugLineNum = 7274535;BA.debugLine="rp.CheckAndRequest(rp.PERMISSION_CALL_PHONE)";
+__ref._rp.CheckAndRequest(ba,__ref._rp.PERMISSION_CALL_PHONE);
+RDebugUtils.currentLine=7274536;
+ //BA.debugLineNum = 7274536;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.collections.List  _getemails(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getemails"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getemails", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getemails", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getemails", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _res = null;
 Object[] _obj = null;
 com.no3dlauncher.contactsutils._cuemail _e = null;
@@ -278,8 +288,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.Map  _getaccounts(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getaccounts"))
-	return (anywheresoftware.b4a.objects.collections.Map) Debug.delegate(ba, "getaccounts", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getaccounts", false))
+	 {return ((anywheresoftware.b4a.objects.collections.Map) Debug.delegate(ba, "getaccounts", new Object[] {_id}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _uri = null;
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 anywheresoftware.b4a.objects.collections.Map _m = null;
@@ -308,7 +318,7 @@ RDebugUtils.currentLine=9175046;
 final int step6 = 1;
 final int limit6 = (int) (_c.getRowCount()-1);
 _i = (int) (0) ;
-for (;(step6 > 0 && _i <= limit6) || (step6 < 0 && _i >= limit6) ;_i = ((int)(0 + _i + step6))  ) {
+for (;_i <= limit6 ;_i = _i + step6 ) {
 RDebugUtils.currentLine=9175047;
  //BA.debugLineNum = 9175047;BA.debugLine="c.Position = i";
 _c.setPosition(_i);
@@ -330,8 +340,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _getevents(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getevents"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getevents", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getevents", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getevents", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _res = null;
 Object[] _obj = null;
 com.no3dlauncher.contactsutils._cuevent _e = null;
@@ -379,8 +389,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _getgroups(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getgroups"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getgroups", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getgroups", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getgroups", new Object[] {_id}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _uri = null;
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 anywheresoftware.b4a.objects.collections.List _groups = null;
@@ -413,7 +423,7 @@ RDebugUtils.currentLine=9306119;
 final int step7 = 1;
 final int limit7 = (int) (_c.getRowCount()-1);
 _i = (int) (0) ;
-for (;(step7 > 0 && _i <= limit7) || (step7 < 0 && _i >= limit7) ;_i = ((int)(0 + _i + step7))  ) {
+for (;_i <= limit7 ;_i = _i + step7 ) {
 RDebugUtils.currentLine=9306120;
  //BA.debugLineNum = 9306120;BA.debugLine="c.Position = i";
 _c.setPosition(_i);
@@ -446,8 +456,8 @@ return null;
 public String  _getnamefromid(com.no3dlauncher.contactsutils __ref,String _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getnamefromid"))
-	return (String) Debug.delegate(ba, "getnamefromid", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getnamefromid", false))
+	 {return ((String) Debug.delegate(ba, "getnamefromid", new Object[] {_id}));}
 anywheresoftware.b4a.sql.SQL.CursorWrapper _crsr = null;
 String _name = "";
 RDebugUtils.currentLine=7798784;
@@ -464,7 +474,7 @@ RDebugUtils.currentLine=7798788;
 if (_crsr.getRowCount()==0) { 
 RDebugUtils.currentLine=7798789;
  //BA.debugLineNum = 7798789;BA.debugLine="Log(\"Contact not found: \" & id)";
-__c.Log("Contact not found: "+_id);
+__c.LogImpl("37798789","Contact not found: "+_id,0);
  }else {
 RDebugUtils.currentLine=7798791;
  //BA.debugLineNum = 7798791;BA.debugLine="crsr.Position = 0";
@@ -486,8 +496,8 @@ return "";
 public String  _getnote(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getnote"))
-	return (String) Debug.delegate(ba, "getnote", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getnote", false))
+	 {return ((String) Debug.delegate(ba, "getnote", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _raw = null;
 Object[] _obj = null;
 RDebugUtils.currentLine=8192000;
@@ -513,8 +523,8 @@ return "";
 public com.no3dlauncher.contactsutils._cuorganization  _getorganization(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getorganization"))
-	return (com.no3dlauncher.contactsutils._cuorganization) Debug.delegate(ba, "getorganization", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getorganization", false))
+	 {return ((com.no3dlauncher.contactsutils._cuorganization) Debug.delegate(ba, "getorganization", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _organizations = null;
 com.no3dlauncher.contactsutils._cuorganization _o = null;
 Object[] _obj = null;
@@ -553,8 +563,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _getphones(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getphones"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getphones", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getphones", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getphones", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _res = null;
 Object[] _obj = null;
 com.no3dlauncher.contactsutils._cuphone _p = null;
@@ -602,8 +612,8 @@ return null;
 public boolean  _getstarred(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getstarred"))
-	return (Boolean) Debug.delegate(ba, "getstarred", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getstarred", false))
+	 {return ((Boolean) Debug.delegate(ba, "getstarred", new Object[] {_id}));}
 anywheresoftware.b4a.sql.SQL.CursorWrapper _crsr = null;
 boolean _starred = false;
 RDebugUtils.currentLine=8323072;
@@ -631,8 +641,8 @@ return false;
 public anywheresoftware.b4a.objects.collections.List  _findallcontacts(com.no3dlauncher.contactsutils __ref,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findallcontacts"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findallcontacts", new Object[] {_visibleonly});
+if (Debug.shouldDelegate(ba, "findallcontacts", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findallcontacts", new Object[] {_visibleonly}));}
 RDebugUtils.currentLine=7667712;
  //BA.debugLineNum = 7667712;BA.debugLine="Public Sub FindAllContacts(VisibleOnly As Boolean)";
 RDebugUtils.currentLine=7667713;
@@ -645,8 +655,8 @@ return null;
 public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _getphoto(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getphoto"))
-	return (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) Debug.delegate(ba, "getphoto", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "getphoto", false))
+	 {return ((anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) Debug.delegate(ba, "getphoto", new Object[] {_id}));}
 anywheresoftware.b4a.objects.collections.List _raw = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp = null;
 Object[] _obj = null;
@@ -697,8 +707,8 @@ return null;
 public String  _addemail(com.no3dlauncher.contactsutils __ref,long _id,String _email,String _emailtype) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "addemail"))
-	return (String) Debug.delegate(ba, "addemail", new Object[] {_id,_email,_emailtype});
+if (Debug.shouldDelegate(ba, "addemail", false))
+	 {return ((String) Debug.delegate(ba, "addemail", new Object[] {_id,_email,_emailtype}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _v = null;
 RDebugUtils.currentLine=8585216;
  //BA.debugLineNum = 8585216;BA.debugLine="Public Sub AddEmail(Id As Long, Email As String, E";
@@ -724,8 +734,8 @@ return "";
 public int  _getkeyfromvalue(com.no3dlauncher.contactsutils __ref,anywheresoftware.b4a.objects.collections.Map _m,String _v,int _defaultvalue) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getkeyfromvalue"))
-	return (Integer) Debug.delegate(ba, "getkeyfromvalue", new Object[] {_m,_v,_defaultvalue});
+if (Debug.shouldDelegate(ba, "getkeyfromvalue", false))
+	 {return ((Integer) Debug.delegate(ba, "getkeyfromvalue", new Object[] {_m,_v,_defaultvalue}));}
 int _t = 0;
 int _i = 0;
 RDebugUtils.currentLine=8847360;
@@ -739,7 +749,7 @@ RDebugUtils.currentLine=8847362;
 final int step2 = 1;
 final int limit2 = (int) (_m.getSize()-1);
 _i = (int) (0) ;
-for (;(step2 > 0 && _i <= limit2) || (step2 < 0 && _i >= limit2) ;_i = ((int)(0 + _i + step2))  ) {
+for (;_i <= limit2 ;_i = _i + step2 ) {
 RDebugUtils.currentLine=8847363;
  //BA.debugLineNum = 8847363;BA.debugLine="If m.GetValueAt(i) = v Then";
 if ((_m.GetValueAt(_i)).equals((Object)(_v))) { 
@@ -762,8 +772,8 @@ return 0;
 public String  _setdata(com.no3dlauncher.contactsutils __ref,String _mime,anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _values,long _id,boolean _update) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "setdata"))
-	return (String) Debug.delegate(ba, "setdata", new Object[] {_mime,_values,_id,_update});
+if (Debug.shouldDelegate(ba, "setdata", false))
+	 {return ((String) Debug.delegate(ba, "setdata", new Object[] {_mime,_values,_id,_update}));}
 anywheresoftware.b4a.sql.SQL.CursorWrapper _crsr = null;
 RDebugUtils.currentLine=8978432;
  //BA.debugLineNum = 8978432;BA.debugLine="Private Sub SetData(Mime As String, Values As Cont";
@@ -783,7 +793,7 @@ RDebugUtils.currentLine=8978438;
 if (_crsr.getRowCount()==0) { 
 RDebugUtils.currentLine=8978439;
  //BA.debugLineNum = 8978439;BA.debugLine="Log(\"Error getting raw_contact_id\")";
-__c.Log("Error getting raw_contact_id");
+__c.LogImpl("38978439","Error getting raw_contact_id",0);
 RDebugUtils.currentLine=8978440;
  //BA.debugLineNum = 8978440;BA.debugLine="crsr.Close";
 _crsr.Close();
@@ -814,8 +824,8 @@ return "";
 public String  _addnote(com.no3dlauncher.contactsutils __ref,long _id,String _note) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "addnote"))
-	return (String) Debug.delegate(ba, "addnote", new Object[] {_id,_note});
+if (Debug.shouldDelegate(ba, "addnote", false))
+	 {return ((String) Debug.delegate(ba, "addnote", new Object[] {_id,_note}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _v = null;
 RDebugUtils.currentLine=8519680;
  //BA.debugLineNum = 8519680;BA.debugLine="Public Sub AddNote(Id As Long, Note As String)";
@@ -838,8 +848,8 @@ return "";
 public String  _addphone(com.no3dlauncher.contactsutils __ref,long _id,String _phonenumber,String _phonetype) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "addphone"))
-	return (String) Debug.delegate(ba, "addphone", new Object[] {_id,_phonenumber,_phonetype});
+if (Debug.shouldDelegate(ba, "addphone", false))
+	 {return ((String) Debug.delegate(ba, "addphone", new Object[] {_id,_phonenumber,_phonetype}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _v = null;
 RDebugUtils.currentLine=8650752;
  //BA.debugLineNum = 8650752;BA.debugLine="Public Sub AddPhone(Id As Long, PhoneNumber As Str";
@@ -899,14 +909,17 @@ RDebugUtils.currentLine=7208969;
  //BA.debugLineNum = 7208969;BA.debugLine="Private GroupSources As Map";
 _groupsources = new anywheresoftware.b4a.objects.collections.Map();
 RDebugUtils.currentLine=7208970;
- //BA.debugLineNum = 7208970;BA.debugLine="End Sub";
+ //BA.debugLineNum = 7208970;BA.debugLine="Private rp As RuntimePermissions";
+_rp = new anywheresoftware.b4a.objects.RuntimePermissions();
+RDebugUtils.currentLine=7208971;
+ //BA.debugLineNum = 7208971;BA.debugLine="End Sub";
 return "";
 }
 public String  _deletecontact(com.no3dlauncher.contactsutils __ref,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "deletecontact"))
-	return (String) Debug.delegate(ba, "deletecontact", new Object[] {_id});
+if (Debug.shouldDelegate(ba, "deletecontact", false))
+	 {return ((String) Debug.delegate(ba, "deletecontact", new Object[] {_id}));}
 RDebugUtils.currentLine=9109504;
  //BA.debugLineNum = 9109504;BA.debugLine="Public Sub DeleteContact(Id As Long)";
 RDebugUtils.currentLine=9109505;
@@ -919,8 +932,8 @@ return "";
 public String  _deletedata(com.no3dlauncher.contactsutils __ref,String _mime,String _data1value,long _id) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "deletedata"))
-	return (String) Debug.delegate(ba, "deletedata", new Object[] {_mime,_data1value,_id});
+if (Debug.shouldDelegate(ba, "deletedata", false))
+	 {return ((String) Debug.delegate(ba, "deletedata", new Object[] {_mime,_data1value,_id}));}
 RDebugUtils.currentLine=8912896;
  //BA.debugLineNum = 8912896;BA.debugLine="Private Sub DeleteData(Mime As String, Data1Value";
 RDebugUtils.currentLine=8912897;
@@ -933,8 +946,8 @@ return "";
 public String  _deleteemail(com.no3dlauncher.contactsutils __ref,long _id,String _email) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "deleteemail"))
-	return (String) Debug.delegate(ba, "deleteemail", new Object[] {_id,_email});
+if (Debug.shouldDelegate(ba, "deleteemail", false))
+	 {return ((String) Debug.delegate(ba, "deleteemail", new Object[] {_id,_email}));}
 RDebugUtils.currentLine=8781824;
  //BA.debugLineNum = 8781824;BA.debugLine="Public Sub DeleteEmail(Id As Long,Email As String)";
 RDebugUtils.currentLine=8781825;
@@ -947,8 +960,8 @@ return "";
 public String  _deletephone(com.no3dlauncher.contactsutils __ref,long _id,String _phonenumber) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "deletephone"))
-	return (String) Debug.delegate(ba, "deletephone", new Object[] {_id,_phonenumber});
+if (Debug.shouldDelegate(ba, "deletephone", false))
+	 {return ((String) Debug.delegate(ba, "deletephone", new Object[] {_id,_phonenumber}));}
 RDebugUtils.currentLine=8716288;
  //BA.debugLineNum = 8716288;BA.debugLine="Public Sub DeletePhone(Id As Long, PhoneNumber As";
 RDebugUtils.currentLine=8716289;
@@ -961,8 +974,8 @@ return "";
 public String  _fillgroupsources(com.no3dlauncher.contactsutils __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "fillgroupsources"))
-	return (String) Debug.delegate(ba, "fillgroupsources", null);
+if (Debug.shouldDelegate(ba, "fillgroupsources", false))
+	 {return ((String) Debug.delegate(ba, "fillgroupsources", null));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _gu = null;
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 int _i = 0;
@@ -990,7 +1003,7 @@ RDebugUtils.currentLine=9240582;
 final int step6 = 1;
 final int limit6 = (int) (_c.getRowCount()-1);
 _i = (int) (0) ;
-for (;(step6 > 0 && _i <= limit6) || (step6 < 0 && _i >= limit6) ;_i = ((int)(0 + _i + step6))  ) {
+for (;_i <= limit6 ;_i = _i + step6 ) {
 RDebugUtils.currentLine=9240583;
  //BA.debugLineNum = 9240583;BA.debugLine="c.Position = i";
 _c.setPosition(_i);
@@ -1007,8 +1020,8 @@ return "";
 public anywheresoftware.b4a.objects.collections.List  _findcontactsidfromdata(com.no3dlauncher.contactsutils __ref,String _mime,String _datacolumn,String _value,String _operator,boolean _exact,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsidfromdata"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsidfromdata", new Object[] {_mime,_datacolumn,_value,_operator,_exact,_visibleonly});
+if (Debug.shouldDelegate(ba, "findcontactsidfromdata", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsidfromdata", new Object[] {_mime,_datacolumn,_value,_operator,_exact,_visibleonly}));}
 String _selection = "";
 anywheresoftware.b4a.sql.SQL.CursorWrapper _crsr = null;
 anywheresoftware.b4a.objects.collections.List _res = null;
@@ -1056,7 +1069,7 @@ RDebugUtils.currentLine=7864334;
 final int step12 = 1;
 final int limit12 = (int) (_crsr.getRowCount()-1);
 _i = (int) (0) ;
-for (;(step12 > 0 && _i <= limit12) || (step12 < 0 && _i >= limit12) ;_i = ((int)(0 + _i + step12))  ) {
+for (;_i <= limit12 ;_i = _i + step12 ) {
 RDebugUtils.currentLine=7864335;
  //BA.debugLineNum = 7864335;BA.debugLine="crsr.Position = i";
 _crsr.setPosition(_i);
@@ -1097,8 +1110,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactsbymail(com.no3dlauncher.contactsutils __ref,String _mail,boolean _exact,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsbymail"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbymail", new Object[] {_mail,_exact,_visibleonly});
+if (Debug.shouldDelegate(ba, "findcontactsbymail", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbymail", new Object[] {_mail,_exact,_visibleonly}));}
 RDebugUtils.currentLine=7405568;
  //BA.debugLineNum = 7405568;BA.debugLine="Public Sub FindContactsByMail(Mail As String, Exac";
 RDebugUtils.currentLine=7405569;
@@ -1111,8 +1124,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactsbyname(com.no3dlauncher.contactsutils __ref,String _name,boolean _exact,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsbyname"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbyname", new Object[] {_name,_exact,_visibleonly});
+if (Debug.shouldDelegate(ba, "findcontactsbyname", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbyname", new Object[] {_name,_exact,_visibleonly}));}
 RDebugUtils.currentLine=7340032;
  //BA.debugLineNum = 7340032;BA.debugLine="Public Sub FindContactsByName(Name As String, Exac";
 RDebugUtils.currentLine=7340033;
@@ -1125,8 +1138,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactsbynotes(com.no3dlauncher.contactsutils __ref,String _note,boolean _exact,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsbynotes"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbynotes", new Object[] {_note,_exact,_visibleonly});
+if (Debug.shouldDelegate(ba, "findcontactsbynotes", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbynotes", new Object[] {_note,_exact,_visibleonly}));}
 RDebugUtils.currentLine=7471104;
  //BA.debugLineNum = 7471104;BA.debugLine="Public Sub FindContactsByNotes(Note As String, Exa";
 RDebugUtils.currentLine=7471105;
@@ -1139,8 +1152,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactsbyphone(com.no3dlauncher.contactsutils __ref,String _phonenumber,boolean _exact,boolean _visibleonly) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsbyphone"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbyphone", new Object[] {_phonenumber,_exact,_visibleonly});
+if (Debug.shouldDelegate(ba, "findcontactsbyphone", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbyphone", new Object[] {_phonenumber,_exact,_visibleonly}));}
 RDebugUtils.currentLine=7536640;
  //BA.debugLineNum = 7536640;BA.debugLine="Public Sub FindContactsByPhone(PhoneNumber As Stri";
 RDebugUtils.currentLine=7536641;
@@ -1153,8 +1166,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactsbystarred(com.no3dlauncher.contactsutils __ref,boolean _starred) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactsbystarred"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbystarred", new Object[] {_starred});
+if (Debug.shouldDelegate(ba, "findcontactsbystarred", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactsbystarred", new Object[] {_starred}));}
 String _value = "";
 RDebugUtils.currentLine=7602176;
  //BA.debugLineNum = 7602176;BA.debugLine="Public Sub FindContactsByStarred(Starred As Boolea";
@@ -1177,8 +1190,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _findcontactswithphotos(com.no3dlauncher.contactsutils __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "findcontactswithphotos"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactswithphotos", null);
+if (Debug.shouldDelegate(ba, "findcontactswithphotos", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "findcontactswithphotos", null));}
 RDebugUtils.currentLine=7733248;
  //BA.debugLineNum = 7733248;BA.debugLine="Public Sub FindContactsWithPhotos As List";
 RDebugUtils.currentLine=7733249;
@@ -1191,8 +1204,8 @@ return null;
 public anywheresoftware.b4a.objects.collections.List  _getdata(com.no3dlauncher.contactsutils __ref,String _mime,String[] _datacolumns,long _id,boolean[] _blobs) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "getdata"))
-	return (anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getdata", new Object[] {_mime,_datacolumns,_id,_blobs});
+if (Debug.shouldDelegate(ba, "getdata", false))
+	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "getdata", new Object[] {_mime,_datacolumns,_id,_blobs}));}
 anywheresoftware.b4a.sql.SQL.CursorWrapper _crsr = null;
 anywheresoftware.b4a.objects.collections.List _res = null;
 int _i = 0;
@@ -1216,7 +1229,7 @@ RDebugUtils.currentLine=8388613;
 final int step4 = 1;
 final int limit4 = (int) (_crsr.getRowCount()-1);
 _i = (int) (0) ;
-for (;(step4 > 0 && _i <= limit4) || (step4 < 0 && _i >= limit4) ;_i = ((int)(0 + _i + step4))  ) {
+for (;_i <= limit4 ;_i = _i + step4 ) {
 RDebugUtils.currentLine=8388614;
  //BA.debugLineNum = 8388614;BA.debugLine="crsr.Position = i";
 _crsr.setPosition(_i);
@@ -1236,7 +1249,7 @@ RDebugUtils.currentLine=8388616;
 final int step7 = 1;
 final int limit7 = (int) (_datacolumns.length-1);
 _c = (int) (0) ;
-for (;(step7 > 0 && _c <= limit7) || (step7 < 0 && _c >= limit7) ;_c = ((int)(0 + _c + step7))  ) {
+for (;_c <= limit7 ;_c = _c + step7 ) {
 RDebugUtils.currentLine=8388617;
  //BA.debugLineNum = 8388617;BA.debugLine="If  Blobs <> Null And Blobs(c) = True Then";
 if (_blobs!= null && _blobs[_c]==__c.True) { 
@@ -1268,8 +1281,8 @@ return null;
 public com.no3dlauncher.contactsutils._cucontact  _insertcontact(com.no3dlauncher.contactsutils __ref,String _name,String _phone) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "insertcontact"))
-	return (com.no3dlauncher.contactsutils._cucontact) Debug.delegate(ba, "insertcontact", new Object[] {_name,_phone});
+if (Debug.shouldDelegate(ba, "insertcontact", false))
+	 {return ((com.no3dlauncher.contactsutils._cucontact) Debug.delegate(ba, "insertcontact", new Object[] {_name,_phone}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _values = null;
 anywheresoftware.b4a.objects.ContentResolverWrapper.UriWrapper _rawuri = null;
 long _rawcontactid = 0L;
@@ -1355,8 +1368,8 @@ return null;
 public String  _printcursor(com.no3dlauncher.contactsutils __ref,anywheresoftware.b4a.sql.SQL.CursorWrapper _c) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "printcursor"))
-	return (String) Debug.delegate(ba, "printcursor", new Object[] {_c});
+if (Debug.shouldDelegate(ba, "printcursor", false))
+	 {return ((String) Debug.delegate(ba, "printcursor", new Object[] {_c}));}
 int _r = 0;
 int _col = 0;
 RDebugUtils.currentLine=9437184;
@@ -1367,7 +1380,7 @@ RDebugUtils.currentLine=9437185;
 final int step1 = 1;
 final int limit1 = (int) (_c.getRowCount()-1);
 _r = (int) (0) ;
-for (;(step1 > 0 && _r <= limit1) || (step1 < 0 && _r >= limit1) ;_r = ((int)(0 + _r + step1))  ) {
+for (;_r <= limit1 ;_r = _r + step1 ) {
 RDebugUtils.currentLine=9437186;
  //BA.debugLineNum = 9437186;BA.debugLine="c.Position = r";
 _c.setPosition(_r);
@@ -1377,23 +1390,23 @@ RDebugUtils.currentLine=9437187;
 final int step3 = 1;
 final int limit3 = (int) (_c.getColumnCount()-1);
 _col = (int) (0) ;
-for (;(step3 > 0 && _col <= limit3) || (step3 < 0 && _col >= limit3) ;_col = ((int)(0 + _col + step3))  ) {
+for (;_col <= limit3 ;_col = _col + step3 ) {
 RDebugUtils.currentLine=9437188;
  //BA.debugLineNum = 9437188;BA.debugLine="Try";
 try {RDebugUtils.currentLine=9437189;
  //BA.debugLineNum = 9437189;BA.debugLine="Log(c.GetColumnName(col) & \": \" & c.GetString2";
-__c.Log(_c.GetColumnName(_col)+": "+_c.GetString2(_col));
+__c.LogImpl("39437189",_c.GetColumnName(_col)+": "+_c.GetString2(_col),0);
  } 
        catch (Exception e7) {
 			ba.setLastException(e7);RDebugUtils.currentLine=9437191;
  //BA.debugLineNum = 9437191;BA.debugLine="Log(c.GetColumnName(col) & \": \" & LastExceptio";
-__c.Log(_c.GetColumnName(_col)+": "+BA.ObjectToString(__c.LastException(getActivityBA())));
+__c.LogImpl("39437191",_c.GetColumnName(_col)+": "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
  }
 };
 RDebugUtils.currentLine=9437194;
  //BA.debugLineNum = 9437194;BA.debugLine="Log(\"***************\")";
-__c.Log("***************");
+__c.LogImpl("39437194","***************",0);
  }
 };
 RDebugUtils.currentLine=9437196;
@@ -1403,8 +1416,8 @@ return "";
 public String  _setnote(com.no3dlauncher.contactsutils __ref,long _id,String _note) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "setnote"))
-	return (String) Debug.delegate(ba, "setnote", new Object[] {_id,_note});
+if (Debug.shouldDelegate(ba, "setnote", false))
+	 {return ((String) Debug.delegate(ba, "setnote", new Object[] {_id,_note}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _v = null;
 RDebugUtils.currentLine=8454144;
  //BA.debugLineNum = 8454144;BA.debugLine="Public Sub SetNote(Id As Long, Note As String)";
@@ -1427,8 +1440,8 @@ return "";
 public String  _setstarred(com.no3dlauncher.contactsutils __ref,long _id,boolean _starred) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="contactsutils";
-if (Debug.shouldDelegate(ba, "setstarred"))
-	return (String) Debug.delegate(ba, "setstarred", new Object[] {_id,_starred});
+if (Debug.shouldDelegate(ba, "setstarred", false))
+	 {return ((String) Debug.delegate(ba, "setstarred", new Object[] {_id,_starred}));}
 anywheresoftware.b4a.objects.ContentResolverWrapper.ContentValuesWrapper _values = null;
 RDebugUtils.currentLine=9043968;
  //BA.debugLineNum = 9043968;BA.debugLine="Public Sub SetStarred (Id As Long, Starred As Bool";

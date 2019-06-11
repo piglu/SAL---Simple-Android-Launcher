@@ -300,11 +300,14 @@ public class pnlmeni_postavke extends Activity implements B4AActivity{
     		this.activity = new WeakReference<Activity>(activity);
     	}
 		public void run() {
-			if (mostCurrent == null || mostCurrent != activity.get())
+            pnlmeni_postavke mc = mostCurrent;
+			if (mc == null || mc != activity.get())
 				return;
 			processBA.setActivityPaused(false);
             BA.LogInfo("** Activity (pnlmeni_postavke) Resume **");
-		    processBA.raiseEvent(mostCurrent._activity, "activity_resume", (Object[])null);
+            if (mc != mostCurrent)
+                return;
+		    processBA.raiseEvent(mc._activity, "activity_resume", (Object[])null);
 		}
     }
 	@Override
@@ -360,8 +363,8 @@ public com.no3dlauncher.f _f = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
 anywheresoftware.b4a.objects.drawable.ColorDrawable _cd = null;
 int[] _res = null;
 anywheresoftware.b4a.objects.collections.List _l = null;
@@ -446,7 +449,7 @@ RDebugUtils.currentLine=4325405;
 final int step26 = 1;
 final int limit26 = (int) (mostCurrent._mapaanimacija.getSize()-1);
 _i = (int) (0) ;
-for (;(step26 > 0 && _i <= limit26) || (step26 < 0 && _i >= limit26) ;_i = ((int)(0 + _i + step26))  ) {
+for (;_i <= limit26 ;_i = _i + step26 ) {
 RDebugUtils.currentLine=4325406;
  //BA.debugLineNum = 4325406;BA.debugLine="l.Add(mapaAnimacija.GetKeyAt(i))";
 _l.Add(mostCurrent._mapaanimacija.GetKeyAt(_i));
@@ -473,8 +476,8 @@ return "";
 }
 public static int[]  _getargb(int _color) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "getargb"))
-	return (int[]) Debug.delegate(mostCurrent.activityBA, "getargb", new Object[] {_color});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "getargb", false))
+	 {return ((int[]) Debug.delegate(mostCurrent.activityBA, "getargb", new Object[] {_color}));}
 int[] _res = null;
 RDebugUtils.currentLine=4915200;
  //BA.debugLineNum = 4915200;BA.debugLine="Sub getARGB(Color As Int) As Int()";
@@ -503,8 +506,8 @@ return null;
 }
 public static String  _dodajfontove() throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "dodajfontove"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "dodajfontove", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "dodajfontove", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "dodajfontove", null));}
 anywheresoftware.b4a.objects.collections.List _list = null;
 int _i = 0;
 String _s = "";
@@ -522,7 +525,7 @@ RDebugUtils.currentLine=4521987;
 final int step3 = 1;
 final int limit3 = (int) (_list.getSize()-1);
 _i = (int) (0) ;
-for (;(step3 > 0 && _i <= limit3) || (step3 < 0 && _i >= limit3) ;_i = ((int)(0 + _i + step3))  ) {
+for (;_i <= limit3 ;_i = _i + step3 ) {
 RDebugUtils.currentLine=4521988;
  //BA.debugLineNum = 4521988;BA.debugLine="Dim s As String = list.Get(i)";
 _s = BA.ObjectToString(_list.Get(_i));
@@ -557,7 +560,7 @@ RDebugUtils.currentLine=4456449;
 if (_userclosed) { 
 RDebugUtils.currentLine=4456450;
  //BA.debugLineNum = 4456450;BA.debugLine="Log(\"juzer klouzed\")";
-anywheresoftware.b4a.keywords.Common.Log("juzer klouzed");
+anywheresoftware.b4a.keywords.Common.LogImpl("34456450","juzer klouzed",0);
 RDebugUtils.currentLine=4456451;
  //BA.debugLineNum = 4456451;BA.debugLine="CallSubDelayed(Main, \"Osvjezi\")";
 anywheresoftware.b4a.keywords.Common.CallSubDelayed(processBA,(Object)(mostCurrent._main.getObject()),"Osvjezi");
@@ -568,8 +571,8 @@ return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
 RDebugUtils.currentLine=4390912;
  //BA.debugLineNum = 4390912;BA.debugLine="Sub Activity_Resume";
 RDebugUtils.currentLine=4390914;
@@ -577,6 +580,9 @@ RDebugUtils.currentLine=4390914;
 return "";
 }
 public static void  _btnbackground_click() throws Exception{
+RDebugUtils.currentModule="pnlmeni_postavke";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnbackground_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "btnbackground_click", null); return;}
 ResumableSub_btnBackground_Click rsub = new ResumableSub_btnBackground_Click(null);
 rsub.resume(processBA, null);
 }
@@ -592,8 +598,7 @@ boolean _success = false;
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-Debug.delegate(mostCurrent.activityBA, "btnbackground_click", null);
-if (true) return;
+
     while (true) {
         switch (state) {
             case -1:
@@ -617,7 +622,7 @@ RDebugUtils.currentLine=4784133;
 _cw._showasync(null,pnlmeni_postavke.getObject(),"Select Background Color");
 RDebugUtils.currentLine=4784134;
  //BA.debugLineNum = 4784134;BA.debugLine="Wait For (cw) Color_Result(Success As Boolean)";
-anywheresoftware.b4a.keywords.Common.WaitFor("color_result", processBA, this, (Object)(_cw));
+anywheresoftware.b4a.keywords.Common.WaitFor("color_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "pnlmeni_postavke", "btnbackground_click"), (Object)(_cw));
 this.state = 5;
 return;
 case 5:
@@ -644,16 +649,16 @@ RDebugUtils.currentLine=4784136;
 _res = _getargb(_cw._colorresult);
 RDebugUtils.currentLine=4784137;
  //BA.debugLineNum = 4784137;BA.debugLine="Log(res(0))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (0)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34784137",BA.NumberToString(_res[(int) (0)]),0);
 RDebugUtils.currentLine=4784138;
  //BA.debugLineNum = 4784138;BA.debugLine="Log(res(1))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (1)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34784138",BA.NumberToString(_res[(int) (1)]),0);
 RDebugUtils.currentLine=4784139;
  //BA.debugLineNum = 4784139;BA.debugLine="Log(res(2))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (2)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34784139",BA.NumberToString(_res[(int) (2)]),0);
 RDebugUtils.currentLine=4784140;
  //BA.debugLineNum = 4784140;BA.debugLine="Log(res(3))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (3)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34784140",BA.NumberToString(_res[(int) (3)]),0);
 RDebugUtils.currentLine=4784141;
  //BA.debugLineNum = 4784141;BA.debugLine="Label1.Color = cw.ColorResult";
 parent.mostCurrent._label1.setColor(_cw._colorresult);
@@ -675,6 +680,9 @@ if (true) break;
     }
 }
 public static void  _btnfont_click() throws Exception{
+RDebugUtils.currentModule="pnlmeni_postavke";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnfont_click", false))
+	 {Debug.delegate(mostCurrent.activityBA, "btnfont_click", null); return;}
 ResumableSub_btnFont_Click rsub = new ResumableSub_btnFont_Click(null);
 rsub.resume(processBA, null);
 }
@@ -690,8 +698,7 @@ boolean _success = false;
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-Debug.delegate(mostCurrent.activityBA, "btnfont_click", null);
-if (true) return;
+
     while (true) {
         switch (state) {
             case -1:
@@ -715,7 +722,7 @@ RDebugUtils.currentLine=4849669;
 _cw._showasync(null,pnlmeni_postavke.getObject(),"Select Font Color");
 RDebugUtils.currentLine=4849670;
  //BA.debugLineNum = 4849670;BA.debugLine="Wait For (cw) Color_Result(Success As Boolean)";
-anywheresoftware.b4a.keywords.Common.WaitFor("color_result", processBA, this, (Object)(_cw));
+anywheresoftware.b4a.keywords.Common.WaitFor("color_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "pnlmeni_postavke", "btnfont_click"), (Object)(_cw));
 this.state = 5;
 return;
 case 5:
@@ -742,16 +749,16 @@ RDebugUtils.currentLine=4849672;
 _res = _getargb(_cw._colorresult);
 RDebugUtils.currentLine=4849673;
  //BA.debugLineNum = 4849673;BA.debugLine="Log(res(0))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (0)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34849673",BA.NumberToString(_res[(int) (0)]),0);
 RDebugUtils.currentLine=4849674;
  //BA.debugLineNum = 4849674;BA.debugLine="Log(res(1))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (1)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34849674",BA.NumberToString(_res[(int) (1)]),0);
 RDebugUtils.currentLine=4849675;
  //BA.debugLineNum = 4849675;BA.debugLine="Log(res(2))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (2)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34849675",BA.NumberToString(_res[(int) (2)]),0);
 RDebugUtils.currentLine=4849676;
  //BA.debugLineNum = 4849676;BA.debugLine="Log(res(3))";
-anywheresoftware.b4a.keywords.Common.Log(BA.NumberToString(_res[(int) (3)]));
+anywheresoftware.b4a.keywords.Common.LogImpl("34849676",BA.NumberToString(_res[(int) (3)]),0);
 RDebugUtils.currentLine=4849677;
  //BA.debugLineNum = 4849677;BA.debugLine="Label1.TextColor = cw.ColorResult";
 parent.mostCurrent._label1.setTextColor(_cw._colorresult);
@@ -774,8 +781,8 @@ if (true) break;
 }
 public static String  _edtfontsize_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "edtfontsize_textchanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "edtfontsize_textchanged", new Object[] {_old,_new});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "edtfontsize_textchanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edtfontsize_textchanged", new Object[] {_old,_new}));}
 RDebugUtils.currentLine=4718592;
  //BA.debugLineNum = 4718592;BA.debugLine="Sub edtFontSize_TextChanged (Old As String, New As";
 RDebugUtils.currentLine=4718593;
@@ -791,8 +798,8 @@ return "";
 }
 public static String  _edtnoofstarpoints_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "edtnoofstarpoints_textchanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "edtnoofstarpoints_textchanged", new Object[] {_old,_new});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "edtnoofstarpoints_textchanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edtnoofstarpoints_textchanged", new Object[] {_old,_new}));}
 RDebugUtils.currentLine=5111808;
  //BA.debugLineNum = 5111808;BA.debugLine="Sub edtNoOfStarPoints_TextChanged (Old As String,";
 RDebugUtils.currentLine=5111809;
@@ -808,8 +815,8 @@ return "";
 }
 public static String  _edtpages_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "edtpages_textchanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "edtpages_textchanged", new Object[] {_old,_new});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "edtpages_textchanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edtpages_textchanged", new Object[] {_old,_new}));}
 RDebugUtils.currentLine=5177344;
  //BA.debugLineNum = 5177344;BA.debugLine="Sub edtPages_TextChanged (Old As String, New As St";
 RDebugUtils.currentLine=5177345;
@@ -825,8 +832,8 @@ return "";
 }
 public static String  _sbtransparent_valuechanged(int _value,boolean _userchanged) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "sbtransparent_valuechanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "sbtransparent_valuechanged", new Object[] {_value,_userchanged});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "sbtransparent_valuechanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "sbtransparent_valuechanged", new Object[] {_value,_userchanged}));}
 int[] _res = null;
 RDebugUtils.currentLine=4980736;
  //BA.debugLineNum = 4980736;BA.debugLine="Sub sbTransparent_ValueChanged (Value As Int, User";
@@ -859,8 +866,8 @@ return "";
 }
 public static String  _spnanim_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "spnanim_itemclick"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "spnanim_itemclick", new Object[] {_position,_value});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "spnanim_itemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spnanim_itemclick", new Object[] {_position,_value}));}
 RDebugUtils.currentLine=5242880;
  //BA.debugLineNum = 5242880;BA.debugLine="Sub spnAnim_ItemClick (Position As Int, Value As O";
 RDebugUtils.currentLine=5242881;
@@ -872,8 +879,8 @@ return "";
 }
 public static String  _spnapps_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "spnapps_itemclick"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "spnapps_itemclick", new Object[] {_position,_value});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "spnapps_itemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spnapps_itemclick", new Object[] {_position,_value}));}
 RDebugUtils.currentLine=4653056;
  //BA.debugLineNum = 4653056;BA.debugLine="Sub spnApps_ItemClick (Position As Int, Value As O";
 RDebugUtils.currentLine=4653057;
@@ -906,8 +913,8 @@ return "";
 }
 public static String  _spnfont_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "spnfont_itemclick"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "spnfont_itemclick", new Object[] {_position,_value});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "spnfont_itemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spnfont_itemclick", new Object[] {_position,_value}));}
 RDebugUtils.currentLine=4587520;
  //BA.debugLineNum = 4587520;BA.debugLine="Sub spnFont_ItemClick (Position As Int, Value As O";
 RDebugUtils.currentLine=4587521;
@@ -922,8 +929,8 @@ return "";
 }
 public static String  _spnicontype_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="pnlmeni_postavke";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "spnicontype_itemclick"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "spnicontype_itemclick", new Object[] {_position,_value});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "spnicontype_itemclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spnicontype_itemclick", new Object[] {_position,_value}));}
 RDebugUtils.currentLine=5046272;
  //BA.debugLineNum = 5046272;BA.debugLine="Sub spnIconType_ItemClick (Position As Int, Value";
 RDebugUtils.currentLine=5046273;

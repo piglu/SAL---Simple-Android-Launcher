@@ -300,11 +300,14 @@ public class search extends Activity implements B4AActivity{
     		this.activity = new WeakReference<Activity>(activity);
     	}
 		public void run() {
-			if (mostCurrent == null || mostCurrent != activity.get())
+            search mc = mostCurrent;
+			if (mc == null || mc != activity.get())
 				return;
 			processBA.setActivityPaused(false);
             BA.LogInfo("** Activity (search) Resume **");
-		    processBA.raiseEvent(mostCurrent._activity, "activity_resume", (Object[])null);
+            if (mc != mostCurrent)
+                return;
+		    processBA.raiseEvent(mc._activity, "activity_resume", (Object[])null);
 		}
     }
 	@Override
@@ -349,8 +352,8 @@ public com.no3dlauncher.f _f = null;
 public com.no3dlauncher.provjera _provjera = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
 RDebugUtils.currentLine=5439488;
  //BA.debugLineNum = 5439488;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
 RDebugUtils.currentLine=5439490;
@@ -365,8 +368,8 @@ return "";
 }
 public static String  _dodajslova() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "dodajslova"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "dodajslova", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "dodajslova", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "dodajslova", null));}
 int _x = 0;
 int _y = 0;
 anywheresoftware.b4a.objects.drawable.ColorDrawable _cd = null;
@@ -404,14 +407,14 @@ RDebugUtils.currentLine=5636104;
 final int step8 = 1;
 final int limit8 = (int) (mostCurrent._starter._listaslova.getSize()-1);
 _i = (int) (0) ;
-for (;(step8 > 0 && _i <= limit8) || (step8 < 0 && _i >= limit8) ;_i = ((int)(0 + _i + step8))  ) {
+for (;_i <= limit8 ;_i = _i + step8 ) {
 RDebugUtils.currentLine=5636105;
  //BA.debugLineNum = 5636105;BA.debugLine="For j = 0 To 4";
 {
 final int step9 = 1;
 final int limit9 = (int) (4);
 _j = (int) (0) ;
-for (;(step9 > 0 && _j <= limit9) || (step9 < 0 && _j >= limit9) ;_j = ((int)(0 + _j + step9))  ) {
+for (;_j <= limit9 ;_j = _j + step9 ) {
 RDebugUtils.currentLine=5636106;
  //BA.debugLineNum = 5636106;BA.debugLine="If ukupno < Starter.listaSlova.Size Then";
 if (_ukupno<mostCurrent._starter._listaslova.getSize()) { 
@@ -466,8 +469,8 @@ return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress"))
-	return (Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
+	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
 RDebugUtils.currentLine=6225920;
  //BA.debugLineNum = 6225920;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
 RDebugUtils.currentLine=6225921;
@@ -504,8 +507,8 @@ return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
 RDebugUtils.currentLine=5505024;
  //BA.debugLineNum = 5505024;BA.debugLine="Sub Activity_Resume";
 RDebugUtils.currentLine=5505026;
@@ -514,8 +517,8 @@ return "";
 }
 public static String  _addtofavorites() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "addtofavorites"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "addtofavorites", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "addtofavorites", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "addtofavorites", null));}
 RDebugUtils.currentLine=6094848;
  //BA.debugLineNum = 6094848;BA.debugLine="Sub AddToFavorites";
 RDebugUtils.currentLine=6094849;
@@ -527,8 +530,8 @@ return "";
 }
 public static String  _btnslovo_click() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnslovo_click"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "btnslovo_click", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnslovo_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnslovo_click", null));}
 anywheresoftware.b4a.objects.ButtonWrapper _b = null;
 anywheresoftware.b4a.phone.PackageManagerWrapper _pm = null;
 anywheresoftware.b4a.objects.collections.List _pkg1 = null;
@@ -563,7 +566,7 @@ RDebugUtils.currentLine=5898245;
 _b.setObject((android.widget.Button)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
 RDebugUtils.currentLine=5898246;
  //BA.debugLineNum = 5898246;BA.debugLine="Log(b.Tag)";
-anywheresoftware.b4a.keywords.Common.Log(BA.ObjectToString(_b.getTag()));
+anywheresoftware.b4a.keywords.Common.LogImpl("35898246",BA.ObjectToString(_b.getTag()),0);
 RDebugUtils.currentLine=5898247;
  //BA.debugLineNum = 5898247;BA.debugLine="pnlSlova.Visible = False";
 mostCurrent._pnlslova.setVisible(anywheresoftware.b4a.keywords.Common.False);
@@ -589,7 +592,7 @@ RDebugUtils.currentLine=5898254;
 final int step12 = 1;
 final int limit12 = (int) (mostCurrent._starter._mapa.getSize()-1);
 _i = (int) (0) ;
-for (;(step12 > 0 && _i <= limit12) || (step12 < 0 && _i >= limit12) ;_i = ((int)(0 + _i + step12))  ) {
+for (;_i <= limit12 ;_i = _i + step12 ) {
 RDebugUtils.currentLine=5898255;
  //BA.debugLineNum = 5898255;BA.debugLine="Dim s As String = Starter.mapa.GetKeyAt(i)";
 _s = BA.ObjectToString(mostCurrent._starter._mapa.GetKeyAt(_i));
@@ -629,14 +632,14 @@ RDebugUtils.currentLine=5898273;
 final int step25 = 1;
 final int limit25 = (int) (_pkg1.getSize()-1);
 _i = (int) (0) ;
-for (;(step25 > 0 && _i <= limit25) || (step25 < 0 && _i >= limit25) ;_i = ((int)(0 + _i + step25))  ) {
+for (;_i <= limit25 ;_i = _i + step25 ) {
 RDebugUtils.currentLine=5898274;
  //BA.debugLineNum = 5898274;BA.debugLine="For j = 0 To 4";
 {
 final int step26 = 1;
 final int limit26 = (int) (4);
 _j = (int) (0) ;
-for (;(step26 > 0 && _j <= limit26) || (step26 < 0 && _j >= limit26) ;_j = ((int)(0 + _j + step26))  ) {
+for (;_j <= limit26 ;_j = _j + step26 ) {
 RDebugUtils.currentLine=5898275;
  //BA.debugLineNum = 5898275;BA.debugLine="If ukupno2 < ukupno1 Then'pkg1.Size - 1 Then";
 if (_ukupno2<_ukupno1) { 
@@ -718,13 +721,13 @@ return "";
 }
 public static String  _btntrazi_click() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btntrazi_click"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "btntrazi_click", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btntrazi_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btntrazi_click", null));}
 RDebugUtils.currentLine=5767168;
  //BA.debugLineNum = 5767168;BA.debugLine="Sub btnTrazi_Click";
 RDebugUtils.currentLine=5767169;
  //BA.debugLineNum = 5767169;BA.debugLine="Log(\"trazi\")";
-anywheresoftware.b4a.keywords.Common.Log("trazi");
+anywheresoftware.b4a.keywords.Common.LogImpl("35767169","trazi",0);
 RDebugUtils.currentLine=5767170;
  //BA.debugLineNum = 5767170;BA.debugLine="Trazi(traziString)";
 _trazi(mostCurrent._trazistring);
@@ -734,8 +737,8 @@ return "";
 }
 public static String  _trazi(String _str) throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "trazi"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "trazi", new Object[] {_str});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "trazi", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "trazi", new Object[] {_str}));}
 RDebugUtils.currentLine=5832704;
  //BA.debugLineNum = 5832704;BA.debugLine="Sub Trazi(str As String)";
 RDebugUtils.currentLine=5832706;
@@ -744,8 +747,8 @@ return "";
 }
 public static String  _edttrazi_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "edttrazi_textchanged"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "edttrazi_textchanged", new Object[] {_old,_new});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "edttrazi_textchanged", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edttrazi_textchanged", new Object[] {_old,_new}));}
 RDebugUtils.currentLine=5701632;
  //BA.debugLineNum = 5701632;BA.debugLine="Sub edtTrazi_TextChanged (Old As String, New As St";
 RDebugUtils.currentLine=5701633;
@@ -753,7 +756,7 @@ RDebugUtils.currentLine=5701633;
 if (_new.length()>0) { 
 RDebugUtils.currentLine=5701634;
  //BA.debugLineNum = 5701634;BA.debugLine="Log(New)";
-anywheresoftware.b4a.keywords.Common.Log(_new);
+anywheresoftware.b4a.keywords.Common.LogImpl("35701634",_new,0);
 RDebugUtils.currentLine=5701635;
  //BA.debugLineNum = 5701635;BA.debugLine="traziString = New";
 mostCurrent._trazistring = _new;
@@ -764,8 +767,8 @@ return "";
 }
 public static String  _ivapp_click() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "ivapp_click"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "ivapp_click", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "ivapp_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "ivapp_click", null));}
 anywheresoftware.b4a.objects.IntentWrapper _in = null;
 anywheresoftware.b4a.objects.ImageViewWrapper _iv = null;
 anywheresoftware.b4a.phone.PackageManagerWrapper _pm = null;
@@ -785,7 +788,7 @@ RDebugUtils.currentLine=5963781;
 _iv.setObject((android.widget.ImageView)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
 RDebugUtils.currentLine=5963782;
  //BA.debugLineNum = 5963782;BA.debugLine="Log(iv.Tag)";
-anywheresoftware.b4a.keywords.Common.Log(BA.ObjectToString(_iv.getTag()));
+anywheresoftware.b4a.keywords.Common.LogImpl("35963782",BA.ObjectToString(_iv.getTag()),0);
 RDebugUtils.currentLine=5963783;
  //BA.debugLineNum = 5963783;BA.debugLine="in = pm.GetApplicationIntent(iv.Tag)";
 _in = _pm.GetApplicationIntent(BA.ObjectToString(_iv.getTag()));
@@ -802,8 +805,8 @@ return "";
 }
 public static String  _ivapp_longclick() throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "ivapp_longclick"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "ivapp_longclick", null);
+if (Debug.shouldDelegate(mostCurrent.activityBA, "ivapp_longclick", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "ivapp_longclick", null));}
 anywheresoftware.b4a.objects.ImageViewWrapper _iv = null;
 anywheresoftware.b4a.objects.collections.List _ll = null;
 com.maximus.id.id _x = null;
@@ -812,7 +815,7 @@ RDebugUtils.currentLine=6029312;
  //BA.debugLineNum = 6029312;BA.debugLine="Sub ivApp_LongClick";
 RDebugUtils.currentLine=6029313;
  //BA.debugLineNum = 6029313;BA.debugLine="Log(\"long klik!\")";
-anywheresoftware.b4a.keywords.Common.Log("long klik!");
+anywheresoftware.b4a.keywords.Common.LogImpl("36029313","long klik!",0);
 RDebugUtils.currentLine=6029314;
  //BA.debugLineNum = 6029314;BA.debugLine="Dim iv As ImageView";
 _iv = new anywheresoftware.b4a.objects.ImageViewWrapper();
@@ -821,7 +824,7 @@ RDebugUtils.currentLine=6029315;
 _iv.setObject((android.widget.ImageView)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
 RDebugUtils.currentLine=6029316;
  //BA.debugLineNum = 6029316;BA.debugLine="Log(iv.Tag)";
-anywheresoftware.b4a.keywords.Common.Log(BA.ObjectToString(_iv.getTag()));
+anywheresoftware.b4a.keywords.Common.LogImpl("36029316",BA.ObjectToString(_iv.getTag()),0);
 RDebugUtils.currentLine=6029317;
  //BA.debugLineNum = 6029317;BA.debugLine="Dim ll As List";
 _ll = new anywheresoftware.b4a.objects.collections.List();
@@ -858,8 +861,8 @@ return "";
 }
 public static String  _uninstallapp(String _pkg) throws Exception{
 RDebugUtils.currentModule="search";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "uninstallapp"))
-	return (String) Debug.delegate(mostCurrent.activityBA, "uninstallapp", new Object[] {_pkg});
+if (Debug.shouldDelegate(mostCurrent.activityBA, "uninstallapp", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "uninstallapp", new Object[] {_pkg}));}
 anywheresoftware.b4a.objects.IntentWrapper _i = null;
 RDebugUtils.currentLine=6160384;
  //BA.debugLineNum = 6160384;BA.debugLine="Sub UninstallApp(pkg As String)";
@@ -872,7 +875,7 @@ RDebugUtils.currentLine=6160387;
 _i = new anywheresoftware.b4a.objects.IntentWrapper();
 RDebugUtils.currentLine=6160389;
  //BA.debugLineNum = 6160389;BA.debugLine="Log(\"package:\" & pkg)";
-anywheresoftware.b4a.keywords.Common.Log("package:"+_pkg);
+anywheresoftware.b4a.keywords.Common.LogImpl("36160389","package:"+_pkg,0);
 RDebugUtils.currentLine=6160390;
  //BA.debugLineNum = 6160390;BA.debugLine="i.Initialize(\"android.intent.action.DELETE\", \"pac";
 _i.Initialize("android.intent.action.DELETE","package:"+_pkg);
