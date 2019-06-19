@@ -58,7 +58,7 @@ Debug.ShouldStop(16384);
 starter._mapa.runVoidMethod ("Clear");
  BA.debugLineNum = 48;BA.debugLine="Log(\"starter: \" & mapa.Size)";
 Debug.ShouldStop(32768);
-starter.mostCurrent.__c.runVoidMethod ("LogImpl","34063239",RemoteObject.concat(RemoteObject.createImmutable("starter: "),starter._mapa.runMethod(true,"getSize")),0);
+starter.mostCurrent.__c.runVoidMethod ("LogImpl","7720903",RemoteObject.concat(RemoteObject.createImmutable("starter: "),starter._mapa.runMethod(true,"getSize")),0);
  BA.debugLineNum = 49;BA.debugLine="listaSlova.Initialize";
 Debug.ShouldStop(65536);
 starter._listaslova.runVoidMethod ("Initialize");
@@ -82,70 +82,70 @@ _p = BA.ObjectToString(_packages.runMethod(false,"Get",(Object)(BA.numberCast(in
  BA.debugLineNum = 56;BA.debugLine="Dim AppName As String = pm.GetApplicationLabel(p";
 Debug.ShouldStop(8388608);
 _appname = _pm.runMethod(true,"GetApplicationLabel",(Object)(_p));Debug.locals.put("AppName", _appname);Debug.locals.put("AppName", _appname);
- BA.debugLineNum = 57;BA.debugLine="If pm.GetApplicationIntent(p).IsInitialized Then";
-Debug.ShouldStop(16777216);
-if (_pm.runMethod(false,"GetApplicationIntent",(Object)(_p)).runMethod(true,"IsInitialized").<Boolean>get().booleanValue()) { 
- BA.debugLineNum = 58;BA.debugLine="listaSlova.Add(AppName.SubString2(0, 1).ToUpper";
+ BA.debugLineNum = 58;BA.debugLine="If pm.GetApplicationIntent(p).IsInitialized Then";
 Debug.ShouldStop(33554432);
+if (_pm.runMethod(false,"GetApplicationIntent",(Object)(_p)).runMethod(true,"IsInitialized").<Boolean>get().booleanValue()) { 
+ BA.debugLineNum = 65;BA.debugLine="listaSlova.Add(AppName.SubString2(0, 1).ToUpper";
+Debug.ShouldStop(1);
 starter._listaslova.runVoidMethod ("Add",(Object)((_appname.runMethod(true,"substring",(Object)(BA.numberCast(int.class, 0)),(Object)(BA.numberCast(int.class, 1))).runMethod(true,"toUpperCase"))));
- BA.debugLineNum = 59;BA.debugLine="mapa.Put(AppName & \";\" & packages.Get(i), i)";
-Debug.ShouldStop(67108864);
+ BA.debugLineNum = 66;BA.debugLine="mapa.Put(AppName & \";\" & packages.Get(i), i)";
+Debug.ShouldStop(2);
 starter._mapa.runVoidMethod ("Put",(Object)((RemoteObject.concat(_appname,RemoteObject.createImmutable(";"),_packages.runMethod(false,"Get",(Object)(BA.numberCast(int.class, _i)))))),(Object)(RemoteObject.createImmutable((_i))));
  };
  }
 }Debug.locals.put("i", _i);
 ;
- BA.debugLineNum = 75;BA.debugLine="Dim mTemp As Map";
-Debug.ShouldStop(1024);
+ BA.debugLineNum = 82;BA.debugLine="Dim mTemp As Map";
+Debug.ShouldStop(131072);
 _mtemp = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");Debug.locals.put("mTemp", _mtemp);
- BA.debugLineNum = 76;BA.debugLine="mTemp.Initialize";
-Debug.ShouldStop(2048);
+ BA.debugLineNum = 83;BA.debugLine="mTemp.Initialize";
+Debug.ShouldStop(262144);
 _mtemp.runVoidMethod ("Initialize");
- BA.debugLineNum = 77;BA.debugLine="For i = 0 To listaSlova.Size - 1";
-Debug.ShouldStop(4096);
+ BA.debugLineNum = 84;BA.debugLine="For i = 0 To listaSlova.Size - 1";
+Debug.ShouldStop(524288);
 {
 final int step20 = 1;
 final int limit20 = RemoteObject.solve(new RemoteObject[] {starter._listaslova.runMethod(true,"getSize"),RemoteObject.createImmutable(1)}, "-",1, 1).<Integer>get().intValue();
 _i = 0 ;
 for (;(step20 > 0 && _i <= limit20) || (step20 < 0 && _i >= limit20) ;_i = ((int)(0 + _i + step20))  ) {
 Debug.locals.put("i", _i);
- BA.debugLineNum = 78;BA.debugLine="mTemp.Put(listaSlova.Get(i), i)";
-Debug.ShouldStop(8192);
+ BA.debugLineNum = 85;BA.debugLine="mTemp.Put(listaSlova.Get(i), i)";
+Debug.ShouldStop(1048576);
 _mtemp.runVoidMethod ("Put",(Object)(starter._listaslova.runMethod(false,"Get",(Object)(BA.numberCast(int.class, _i)))),(Object)(RemoteObject.createImmutable((_i))));
  }
 }Debug.locals.put("i", _i);
 ;
- BA.debugLineNum = 80;BA.debugLine="listaSlova.Clear";
-Debug.ShouldStop(32768);
+ BA.debugLineNum = 87;BA.debugLine="listaSlova.Clear";
+Debug.ShouldStop(4194304);
 starter._listaslova.runVoidMethod ("Clear");
- BA.debugLineNum = 81;BA.debugLine="For i = 0 To mTemp.Size - 1";
-Debug.ShouldStop(65536);
+ BA.debugLineNum = 88;BA.debugLine="For i = 0 To mTemp.Size - 1";
+Debug.ShouldStop(8388608);
 {
 final int step24 = 1;
 final int limit24 = RemoteObject.solve(new RemoteObject[] {_mtemp.runMethod(true,"getSize"),RemoteObject.createImmutable(1)}, "-",1, 1).<Integer>get().intValue();
 _i = 0 ;
 for (;(step24 > 0 && _i <= limit24) || (step24 < 0 && _i >= limit24) ;_i = ((int)(0 + _i + step24))  ) {
 Debug.locals.put("i", _i);
- BA.debugLineNum = 82;BA.debugLine="listaSlova.Add(mTemp.GetKeyAt(i))";
-Debug.ShouldStop(131072);
+ BA.debugLineNum = 89;BA.debugLine="listaSlova.Add(mTemp.GetKeyAt(i))";
+Debug.ShouldStop(16777216);
 starter._listaslova.runVoidMethod ("Add",(Object)(_mtemp.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))));
  }
 }Debug.locals.put("i", _i);
 ;
- BA.debugLineNum = 84;BA.debugLine="listaSlova.Sort(True)";
-Debug.ShouldStop(524288);
+ BA.debugLineNum = 91;BA.debugLine="listaSlova.Sort(True)";
+Debug.ShouldStop(67108864);
 starter._listaslova.runVoidMethod ("Sort",(Object)(starter.mostCurrent.__c.getField(true,"True")));
- BA.debugLineNum = 86;BA.debugLine="Dim m As Map";
-Debug.ShouldStop(2097152);
+ BA.debugLineNum = 93;BA.debugLine="Dim m As Map";
+Debug.ShouldStop(268435456);
 _m = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");Debug.locals.put("m", _m);
- BA.debugLineNum = 87;BA.debugLine="m = SortMapKeys(mapa, True)";
-Debug.ShouldStop(4194304);
+ BA.debugLineNum = 94;BA.debugLine="m = SortMapKeys(mapa, True)";
+Debug.ShouldStop(536870912);
 _m = _sortmapkeys(starter._mapa,starter.mostCurrent.__c.getField(true,"True"));Debug.locals.put("m", _m);
- BA.debugLineNum = 88;BA.debugLine="mapa = m";
-Debug.ShouldStop(8388608);
+ BA.debugLineNum = 95;BA.debugLine="mapa = m";
+Debug.ShouldStop(1073741824);
 starter._mapa = _m;
- BA.debugLineNum = 89;BA.debugLine="End Sub";
-Debug.ShouldStop(16777216);
+ BA.debugLineNum = 96;BA.debugLine="End Sub";
+Debug.ShouldStop(-2147483648);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -239,7 +239,7 @@ finally {
 		}}
 public static RemoteObject  _sortmapkeys(RemoteObject _m,RemoteObject _sortasc) throws Exception{
 try {
-		Debug.PushSubsStack("SortMapKeys (starter) ","starter",1,starter.processBA,starter.mostCurrent,100);
+		Debug.PushSubsStack("SortMapKeys (starter) ","starter",1,starter.processBA,starter.mostCurrent,107);
 if (RapidSub.canDelegate("sortmapkeys")) { return com.no3dlauncher.starter.remoteMe.runUserSub(false, "starter","sortmapkeys", _m, _sortasc);}
 RemoteObject _keyslist = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _m2 = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -250,65 +250,65 @@ RemoteObject _val = RemoteObject.declareNull("Object");
 RemoteObject _m2key = RemoteObject.createImmutable("");
 Debug.locals.put("m", _m);
 Debug.locals.put("SortAsc", _sortasc);
- BA.debugLineNum = 100;BA.debugLine="Sub SortMapKeys (m As Map, SortAsc As Boolean) As";
-Debug.ShouldStop(8);
- BA.debugLineNum = 101;BA.debugLine="Private KeysList As List:KeysList.Initialize";
-Debug.ShouldStop(16);
+ BA.debugLineNum = 107;BA.debugLine="Sub SortMapKeys (m As Map, SortAsc As Boolean) As";
+Debug.ShouldStop(1024);
+ BA.debugLineNum = 108;BA.debugLine="Private KeysList As List:KeysList.Initialize";
+Debug.ShouldStop(2048);
 _keyslist = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.List");Debug.locals.put("KeysList", _keyslist);
- BA.debugLineNum = 101;BA.debugLine="Private KeysList As List:KeysList.Initialize";
-Debug.ShouldStop(16);
+ BA.debugLineNum = 108;BA.debugLine="Private KeysList As List:KeysList.Initialize";
+Debug.ShouldStop(2048);
 _keyslist.runVoidMethod ("Initialize");
- BA.debugLineNum = 102;BA.debugLine="Private m2 As Map:m2.Initialize";
-Debug.ShouldStop(32);
+ BA.debugLineNum = 109;BA.debugLine="Private m2 As Map:m2.Initialize";
+Debug.ShouldStop(4096);
 _m2 = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");Debug.locals.put("m2", _m2);
- BA.debugLineNum = 102;BA.debugLine="Private m2 As Map:m2.Initialize";
-Debug.ShouldStop(32);
+ BA.debugLineNum = 109;BA.debugLine="Private m2 As Map:m2.Initialize";
+Debug.ShouldStop(4096);
 _m2.runVoidMethod ("Initialize");
- BA.debugLineNum = 104;BA.debugLine="For i = 0 To m.Size - 1";
-Debug.ShouldStop(128);
+ BA.debugLineNum = 111;BA.debugLine="For i = 0 To m.Size - 1";
+Debug.ShouldStop(16384);
 {
 final int step5 = 1;
 final int limit5 = RemoteObject.solve(new RemoteObject[] {_m.runMethod(true,"getSize"),RemoteObject.createImmutable(1)}, "-",1, 1).<Integer>get().intValue();
 _i = 0 ;
 for (;(step5 > 0 && _i <= limit5) || (step5 < 0 && _i >= limit5) ;_i = ((int)(0 + _i + step5))  ) {
 Debug.locals.put("i", _i);
- BA.debugLineNum = 105;BA.debugLine="Private key As String = m.GetKeyAt(i)";
-Debug.ShouldStop(256);
+ BA.debugLineNum = 112;BA.debugLine="Private key As String = m.GetKeyAt(i)";
+Debug.ShouldStop(32768);
 _key = BA.ObjectToString(_m.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i))));Debug.locals.put("key", _key);Debug.locals.put("key", _key);
- BA.debugLineNum = 106;BA.debugLine="KeysList.Add(key)";
-Debug.ShouldStop(512);
+ BA.debugLineNum = 113;BA.debugLine="KeysList.Add(key)";
+Debug.ShouldStop(65536);
 _keyslist.runVoidMethod ("Add",(Object)((_key)));
  }
 }Debug.locals.put("i", _i);
 ;
- BA.debugLineNum = 109;BA.debugLine="KeysList.Sort(SortAsc)";
-Debug.ShouldStop(4096);
+ BA.debugLineNum = 116;BA.debugLine="KeysList.Sort(SortAsc)";
+Debug.ShouldStop(524288);
 _keyslist.runVoidMethod ("Sort",(Object)(_sortasc));
- BA.debugLineNum = 111;BA.debugLine="For x = 0 To KeysList.Size - 1";
-Debug.ShouldStop(16384);
+ BA.debugLineNum = 118;BA.debugLine="For x = 0 To KeysList.Size - 1";
+Debug.ShouldStop(2097152);
 {
 final int step10 = 1;
 final int limit10 = RemoteObject.solve(new RemoteObject[] {_keyslist.runMethod(true,"getSize"),RemoteObject.createImmutable(1)}, "-",1, 1).<Integer>get().intValue();
 _x = 0 ;
 for (;(step10 > 0 && _x <= limit10) || (step10 < 0 && _x >= limit10) ;_x = ((int)(0 + _x + step10))  ) {
 Debug.locals.put("x", _x);
- BA.debugLineNum = 112;BA.debugLine="Private key As String = KeysList.Get(x)";
-Debug.ShouldStop(32768);
+ BA.debugLineNum = 119;BA.debugLine="Private key As String = KeysList.Get(x)";
+Debug.ShouldStop(4194304);
 _key = BA.ObjectToString(_keyslist.runMethod(false,"Get",(Object)(BA.numberCast(int.class, _x))));Debug.locals.put("key", _key);Debug.locals.put("key", _key);
- BA.debugLineNum = 113;BA.debugLine="Private val As Object = m.Get(key)";
-Debug.ShouldStop(65536);
+ BA.debugLineNum = 120;BA.debugLine="Private val As Object = m.Get(key)";
+Debug.ShouldStop(8388608);
 _val = _m.runMethod(false,"Get",(Object)((_key)));Debug.locals.put("val", _val);Debug.locals.put("val", _val);
- BA.debugLineNum = 114;BA.debugLine="m2.Put(key, val)";
-Debug.ShouldStop(131072);
+ BA.debugLineNum = 121;BA.debugLine="m2.Put(key, val)";
+Debug.ShouldStop(16777216);
 _m2.runVoidMethod ("Put",(Object)((_key)),(Object)(_val));
  }
 }Debug.locals.put("x", _x);
 ;
- BA.debugLineNum = 116;BA.debugLine="m.Clear";
-Debug.ShouldStop(524288);
+ BA.debugLineNum = 123;BA.debugLine="m.Clear";
+Debug.ShouldStop(67108864);
 _m.runVoidMethod ("Clear");
- BA.debugLineNum = 117;BA.debugLine="For Each m2Key As String In m2.Keys";
-Debug.ShouldStop(1048576);
+ BA.debugLineNum = 124;BA.debugLine="For Each m2Key As String In m2.Keys";
+Debug.ShouldStop(134217728);
 {
 final RemoteObject group16 = _m2.runMethod(false,"Keys");
 final int groupLen16 = group16.runMethod(true,"getSize").<Integer>get()
@@ -317,17 +317,17 @@ final int groupLen16 = group16.runMethod(true,"getSize").<Integer>get()
 for (; index16 < groupLen16;index16++){
 _m2key = BA.ObjectToString(group16.runMethod(false,"Get",index16));Debug.locals.put("m2Key", _m2key);
 Debug.locals.put("m2Key", _m2key);
- BA.debugLineNum = 118;BA.debugLine="m.Put(m2Key, m2.Get(m2Key))";
-Debug.ShouldStop(2097152);
+ BA.debugLineNum = 125;BA.debugLine="m.Put(m2Key, m2.Get(m2Key))";
+Debug.ShouldStop(268435456);
 _m.runVoidMethod ("Put",(Object)((_m2key)),(Object)(_m2.runMethod(false,"Get",(Object)((_m2key)))));
  }
 }Debug.locals.put("m2Key", _m2key);
 ;
- BA.debugLineNum = 121;BA.debugLine="Return m";
-Debug.ShouldStop(16777216);
+ BA.debugLineNum = 128;BA.debugLine="Return m";
+Debug.ShouldStop(-2147483648);
 if (true) return _m;
- BA.debugLineNum = 122;BA.debugLine="End Sub";
-Debug.ShouldStop(33554432);
+ BA.debugLineNum = 129;BA.debugLine="End Sub";
+Debug.ShouldStop(1);
 return RemoteObject.createImmutable(null);
 }
 catch (Exception e) {

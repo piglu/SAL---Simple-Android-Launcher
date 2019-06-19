@@ -61,7 +61,7 @@ public class postavke_kontakti extends Activity implements B4AActivity{
 		setContentView(layout);
 		afterFirstLayout = false;
         WaitForLayout wl = new WaitForLayout();
-        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(processBA, wl, false))
+        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(this, processBA, wl, false))
 		    BA.handler.postDelayed(wl, 5);
 
 	}
@@ -350,54 +350,54 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=6946816;
- //BA.debugLineNum = 6946816;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=6946818;
- //BA.debugLineNum = 6946818;BA.debugLine="Activity.LoadLayout(\"opt_kontakti\")";
+RDebugUtils.currentLine=7012352;
+ //BA.debugLineNum = 7012352;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=7012354;
+ //BA.debugLineNum = 7012354;BA.debugLine="Activity.LoadLayout(\"opt_kontakti\")";
 mostCurrent._activity.LoadLayout("opt_kontakti",mostCurrent.activityBA);
-RDebugUtils.currentLine=6946820;
- //BA.debugLineNum = 6946820;BA.debugLine="f.UcitajVrijednostiOpt";
+RDebugUtils.currentLine=7012356;
+ //BA.debugLineNum = 7012356;BA.debugLine="f.UcitajVrijednostiOpt";
 mostCurrent._f._ucitajvrijednostiopt(mostCurrent.activityBA);
-RDebugUtils.currentLine=6946821;
- //BA.debugLineNum = 6946821;BA.debugLine="EditText1.Text = f.sms_dani";
+RDebugUtils.currentLine=7012357;
+ //BA.debugLineNum = 7012357;BA.debugLine="EditText1.Text = f.sms_dani";
 mostCurrent._edittext1.setText(BA.ObjectToCharSequence(mostCurrent._f._sms_dani));
-RDebugUtils.currentLine=6946822;
- //BA.debugLineNum = 6946822;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7012358;
+ //BA.debugLineNum = 7012358;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
-RDebugUtils.currentLine=7077888;
- //BA.debugLineNum = 7077888;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=7077890;
- //BA.debugLineNum = 7077890;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7143424;
+ //BA.debugLineNum = 7143424;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=7143426;
+ //BA.debugLineNum = 7143426;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=7012352;
- //BA.debugLineNum = 7012352;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=7012354;
- //BA.debugLineNum = 7012354;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7077888;
+ //BA.debugLineNum = 7077888;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=7077890;
+ //BA.debugLineNum = 7077890;BA.debugLine="End Sub";
 return "";
 }
 public static String  _edittext1_textchanged(String _old,String _new) throws Exception{
 RDebugUtils.currentModule="postavke_kontakti";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "edittext1_textchanged", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edittext1_textchanged", new Object[] {_old,_new}));}
-RDebugUtils.currentLine=7143424;
- //BA.debugLineNum = 7143424;BA.debugLine="Sub EditText1_TextChanged (Old As String, New As S";
-RDebugUtils.currentLine=7143425;
- //BA.debugLineNum = 7143425;BA.debugLine="If New.Length > 0 Then";
+RDebugUtils.currentLine=7208960;
+ //BA.debugLineNum = 7208960;BA.debugLine="Sub EditText1_TextChanged (Old As String, New As S";
+RDebugUtils.currentLine=7208961;
+ //BA.debugLineNum = 7208961;BA.debugLine="If New.Length > 0 Then";
 if (_new.length()>0) { 
-RDebugUtils.currentLine=7143426;
- //BA.debugLineNum = 7143426;BA.debugLine="f.SnimiOpcije2(\"sms_dani\", New)";
+RDebugUtils.currentLine=7208962;
+ //BA.debugLineNum = 7208962;BA.debugLine="f.SnimiOpcije2(\"sms_dani\", New)";
 mostCurrent._f._snimiopcije2(mostCurrent.activityBA,"sms_dani",(int)(Double.parseDouble(_new)));
  };
-RDebugUtils.currentLine=7143428;
- //BA.debugLineNum = 7143428;BA.debugLine="End Sub";
+RDebugUtils.currentLine=7208964;
+ //BA.debugLineNum = 7208964;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -60,7 +60,14 @@ Private Sub GetInstalledApps
 	For i = 0 To packages.Size - 1
 		Dim p As String = packages.Get(i)
 		Dim AppName As String = pm.GetApplicationLabel(p)
+		' uzmi samo aplikacije koje se mogu pokrenuti
 		If pm.GetApplicationIntent(p).IsInitialized Then
+'			Log(AppName & " - " & pm.GetApplicationIntent(p).Action)
+'			Log(pm.GetApplicationIntent(p).ExtrasToString)
+'			Log(AppName & " - " & pm.GetApplicationIntent(p).Flags)
+'			If jo.RunMethodJO("getPackageManager", Null).RunMethodJO("getLaunchIntentForPackage", Array(p)) <> Null Then
+'				Log(AppName)
+'			End If
 			listaSlova.Add(AppName.SubString2(0, 1).ToUpperCase)
 			mapa.Put(AppName & ";" & packages.Get(i), i)
 		End If

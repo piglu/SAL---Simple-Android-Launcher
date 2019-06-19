@@ -1,199 +1,204 @@
 com.no3dlauncher
 0
-3
+4
 contactsutils
 keyvaluestore
 colorwheeldialog
+fanmenu
 0
-main,activity_create,1,0,126,239
+main,activity_create,1,0,128,241
 ,tabstrip1,,cu,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,,nativeme,f,animstr,f,brstranica,starter,mapa,f,bojapozadine,f,trans,,iv_size,,listafavorita,,tajmer1,,cr,f,kvs2,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,tipikone,f,brtocaka,f,sms_dani,,lbl,,grid,starter,listaslova,,pnl_dock_vidljiv
 ,tabstrip1,,btndock,,btnmeni,,btnnotify,,btnpostavke,,btnsearch,,btnwidgeti,,pnldock,,pnlmeni,,scvdock,,btnnaprijed,,btnnatrag,,btnpostavkekontakti,,label1,,pnlkontakti,,btndodajstr,,btndodajwidget,,panel1,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,lbl,starter,mapa,,listafavorita,,pnl_dock_vidljiv
 contactsutils,initialize,f,ucitajvrijednostiopt,,tabstrip1_pageselected,starter,getinstalledapps,,getargb,,viewsbringtofront,,showfavoriteapps,,btndock_click,keyvaluestore,containskey,keyvaluestore,get,keyvaluestore,put,,getalltablabels,,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata,starter,sortmapkeys
-main,tabstrip1_pageselected,0,0,2023,2033
+main,tabstrip1_pageselected,0,0,2082,2092
 ,tabstrip1,,lbl,,pnlkontakti,,cu,,grid
 ,lbl
 ,getalltablabels,,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,getargb,0,0,1425,1434
+main,getargb,0,0,1484,1493
 
 
 
-main,viewsbringtofront,0,0,1354,1358
+main,viewsbringtofront,0,0,1413,1417
 ,btnsearch,,btnnotify,,btnpostavke
 
 
-main,showfavoriteapps,0,0,358,439
+main,showfavoriteapps,0,0,360,441
 ,listafavorita,,scvdock,,lbl
 ,listafavorita
 
-main,btndock_click,0,0,441,456
+main,btndock_click,0,0,443,458
 ,pnl_dock_vidljiv,,btndock,,pnldock,,pnlmeni
 ,pnl_dock_vidljiv
 
-main,activity_pause,0,0,350,356
+main,activity_pause,0,0,352,358
 
 
 
-main,activity_resume,0,0,346,348
+main,activity_permissionresult,0,0,2987,2991
 
 
 
-main,btnclearall_click,0,0,2475,2477
+main,activity_resume,0,0,348,350
 
 
 
-main,btndodajstr_click,0,0,2507,2509
+main,bitmaptobitmapdrawable,0,1,766,771
 
 
 
-main,btndodajwidget_click,0,0,2499,2505
+main,btnclearall_click,0,0,2534,2536
+
+
+
+main,btndodajstr_click,0,0,2566,2568
+
+
+
+main,btndodajwidget_click,0,0,2558,2564
 ,panel1,,smartwidgets
 
 ,createsmartwidget
-main,createsmartwidget,0,0,2035,2038
+main,createsmartwidget,0,0,2094,2097
 ,smartwidgets
 
 
-main,btninfo_click,0,0,501,503
+main,btninfo_click,0,0,505,507
 
 
 
-main,btnkontaktemail_click,1,0,2870,2898
+main,btnkontaktemail_click,1,0,2929,2957
 ,cu
 
 contactsutils,getemails,,prikazilistuemailadresaudijalogu,contactsutils,getdata
-main,prikazilistuemailadresaudijalogu,1,0,2900,2910
+main,prikazilistuemailadresaudijalogu,1,0,2959,2969
 
 
 
-main,btnkontaktinfo_click,0,0,2818,2830
+main,btnkontaktinfo_click,0,0,2877,2889
 ,cu
 
 contactsutils,getaccounts,contactsutils,getemails,contactsutils,getevents,contactsutils,getgroups,contactsutils,getnamefromid,contactsutils,getnote,contactsutils,getorganization,contactsutils,getphones,contactsutils,getstarred,contactsutils,getdata,contactsutils,fillgroupsources
-main,btnkontaktpoziv_click,1,0,2832,2853
+main,btnkontaktpoziv_click,1,0,2891,2912
 ,cu
 
 contactsutils,getphones,,prikazilistubrojevatelefona,contactsutils,getdata
-main,prikazilistubrojevatelefona,1,0,2912,2922
+main,prikazilistubrojevatelefona,1,0,2971,2981
 
 
 
-main,btnkontaktsms_click,0,0,2855,2868
+main,btnkontaktsms_click,0,0,2914,2927
 ,l,,cu
 ,l
 contactsutils,getphones,contactsutils,getdata
-main,btnmeni_click,1,0,462,499
-,pnl_dock_vidljiv,,pnldock,,btndock,f,showapps,,wp1,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,btnpostavke,,l1,starter,mapa,,clv,,ivapp,,ivdodaj,,lblimeapp,,sv,,lbl
+main,btnmeni_click,1,1,464,503
+,pnl_dock_vidljiv,,pnldock,,btndock,f,showapps,,wp1,,btnpostavke,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,l1,starter,mapa,,clv,,ivapp,,ivdodaj,,lblimeapp,,sv,,lbl
 ,pnl_dock_vidljiv,,l,,clv,,ivapp,,ivdodaj,,lblimeapp,,lbl
-,dodajlistuappukotac,,dodajlistusaikonamaappuladicu,,dodajappuladicu,,filtrirajimenaappiimenapaketa,,getargb,,kreirajstavku
-main,dodajlistuappukotac,0,0,869,917
-,wp1,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,btnpostavke,,l1,starter,mapa
+,dodajlistuappukotac,,dodajlistusaikonamaappuladicu,,dodajappuladicu,,filtrirajimenaappiimenapaketa,,getargb,,kreirajstavku,,bitmaptobitmapdrawable
+main,dodajlistuappukotac,0,0,928,976
+,wp1,,btnpostavke,,pnlmeni,f,bojafonta,f,fontzsize,f,wheellistfont,f,bojapozadine,f,trans,,l,,ivwheeldodaj,,l1,starter,mapa
 ,l
 ,filtrirajimenaappiimenapaketa,,getargb
-main,dodajlistusaikonamaappuladicu,1,0,639,680
+main,dodajlistusaikonamaappuladicu,1,0,643,684
 ,clv,f,bojapozadine,f,trans,starter,mapa,,pnlmeni,,l1,,l,,btnpostavke,,ivapp,,ivdodaj,,lblimeapp,f,fontzsize,f,wheellistfont,f,bojafonta
 ,clv,,l,,ivapp,,ivdodaj,,lblimeapp
 ,filtrirajimenaappiimenapaketa,,getargb,,kreirajstavku
-main,dodajappuladicu,0,0,682,736
+main,dodajappuladicu,0,1,686,764
 ,sv,starter,mapa,,lbl,f,wheellistfont,,l1,,l
 ,lbl,,l
-,filtrirajimenaappiimenapaketa
-main,btnnaprijed_click,0,0,2524,2528
+,filtrirajimenaappiimenapaketa,,bitmaptobitmapdrawable
+main,btnnaprijed_click,0,0,2583,2587
 ,tabstrip1
 
 
-main,btnnatrag_click,0,0,2511,2522
+main,btnnatrag_click,0,0,2570,2581
 ,tabstrip1,,pnlkontakti,,cu,,grid
 
 ,ubacikontakte2,contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,ubacikontakte2,0,0,2530,2630
+main,ubacikontakte2,0,0,2589,2689
 ,cu,,grid,,pnlkontakti
 
 contactsutils,findallcontacts,contactsutils,getphoto,contactsutils,findcontactsidfromdata,contactsutils,getdata
-main,btnnotify_click,0,0,2489,2497
+main,btnnotify_click,0,0,2548,2556
 
 
 
-main,btnpostavke_click,0,0,505,507
+main,btnpostavke_click,0,0,509,511
 
 
 
-main,btnpostavkekontakti_click,0,0,2924,2926
+main,btnpostavkekontakti_click,0,0,2983,2985
 
 
 
-main,btnsearch_click,0,0,458,460
+main,btnsearch_click,0,0,460,462
 
 
 
-main,btnwidgeti_click,0,0,509,577
+main,btnwidgeti_click,0,0,513,581
 ,tabstrip1
 
 
-main,clv_itemclick,0,0,1341,1352
+main,clv_itemclick,0,0,1400,1411
 ,zadnja_oznacena_app,,l1
 ,zadnja_oznacena_app
 
-main,dodajappufavorite,0,0,1071,1097
+main,dodajappufavorite,0,0,1130,1156
 starter,mapa,,zadnja_oznacena_app,,scvdock,,listafavorita
 
 ,provjeraappufavoritima
-main,provjeraappufavoritima,0,0,1559,1568
+main,provjeraappufavoritima,0,0,1618,1627
 ,scvdock,,listafavorita
 
 
-main,filtrirajimenaappiimenapaketa,0,0,853,867
+main,filtrirajimenaappiimenapaketa,0,0,912,926
 ,l1,,l,starter,mapa
 ,l
 
-main,kreirajstavku,1,0,1324,1339
+main,kreirajstavku,1,0,1383,1398
 ,btnpostavke,,ivapp,,ivdodaj,,lblimeapp,f,fontzsize,f,wheellistfont,f,bojafonta
 ,ivapp,,ivdodaj,,lblimeapp
 
-main,getalltablabels,0,0,253,265
+main,getalltablabels,0,0,255,267
 
 
 
-main,globals,0,1,39,124
+main,globals,0,1,39,126
 ,pnl_dock_vidljiv,,zadnja_oznacena_app,,topw
 ,pnl_dock_vidljiv,,zadnja_oznacena_app,,topw
 
-main,ivappmain_click,0,0,774,787
-
-
-
-main,ivappmain_longclick,1,0,738,755
+main,ivappmain_click,1,1,821,846
 starter,mapa,,zadnja_oznacena_app,,scvdock,,listafavorita
 
 ,provjeraappufavoritima,,dodajappufavorite,,uninstallapp
-main,uninstallapp,0,0,757,772
+main,uninstallapp,0,0,804,819
 
 
 
-main,ivclvdodaj_click,0,0,1436,1557
+main,ivclvdodaj_click,0,0,1495,1616
 ,lbl,,clv,starter,mapa,,scvdock,,listafavorita
 
 ,provjeraappufavoritima
-main,ivdokpokreniapp_click,0,0,1570,1586
+main,ivdokpokreniapp_click,0,0,1629,1645
 ,listafavorita
 
 
-main,ivwheeldodaj_click,0,0,1099,1218
+main,ivwheeldodaj_click,0,0,1158,1277
 ,ivwheeldodaj,,lbl,starter,mapa,,zadnja_oznacena_app,,listafavorita,,scvdock
 
 ,provjeraappufavoritima,,dodajappufavorite
-main,kontaktigrid_finishedloading,0,0,2652,2654
+main,kontaktigrid_finishedloading,0,0,2711,2713
 
 
 
-main,kontaktigrid_itemclicked,1,0,2632,2650
+main,kontaktigrid_itemclicked,1,0,2691,2709
 ,cu,,l
 ,l
 ,btnkontaktpoziv_click,,btnkontaktsms_click,,btnkontaktemail_click,,btnkontaktinfo_click,contactsutils,getphones,,prikazilistubrojevatelefona,contactsutils,getdata,contactsutils,getemails,,prikazilistuemailadresaudijalogu,contactsutils,getaccounts,contactsutils,getevents,contactsutils,getgroups,contactsutils,getnamefromid,contactsutils,getnote,contactsutils,getorganization,contactsutils,getstarred,contactsutils,fillgroupsources
-main,lblimeapp_longclick,0,0,1421,1423
+main,lblimeapp_longclick,0,0,1480,1482
 
 
 
-main,osvjezi,0,0,1360,1407
+main,osvjezi,0,0,1419,1466
 ,scvdock,f,kvs2,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,btnsearch,,btnnotify,,btnpostavke,,listafavorita,,lbl
 f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani,,listafavorita
 f,ucitajvrijednostiopt,,viewsbringtofront,,showfavoriteapps,keyvaluestore,containskey,keyvaluestore,get,keyvaluestore,put
@@ -201,31 +206,31 @@ main,process_globals,0,1,23,37
 
 
 
-main,scvpanel_longclick,0,0,579,581
+main,scvpanel_longclick,0,0,583,585
 
 
 
-main,scvpanel_touch,0,0,583,597
+main,scvpanel_touch,0,0,587,601
 ,lbl,,scvdock,,listafavorita
 
 
-main,smartwidgets_backpressed,0,0,2183,2185
+main,smartwidgets_backpressed,0,0,2242,2244
 
 
 
-main,smartwidgets_widgetcreated,0,0,2068,2180
+main,smartwidgets_widgetcreated,0,0,2127,2239
 ,ipsilon,,smartwidgets,,panel1,,topw
 ,ipsilon,,topw
 
-main,tajmer_tick,0,0,2483,2487
+main,tajmer_tick,0,0,2542,2546
 notificationservice,brojnotifikacija
 notificationservice,brojnotifikacija
 
-main,wp1_index_changed,0,0,599,609
+main,wp1_index_changed,0,0,603,613
 ,zadnja_oznacena_app
 ,zadnja_oznacena_app
 
-main,wp1_index_clicked,0,0,611,622
+main,wp1_index_clicked,0,0,615,626
 ,l1,,zadnja_oznacena_app,f,animstr
 
 
@@ -389,7 +394,7 @@ f,process_globals,0,1,3,19
 ,bojapozadine,,wheellistfont,,showapps,,fontzsize,,bojafonta,,trans,,brtocaka,,brstranica,,animstr,,sms_dani
 ,bojapozadine,,wheellistfont,,showapps,,fontzsize,,bojafonta,,trans,,brtocaka,,brstranica,,animstr,,sms_dani
 
-starter,getinstalledapps,0,0,41,89
+starter,getinstalledapps,0,0,41,96
 ,mapa,,listaslova
 ,mapa
 ,sortmapkeys
@@ -397,7 +402,7 @@ starter,application_error,0,0,33,35
 
 
 
-starter,sortmapkeys,0,0,100,122
+starter,sortmapkeys,0,0,107,129
 
 
 
@@ -421,7 +426,7 @@ starter,service_taskremoved,0,0,28,30
 
 
 
-pnlmeni_postavke,activity_create,1,0,36,77
+pnlmeni_postavke,activity_create,1,1,36,77
 ,btnbackground,,btnenablenotifications,,btnfont,,edtfontsize,,edtnoofstarpoints,,edtpages,,label1,,label3,,label7,,sbtransparent,,spnanim,,spnapps,,spnfont,,spnicontype,,mapaanimacija,,animacije,f,trans,f,bojapozadine,f,bojafonta,f,showapps,f,tipikone,f,brtocaka,f,animstr,f,brstranica,f,fontzsize,f,kvs2,f,wheellistfont,f,sms_dani
 ,btnbackground,,btnenablenotifications,,btnfont,,edtfontsize,,edtnoofstarpoints,,edtpages,,label1,,label3,,label7,,sbtransparent,,spnanim,,spnapps,,spnfont,,spnicontype,,mapaanimacija,f,bojapozadine,f,wheellistfont,f,showapps,f,fontzsize,f,bojafonta,f,trans,f,tipikone,f,brtocaka,f,brstranica,f,animstr,f,sms_dani
 f,ucitajvrijednostiopt,,getargb,,dodajfontove,keyvaluestore,containskey,keyvaluestore,get,keyvaluestore,put
@@ -505,62 +510,70 @@ colorwheeldialog,pnlcolors_touch,0,0,26,33
 
 
 
-search,activity_create,1,0,22,27
-,btntrazi,,edttrazi,,pnlslova,starter,listaslova,f,wheellistfont
+search,activity_create,1,0,24,32
+,btntrazi,,edttrazi,,sv,,pnlslova,starter,listaslova,f,wheellistfont
 ,btntrazi,,edttrazi
 ,dodajslova
-search,dodajslova,0,0,37,65
-,pnlslova,starter,listaslova,f,wheellistfont
+search,dodajslova,0,0,42,72
+,pnlslova,,sv,starter,listaslova,f,wheellistfont
 
 
-search,activity_keypress,0,0,200,210
-,pnlapppodslovom,,pnlslova
+search,activity_keypress,0,0,287,300
+,pnlapppodslovom,,lbl1,,pnlslova,,sv,starter,listaslova,f,wheellistfont
 
-
-search,activity_pause,0,0,33,35
-
-
-
-search,activity_resume,0,0,29,31
+,dodajslova
+search,activity_pause,0,0,38,40
 
 
 
-search,addtofavorites,0,0,179,181
+search,activity_resume,0,0,34,36
+
+
+
+search,addtofavorites,0,0,267,269
 starter,mapa,main,zadnja_oznacena_app,main,scvdock,main,listafavorita
 
 main,dodajappufavorite,main,provjeraappufavoritima
-search,btnslovo_click,0,0,83,146
-,pnlslova,,pnlapppodslovom,starter,mapa,f,wheellistfont
+search,bitmaptobitmapdrawable,0,0,202,207
 
 
-search,btntrazi_click,0,0,74,77
+
+search,btnslovo_click,0,0,90,200
+,pnlslova,,pnlapppodslovom,,sv,,lbl1,starter,mapa,f,wheellistfont
+
+,bitmaptobitmapdrawable
+search,btntrazi_click,0,0,81,84
 ,trazistring
 
 ,trazi
-search,trazi,0,0,79,81
+search,trazi,0,0,86,88
 
 
 
-search,edttrazi_textchanged,0,0,67,72
+search,edttrazi_textchanged,0,0,74,79
 ,trazistring
 ,trazistring
 
-search,globals,0,1,12,20
+search,globals,0,1,12,22
 
 
 
-search,ivapp_click,0,0,148,159
+search,issystemapp,0,0,302,325
 
 
 
-search,ivapp_longclick,1,0,161,177
-starter,mapa,main,zadnja_oznacena_app,main,scvdock,main,listafavorita,,pnlapppodslovom,,pnlslova,starter,listaslova,f,wheellistfont
+search,ivapp_click,1,0,209,247
+starter,mapa,main,zadnja_oznacena_app,main,scvdock,main,listafavorita,,pnlslova,,sv,starter,listaslova,f,wheellistfont
 
 ,addtofavorites,,uninstallapp,main,dodajappufavorite,main,provjeraappufavoritima,,dodajslova
-search,uninstallapp,0,0,183,198
-,pnlapppodslovom,,pnlslova,starter,listaslova,f,wheellistfont
+search,uninstallapp,0,0,271,285
+,pnlslova,,sv,starter,listaslova,f,wheellistfont
 
 ,dodajslova
+search,playstorelink,0,0,330,336
+
+
+
 search,process_globals,0,1,6,10
 
 
@@ -701,3 +714,139 @@ provjera,service_start,0,0,15,17
 
 
 
+fanmenu,class_globals,0,0,5,53
+
+
+
+fanmenu,createmenu,0,0,91,306
+
+
+,findboundingrect,,findblademidpoint,,drawbladetext,,degreetoradian
+fanmenu,findboundingrect,0,0,465,525
+
+
+,degreetoradian
+fanmenu,findblademidpoint,0,0,442,463
+
+
+,degreetoradian
+fanmenu,drawbladetext,0,0,402,440
+
+
+,degreetoradian
+fanmenu,degreetoradian,0,0,530,532
+
+
+
+fanmenu,getautoclose,0,0,851,853
+
+
+
+fanmenu,getcancelable,0,0,859,861
+
+
+
+fanmenu,getdefaultitembackcolor,0,0,867,869
+
+
+
+fanmenu,getdefaultitemiconfillpercent,0,0,891,893
+
+
+
+fanmenu,getdefaultitemtextcolor,0,0,875,877
+
+
+
+fanmenu,getdefaultmenuitemtextsize,0,0,883,885
+
+
+
+fanmenu,getitemfont,0,0,915,917
+
+
+
+fanmenu,getmenuitemlinecolor,0,0,899,901
+
+
+
+fanmenu,getmenuitemlinewidth,0,0,907,909
+
+
+
+fanmenu,hidefan,0,0,314,316
+
+
+,rotatemenu,,offsettocolor
+fanmenu,rotatemenu,0,0,535,840
+
+
+,offsettocolor
+fanmenu,initialize,0,0,56,73
+
+
+
+fanmenu,menuisvisible,0,0,319,321
+
+
+
+fanmenu,newmenuitem,0,0,76,87
+
+
+
+fanmenu,offsettocolor,0,0,842,845
+
+
+
+fanmenu,panback_touch,0,0,325,376
+
+
+,radiantodegree
+fanmenu,radiantodegree,0,0,527,529
+
+
+
+fanmenu,raiseclick,0,0,378,399
+
+
+,hidefan,,rotatemenu,,offsettocolor
+fanmenu,setautoclose,0,0,854,856
+
+
+
+fanmenu,setcancelable,0,0,862,864
+
+
+
+fanmenu,setdefaultitembackcolor,0,0,870,872
+
+
+
+fanmenu,setdefaultitemiconfillpercent,0,0,894,896
+
+
+
+fanmenu,setdefaultitemtextcolor,0,0,878,880
+
+
+
+fanmenu,setdefaultmenuitemtextsize,0,0,886,888
+
+
+
+fanmenu,setitemfont,0,0,918,920
+
+
+
+fanmenu,setmenuitemlinecolor,0,0,902,904
+
+
+
+fanmenu,setmenuitemlinewidth,0,0,910,912
+
+
+
+fanmenu,showfan,0,0,309,311
+
+
+,rotatemenu,,offsettocolor

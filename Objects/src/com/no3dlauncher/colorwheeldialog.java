@@ -51,10 +51,10 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="colorwheeldialog";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=11206656;
- //BA.debugLineNum = 11206656;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=11206658;
- //BA.debugLineNum = 11206658;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11272192;
+ //BA.debugLineNum = 11272192;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=11272194;
+ //BA.debugLineNum = 11272194;BA.debugLine="End Sub";
 return "";
 }
 public void  _showasync(com.no3dlauncher.colorwheeldialog __ref,Object _callback,String _title) throws Exception{
@@ -92,14 +92,14 @@ return;
 case 0:
 //C
 this.state = -1;
-RDebugUtils.currentLine=11272193;
- //BA.debugLineNum = 11272193;BA.debugLine="Dim sf As Object = dialog.ShowAsync(Title, \"Ok\",";
+RDebugUtils.currentLine=11337729;
+ //BA.debugLineNum = 11337729;BA.debugLine="Dim sf As Object = dialog.ShowAsync(Title, \"Ok\",";
 _sf = __ref._dialog.ShowAsync(_title,"Ok","Cancel","",ba,(android.graphics.Bitmap)(parent.__c.Null),parent.__c.True);
-RDebugUtils.currentLine=11272194;
- //BA.debugLineNum = 11272194;BA.debugLine="dialog.SetSize(300dip, 450dip)";
+RDebugUtils.currentLine=11337730;
+ //BA.debugLineNum = 11337730;BA.debugLine="dialog.SetSize(300dip, 450dip)";
 __ref._dialog.SetSize(parent.__c.DipToCurrent((int) (300)),parent.__c.DipToCurrent((int) (450)));
-RDebugUtils.currentLine=11272195;
- //BA.debugLineNum = 11272195;BA.debugLine="Wait For (sf) Dialog_Ready (DialogPanel As Panel)";
+RDebugUtils.currentLine=11337731;
+ //BA.debugLineNum = 11337731;BA.debugLine="Wait For (sf) Dialog_Ready (DialogPanel As Panel)";
 parent.__c.WaitFor("dialog_ready", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 1;
 return;
@@ -108,17 +108,17 @@ case 1:
 this.state = -1;
 _dialogpanel = (anywheresoftware.b4a.objects.PanelWrapper) result[1];
 ;
-RDebugUtils.currentLine=11272196;
- //BA.debugLineNum = 11272196;BA.debugLine="DialogPanel.LoadLayout(\"WheelPicker\")";
+RDebugUtils.currentLine=11337732;
+ //BA.debugLineNum = 11337732;BA.debugLine="DialogPanel.LoadLayout(\"WheelPicker\")";
 _dialogpanel.LoadLayout("WheelPicker",ba);
-RDebugUtils.currentLine=11272197;
- //BA.debugLineNum = 11272197;BA.debugLine="cvsColors.Initialize(pnlColors)";
+RDebugUtils.currentLine=11337733;
+ //BA.debugLineNum = 11337733;BA.debugLine="cvsColors.Initialize(pnlColors)";
 __ref._cvscolors.Initialize((android.view.View)(__ref._pnlcolors.getObject()));
-RDebugUtils.currentLine=11272198;
- //BA.debugLineNum = 11272198;BA.debugLine="cvsOverlay.Initialize(pnlOverlay)";
+RDebugUtils.currentLine=11337734;
+ //BA.debugLineNum = 11337734;BA.debugLine="cvsOverlay.Initialize(pnlOverlay)";
 __ref._cvsoverlay.Initialize((android.view.View)(__ref._pnloverlay.getObject()));
-RDebugUtils.currentLine=11272199;
- //BA.debugLineNum = 11272199;BA.debugLine="Wait For (sf) Dialog_Result (Result As Int)";
+RDebugUtils.currentLine=11337735;
+ //BA.debugLineNum = 11337735;BA.debugLine="Wait For (sf) Dialog_Result (Result As Int)";
 parent.__c.WaitFor("dialog_result", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "colorwheeldialog", "showasync"), _sf);
 this.state = 2;
 return;
@@ -127,11 +127,11 @@ case 2:
 this.state = -1;
 _result = (Integer) result[1];
 ;
-RDebugUtils.currentLine=11272200;
- //BA.debugLineNum = 11272200;BA.debugLine="CallSubDelayed2(CallBack, \"Color_Result\", Result";
+RDebugUtils.currentLine=11337736;
+ //BA.debugLineNum = 11337736;BA.debugLine="CallSubDelayed2(CallBack, \"Color_Result\", Result";
 parent.__c.CallSubDelayed2(ba,_callback,"Color_Result",(Object)(_result==parent.__c.DialogResponse.POSITIVE));
-RDebugUtils.currentLine=11272201;
- //BA.debugLineNum = 11272201;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11337737;
+ //BA.debugLineNum = 11337737;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -141,28 +141,28 @@ if (true) break;
 public String  _class_globals(com.no3dlauncher.colorwheeldialog __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="colorwheeldialog";
-RDebugUtils.currentLine=11141120;
- //BA.debugLineNum = 11141120;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=11141121;
- //BA.debugLineNum = 11141121;BA.debugLine="Private dialog As CustomLayoutDialog";
+RDebugUtils.currentLine=11206656;
+ //BA.debugLineNum = 11206656;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=11206657;
+ //BA.debugLineNum = 11206657;BA.debugLine="Private dialog As CustomLayoutDialog";
 _dialog = new anywheresoftware.b4a.agraham.dialogs.InputDialog.CustomLayoutDialog();
-RDebugUtils.currentLine=11141122;
- //BA.debugLineNum = 11141122;BA.debugLine="Private cvsColors As Canvas";
+RDebugUtils.currentLine=11206658;
+ //BA.debugLineNum = 11206658;BA.debugLine="Private cvsColors As Canvas";
 _cvscolors = new anywheresoftware.b4a.objects.drawable.CanvasWrapper();
-RDebugUtils.currentLine=11141123;
- //BA.debugLineNum = 11141123;BA.debugLine="Private cvsOverlay As Canvas";
+RDebugUtils.currentLine=11206659;
+ //BA.debugLineNum = 11206659;BA.debugLine="Private cvsOverlay As Canvas";
 _cvsoverlay = new anywheresoftware.b4a.objects.drawable.CanvasWrapper();
-RDebugUtils.currentLine=11141124;
- //BA.debugLineNum = 11141124;BA.debugLine="Private pnlColors As Panel";
+RDebugUtils.currentLine=11206660;
+ //BA.debugLineNum = 11206660;BA.debugLine="Private pnlColors As Panel";
 _pnlcolors = new anywheresoftware.b4a.objects.PanelWrapper();
-RDebugUtils.currentLine=11141125;
- //BA.debugLineNum = 11141125;BA.debugLine="Private pnlOverlay As Panel";
+RDebugUtils.currentLine=11206661;
+ //BA.debugLineNum = 11206661;BA.debugLine="Private pnlOverlay As Panel";
 _pnloverlay = new anywheresoftware.b4a.objects.PanelWrapper();
-RDebugUtils.currentLine=11141126;
- //BA.debugLineNum = 11141126;BA.debugLine="Public ColorResult As Int";
+RDebugUtils.currentLine=11206662;
+ //BA.debugLineNum = 11206662;BA.debugLine="Public ColorResult As Int";
 _colorresult = 0;
-RDebugUtils.currentLine=11141127;
- //BA.debugLineNum = 11141127;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11206663;
+ //BA.debugLineNum = 11206663;BA.debugLine="End Sub";
 return "";
 }
 public String  _pnlcolors_touch(com.no3dlauncher.colorwheeldialog __ref,int _action,float _x,float _y) throws Exception{
@@ -172,30 +172,30 @@ if (Debug.shouldDelegate(ba, "pnlcolors_touch", false))
 	 {return ((String) Debug.delegate(ba, "pnlcolors_touch", new Object[] {_action,_x,_y}));}
 float _cx = 0f;
 float _cy = 0f;
-RDebugUtils.currentLine=11337728;
- //BA.debugLineNum = 11337728;BA.debugLine="Sub pnlColors_Touch (Action As Int, X As Float, Y";
-RDebugUtils.currentLine=11337729;
- //BA.debugLineNum = 11337729;BA.debugLine="Dim cx = pnlColors.Width / 2, cy = pnlColors.Heig";
+RDebugUtils.currentLine=11403264;
+ //BA.debugLineNum = 11403264;BA.debugLine="Sub pnlColors_Touch (Action As Int, X As Float, Y";
+RDebugUtils.currentLine=11403265;
+ //BA.debugLineNum = 11403265;BA.debugLine="Dim cx = pnlColors.Width / 2, cy = pnlColors.Heig";
 _cx = (float) (__ref._pnlcolors.getWidth()/(double)2);
 _cy = (float) (__ref._pnlcolors.getHeight()/(double)2);
-RDebugUtils.currentLine=11337730;
- //BA.debugLineNum = 11337730;BA.debugLine="If Sqrt(Power(x - cx, 2) + Power(y - cy, 2)) > pn";
+RDebugUtils.currentLine=11403266;
+ //BA.debugLineNum = 11403266;BA.debugLine="If Sqrt(Power(x - cx, 2) + Power(y - cy, 2)) > pn";
 if (__c.Sqrt(__c.Power(_x-_cx,2)+__c.Power(_y-_cy,2))>__ref._pnlcolors.getWidth()/(double)2) { 
 if (true) return "";};
-RDebugUtils.currentLine=11337731;
- //BA.debugLineNum = 11337731;BA.debugLine="ColorResult = cvsColors.Bitmap.GetPixel(X, Y)";
+RDebugUtils.currentLine=11403267;
+ //BA.debugLineNum = 11403267;BA.debugLine="ColorResult = cvsColors.Bitmap.GetPixel(X, Y)";
 __ref._colorresult = __ref._cvscolors.getBitmap().GetPixel((int) (_x),(int) (_y));
-RDebugUtils.currentLine=11337732;
- //BA.debugLineNum = 11337732;BA.debugLine="cvsOverlay.DrawColor(Colors.Transparent)";
+RDebugUtils.currentLine=11403268;
+ //BA.debugLineNum = 11403268;BA.debugLine="cvsOverlay.DrawColor(Colors.Transparent)";
 __ref._cvsoverlay.DrawColor(__c.Colors.Transparent);
-RDebugUtils.currentLine=11337733;
- //BA.debugLineNum = 11337733;BA.debugLine="cvsOverlay.DrawCircle(X, Y, 20dip, Colors.Black,";
+RDebugUtils.currentLine=11403269;
+ //BA.debugLineNum = 11403269;BA.debugLine="cvsOverlay.DrawCircle(X, Y, 20dip, Colors.Black,";
 __ref._cvsoverlay.DrawCircle(_x,_y,(float) (__c.DipToCurrent((int) (20))),__c.Colors.Black,__c.False,(float) (__c.DipToCurrent((int) (3))));
-RDebugUtils.currentLine=11337734;
- //BA.debugLineNum = 11337734;BA.debugLine="pnlOverlay.Invalidate";
+RDebugUtils.currentLine=11403270;
+ //BA.debugLineNum = 11403270;BA.debugLine="pnlOverlay.Invalidate";
 __ref._pnloverlay.Invalidate();
-RDebugUtils.currentLine=11337735;
- //BA.debugLineNum = 11337735;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11403271;
+ //BA.debugLineNum = 11403271;BA.debugLine="End Sub";
 return "";
 }
 }

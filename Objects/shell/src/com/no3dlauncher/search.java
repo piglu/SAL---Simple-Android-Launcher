@@ -60,6 +60,8 @@ public static RemoteObject _btntrazi = RemoteObject.declareNull("anywheresoftwar
 public static RemoteObject _trazistring = RemoteObject.createImmutable("");
 public static RemoteObject _pnlslova = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 public static RemoteObject _pnlapppodslovom = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
+public static RemoteObject _sv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ScrollViewWrapper");
+public static RemoteObject _lbl1 = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 public static com.no3dlauncher.main _main = null;
 public static com.no3dlauncher.starter _starter = null;
 public static com.no3dlauncher.pnlmeni_postavke _pnlmeni_postavke = null;
@@ -68,6 +70,6 @@ public static com.no3dlauncher.postavke_kontakti _postavke_kontakti = null;
 public static com.no3dlauncher.f _f = null;
 public static com.no3dlauncher.provjera _provjera = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",search.mostCurrent._activity,"btnTrazi",search.mostCurrent._btntrazi,"edtTrazi",search.mostCurrent._edttrazi,"f",Debug.moduleToString(com.no3dlauncher.f.class),"Main",Debug.moduleToString(com.no3dlauncher.main.class),"NotificationService",Debug.moduleToString(com.no3dlauncher.notificationservice.class),"pnlAppPodSlovom",search.mostCurrent._pnlapppodslovom,"pnlmeni_postavke",Debug.moduleToString(com.no3dlauncher.pnlmeni_postavke.class),"pnlSlova",search.mostCurrent._pnlslova,"postavke_kontakti",Debug.moduleToString(com.no3dlauncher.postavke_kontakti.class),"provjera",Debug.moduleToString(com.no3dlauncher.provjera.class),"Starter",Debug.moduleToString(com.no3dlauncher.starter.class),"traziString",search.mostCurrent._trazistring};
+		return new Object[] {"Activity",search.mostCurrent._activity,"btnTrazi",search.mostCurrent._btntrazi,"edtTrazi",search.mostCurrent._edttrazi,"f",Debug.moduleToString(com.no3dlauncher.f.class),"lbl1",search.mostCurrent._lbl1,"Main",Debug.moduleToString(com.no3dlauncher.main.class),"NotificationService",Debug.moduleToString(com.no3dlauncher.notificationservice.class),"pnlAppPodSlovom",search.mostCurrent._pnlapppodslovom,"pnlmeni_postavke",Debug.moduleToString(com.no3dlauncher.pnlmeni_postavke.class),"pnlSlova",search.mostCurrent._pnlslova,"postavke_kontakti",Debug.moduleToString(com.no3dlauncher.postavke_kontakti.class),"provjera",Debug.moduleToString(com.no3dlauncher.provjera.class),"Starter",Debug.moduleToString(com.no3dlauncher.starter.class),"sv",search.mostCurrent._sv,"traziString",search.mostCurrent._trazistring};
 }
 }

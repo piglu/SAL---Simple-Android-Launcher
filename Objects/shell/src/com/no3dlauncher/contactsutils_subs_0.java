@@ -934,7 +934,7 @@ Debug.ShouldStop(8);
 if (RemoteObject.solveBoolean("=",_crsr.runMethod(true,"getRowCount"),BA.numberCast(double.class, 0))) { 
  BA.debugLineNum = 101;BA.debugLine="Log(\"Contact not found: \" & id)";
 Debug.ShouldStop(16);
-contactsutils.__c.runVoidMethod ("LogImpl","37798789",RemoteObject.concat(RemoteObject.createImmutable("Contact not found: "),_id),0);
+contactsutils.__c.runVoidMethod ("LogImpl","77864325",RemoteObject.concat(RemoteObject.createImmutable("Contact not found: "),_id),0);
  }else {
  BA.debugLineNum = 103;BA.debugLine="crsr.Position = 0";
 Debug.ShouldStop(64);
@@ -1443,20 +1443,20 @@ Debug.locals.put("col", _col);
 Debug.ShouldStop(64);
 try { BA.debugLineNum = 424;BA.debugLine="Log(c.GetColumnName(col) & \": \" & c.GetString2";
 Debug.ShouldStop(128);
-contactsutils.__c.runVoidMethod ("LogImpl","39437189",RemoteObject.concat(_c.runMethod(true,"GetColumnName",(Object)(BA.numberCast(int.class, _col))),RemoteObject.createImmutable(": "),_c.runMethod(true,"GetString2",(Object)(BA.numberCast(int.class, _col)))),0);
+contactsutils.__c.runVoidMethod ("LogImpl","79502725",RemoteObject.concat(_c.runMethod(true,"GetColumnName",(Object)(BA.numberCast(int.class, _col))),RemoteObject.createImmutable(": "),_c.runMethod(true,"GetString2",(Object)(BA.numberCast(int.class, _col)))),0);
  Debug.CheckDeviceExceptions();
 } 
        catch (Exception e7) {
 			BA.rdebugUtils.runVoidMethod("setLastException",__ref.getField(false, "ba"), e7.toString()); BA.debugLineNum = 426;BA.debugLine="Log(c.GetColumnName(col) & \": \" & LastExceptio";
 Debug.ShouldStop(512);
-contactsutils.__c.runVoidMethod ("LogImpl","39437191",RemoteObject.concat(_c.runMethod(true,"GetColumnName",(Object)(BA.numberCast(int.class, _col))),RemoteObject.createImmutable(": "),contactsutils.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+contactsutils.__c.runVoidMethod ("LogImpl","79502727",RemoteObject.concat(_c.runMethod(true,"GetColumnName",(Object)(BA.numberCast(int.class, _col))),RemoteObject.createImmutable(": "),contactsutils.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  };
  }
 }Debug.locals.put("col", _col);
 ;
  BA.debugLineNum = 429;BA.debugLine="Log(\"***************\")";
 Debug.ShouldStop(4096);
-contactsutils.__c.runVoidMethod ("LogImpl","39437194",RemoteObject.createImmutable("***************"),0);
+contactsutils.__c.runVoidMethod ("LogImpl","79502730",RemoteObject.createImmutable("***************"),0);
  }
 }Debug.locals.put("r", _r);
 ;
@@ -1497,7 +1497,7 @@ Debug.ShouldStop(16777216);
 if (RemoteObject.solveBoolean("=",_crsr.runMethod(true,"getRowCount"),BA.numberCast(double.class, 0))) { 
  BA.debugLineNum = 314;BA.debugLine="Log(\"Error getting raw_contact_id\")";
 Debug.ShouldStop(33554432);
-contactsutils.__c.runVoidMethod ("LogImpl","38978439",RemoteObject.createImmutable("Error getting raw_contact_id"),0);
+contactsutils.__c.runVoidMethod ("LogImpl","79043975",RemoteObject.createImmutable("Error getting raw_contact_id"),0);
  BA.debugLineNum = 315;BA.debugLine="crsr.Close";
 Debug.ShouldStop(67108864);
 _crsr.runVoidMethod ("Close");

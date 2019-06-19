@@ -200,7 +200,7 @@ Module9=provjera
 NumberOfFiles=82
 NumberOfLibraries=20
 NumberOfModules=11
-Version=8.8
+Version=9
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: 1No3DLauncher
@@ -702,7 +702,7 @@ Sub btnMeni_Click
 	else if f.showApps = 2 Then
 		DodajAppULadicu
 	else if f.showApps = 3 Then
-		OtvoriFan
+'		OtvoriFan
 	End If
 End Sub
 
@@ -931,6 +931,30 @@ Sub DodajAppULadicu
 					lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
 					lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
 					sv.Panel.AddView(lbl, x*j + j*2dip, x*i + x + i*30dip + 4dip, x, 30dip)
+				Else
+					Dim btm As Bitmap
+					btm.InitializeMutable(x, x)
+					Dim DestRect As Rect
+					DestRect.Initialize(0, 0, x, x)
+					Dim can As Canvas
+					can.Initialize2(btm)
+					Dim pm As PackageManager
+					can.DrawDrawable(pm.GetApplicationIcon(s1), DestRect)
+					Dim iv As ImageView
+					iv.Initialize("ivAppMain")
+					iv.Background = BitmapToBitmapDrawable(btm)
+					iv.Tag = s1'pkg1.Get(i*5+j)
+					sv.Panel.AddView(iv, x*j + j*2dip, x*i + 10dip + i*30dip, x, x)
+					Dim lbl As Label
+					lbl.Initialize("")
+					Dim s2 As String = s.SubString2(0, s.IndexOf(";"))
+					lbl.Text = s2'pkg2.Get(i*5+j)
+					lbl.TextColor = Colors.White
+					lbl.Background = cd
+					lbl.TextSize = 10
+					lbl.Typeface = Typeface.LoadFromAssets(f.wheelListFont & ".ttf")
+					lbl.Gravity = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+					sv.Panel.AddView(lbl, x*j + j*2dip, x*i + x + i*30dip + 4dip, x, 30dip)
 				End If
 			Else
 				Exit
@@ -943,36 +967,43 @@ Sub DodajAppULadicu
 	Wait For (sf) ivApp_LongClick
 End Sub
 
-Sub OtvoriFan
-	
-	' panel to hold our fan menu, should fill the entire activity and be elevated above of all other views.
-	MenuPanel.Initialize("")
-	Activity.AddView(MenuPanel, 0, 0, Activity.Width, Activity.Height)
-	MenuPanel.Elevation = 25dip  'should be high enough to be on top of all other panels/views
-	MenuPanel.Color = Colors.Transparent
-	MenuPanel.Visible = True
+Sub BitmapToBitmapDrawable(BMD As Bitmap) As BitmapDrawable
+	Dim BD As BitmapDrawable
+	BD.Initialize(BMD)
 
-	foMenu.Initialize(Me, "FanMenu", MenuPanel)
+	Return BD
 End Sub
 
-Sub ivAppMain_LongClick
-	Log("ivapp long klik!")
-	Dim iv As ImageView
-	iv = Sender
-	Log(iv.Tag)
-	Dim ll As List
-	ll.Initialize
-	ll.AddAll(Array As String("Add to favorites", "Uninstall"))
-	Dim x As id
-	Dim m As Int = x.InputList1(ll, "")
-	Select m
-		Case 0
-			ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
-			DodajAppUFavorite
-		Case 1
-			UninstallApp(iv.Tag)
-	End Select
-End Sub
+'Sub OtvoriFan
+'	
+'	' panel to hold our fan menu, should fill the entire activity and be elevated above of all other views.
+'	MenuPanel.Initialize("")
+'	Activity.AddView(MenuPanel, 0, 0, Activity.Width, Activity.Height)
+'	MenuPanel.Elevation = 25dip  'should be high enough to be on top of all other panels/views
+'	MenuPanel.Color = Colors.Transparent
+'	MenuPanel.Visible = True
+'
+'	foMenu.Initialize(Me, "FanMenu", MenuPanel)
+'End Sub
+
+'Sub ivAppMain_LongClick
+'	Log("ivapp long klik!")
+'	Dim iv As ImageView
+'	iv = Sender
+'	Log(iv.Tag)
+'	Dim ll As List
+'	ll.Initialize
+'	ll.AddAll(Array As String("Add to favorites", "Uninstall"))
+'	Dim x As id
+'	Dim m As Int = x.InputList1(ll, "")
+'	Select m
+'		Case 0
+'			ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
+'			DodajAppUFavorite
+'		Case 1
+'			UninstallApp(iv.Tag)
+'	End Select
+'End Sub
 
 Sub UninstallApp(pkg As String)
 	If IsPaused(provjera) = True Then StartService(provjera)
@@ -992,18 +1023,30 @@ Sub UninstallApp(pkg As String)
 End Sub
 
 Sub ivAppMain_Click
-	Dim in As Intent
+	Dim in1 As Intent
 	Dim iv As ImageView
 	Dim pm As PackageManager
 
 	iv = Sender
 	Log(iv.Tag)
-	in = pm.GetApplicationIntent(iv.Tag)
-	If in.IsInitialized Then
-'		animacije.Initialize("Anim", f.animStr)
-'		animacije.delay(500).duration(1500).playOn(sv.Panel)
-		StartActivity(in)
-	End If
+	in1 = pm.GetApplicationIntent(iv.Tag)
+	Dim iv As ImageView
+	iv = Sender
+	Log(iv.Tag)
+	Dim ll As List
+	ll.Initialize
+	ll.AddAll(Array As String("Run", "Add to favorites", "Uninstall"))
+	Dim x As id
+	Dim m As Int = x.InputList1(ll, "")
+	Select m
+		Case 0
+			StartActivity(in1)
+		Case 1
+			ProvjeraAppUFavoritima(Starter.mapa.GetKeyAt(zadnja_oznacena_app))
+			DodajAppUFavorite
+		Case 2
+			UninstallApp(iv.Tag)
+	End Select
 End Sub
 
 'Sub btnSlovo_Click
@@ -3143,4 +3186,10 @@ End Sub
 
 Sub btnPostavkeKontakti_Click
 	StartActivity(postavke_kontakti)
+End Sub
+
+Sub Activity_PermissionResult (Permission As String, Result As Boolean)
+'	If Permission = rp.PERMISSION_ACCESS_FINE_LOCATION Then
+'		gmap.MyLocationEnabled = Result
+'	End If
 End Sub

@@ -16,7 +16,7 @@ Debug.locals.put("Intent", _intent);
 Debug.ShouldStop(4194304);
  BA.debugLineNum = 25;BA.debugLine="Log(\"uninstall ok\")";
 Debug.ShouldStop(16777216);
-provjera.mostCurrent.__c.runVoidMethod ("LogImpl","311075586",RemoteObject.createImmutable("uninstall ok"),0);
+provjera.mostCurrent.__c.runVoidMethod ("LogImpl","711141122",RemoteObject.createImmutable("uninstall ok"),0);
  BA.debugLineNum = 26;BA.debugLine="CallSub(Starter, \"GetInstalledApps\")";
 Debug.ShouldStop(33554432);
 provjera.mostCurrent.__c.runMethodAndSync(false,"CallSubNew",provjera.processBA,(Object)((provjera.mostCurrent._starter.getObject())),(Object)(RemoteObject.createImmutable("GetInstalledApps")));

@@ -8,36 +8,67 @@ public class LS_opt{
 
 public static void LS_320x480_1(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
+//BA.debugLineNum = 2;BA.debugLine="btnBackground.Left = 0"[opt/320x480,scale=1]
 views.get("btnbackground").vw.setLeft((int)(0d));
+//BA.debugLineNum = 3;BA.debugLine="btnBackground.Top = 0"[opt/320x480,scale=1]
 views.get("btnbackground").vw.setTop((int)(0d));
+//BA.debugLineNum = 4;BA.debugLine="btnBackground.Width = 50%x"[opt/320x480,scale=1]
 views.get("btnbackground").vw.setWidth((int)((50d / 100 * width)));
+//BA.debugLineNum = 5;BA.debugLine="btnBackground.Height = 40dip"[opt/320x480,scale=1]
 views.get("btnbackground").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 6;BA.debugLine="btnFont.Left = btnBackground.Right"[opt/320x480,scale=1]
 views.get("btnfont").vw.setLeft((int)((views.get("btnbackground").vw.getLeft() + views.get("btnbackground").vw.getWidth())));
+//BA.debugLineNum = 7;BA.debugLine="btnFont.Top = 0"[opt/320x480,scale=1]
 views.get("btnfont").vw.setTop((int)(0d));
+//BA.debugLineNum = 8;BA.debugLine="btnFont.Width = 50%x"[opt/320x480,scale=1]
 views.get("btnfont").vw.setWidth((int)((50d / 100 * width)));
+//BA.debugLineNum = 9;BA.debugLine="btnFont.Height = 40dip"[opt/320x480,scale=1]
 views.get("btnfont").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 10;BA.debugLine="Label1.Left = 0"[opt/320x480,scale=1]
 views.get("label1").vw.setLeft((int)(0d));
+//BA.debugLineNum = 11;BA.debugLine="Label1.Top = btnBackground.Bottom"[opt/320x480,scale=1]
 views.get("label1").vw.setTop((int)((views.get("btnbackground").vw.getTop() + views.get("btnbackground").vw.getHeight())));
+//BA.debugLineNum = 12;BA.debugLine="Label1.Width = 100%x"[opt/320x480,scale=1]
 views.get("label1").vw.setWidth((int)((100d / 100 * width)));
+//BA.debugLineNum = 13;BA.debugLine="Label1.Height = 40dip"[opt/320x480,scale=1]
 views.get("label1").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 14;BA.debugLine="Label5.Top = Label1.Bottom"[opt/320x480,scale=1]
 views.get("label5").vw.setTop((int)((views.get("label1").vw.getTop() + views.get("label1").vw.getHeight())));
+//BA.debugLineNum = 15;BA.debugLine="Label5.Left = 0"[opt/320x480,scale=1]
 views.get("label5").vw.setLeft((int)(0d));
+//BA.debugLineNum = 16;BA.debugLine="Label5.Width = 120dip"[opt/320x480,scale=1]
 views.get("label5").vw.setWidth((int)((120d * scale)));
+//BA.debugLineNum = 17;BA.debugLine="Label5.Height = 40dip"[opt/320x480,scale=1]
 views.get("label5").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 18;BA.debugLine="sbTransparent.Left = Label5.Right"[opt/320x480,scale=1]
 views.get("sbtransparent").vw.setLeft((int)((views.get("label5").vw.getLeft() + views.get("label5").vw.getWidth())));
+//BA.debugLineNum = 19;BA.debugLine="sbTransparent.Top = Label1.Bottom"[opt/320x480,scale=1]
 views.get("sbtransparent").vw.setTop((int)((views.get("label1").vw.getTop() + views.get("label1").vw.getHeight())));
+//BA.debugLineNum = 20;BA.debugLine="sbTransparent.Width = 100%x - Label5.Width"[opt/320x480,scale=1]
 views.get("sbtransparent").vw.setWidth((int)((100d / 100 * width)-(views.get("label5").vw.getWidth())));
+//BA.debugLineNum = 21;BA.debugLine="sbTransparent.Height = 40dip"[opt/320x480,scale=1]
 views.get("sbtransparent").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 22;BA.debugLine="Label2.Left = 0"[opt/320x480,scale=1]
 views.get("label2").vw.setLeft((int)(0d));
+//BA.debugLineNum = 23;BA.debugLine="Label2.Top = Label5.Bottom"[opt/320x480,scale=1]
 views.get("label2").vw.setTop((int)((views.get("label5").vw.getTop() + views.get("label5").vw.getHeight())));
+//BA.debugLineNum = 24;BA.debugLine="Label2.Width = 100dip"[opt/320x480,scale=1]
 views.get("label2").vw.setWidth((int)((100d * scale)));
+//BA.debugLineNum = 25;BA.debugLine="Label2.Height = 40dip"[opt/320x480,scale=1]
 views.get("label2").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 26;BA.debugLine="spnApps.Left = Label2.Right"[opt/320x480,scale=1]
 views.get("spnapps").vw.setLeft((int)((views.get("label2").vw.getLeft() + views.get("label2").vw.getWidth())));
+//BA.debugLineNum = 27;BA.debugLine="spnApps.Top = Label5.Bottom"[opt/320x480,scale=1]
 views.get("spnapps").vw.setTop((int)((views.get("label5").vw.getTop() + views.get("label5").vw.getHeight())));
+//BA.debugLineNum = 28;BA.debugLine="spnApps.Width = 100%x - Label2.Width"[opt/320x480,scale=1]
 views.get("spnapps").vw.setWidth((int)((100d / 100 * width)-(views.get("label2").vw.getWidth())));
+//BA.debugLineNum = 29;BA.debugLine="spnApps.Height = 40dip"[opt/320x480,scale=1]
 views.get("spnapps").vw.setHeight((int)((40d * scale)));
+//BA.debugLineNum = 30;BA.debugLine="Label3.Left = 0"[opt/320x480,scale=1]
 views.get("label3").vw.setLeft((int)(0d));
+//BA.debugLineNum = 31;BA.debugLine="Label3.Top = Label2.Bottom"[opt/320x480,scale=1]
 views.get("label3").vw.setTop((int)((views.get("label2").vw.getTop() + views.get("label2").vw.getHeight())));
+//BA.debugLineNum = 32;BA.debugLine="Label3.Width = 100dip"[opt/320x480,scale=1]
 views.get("label3").vw.setWidth((int)((100d * scale)));
 //BA.debugLineNum = 33;BA.debugLine="Label3.Height = 40dip"[opt/320x480,scale=1]
 views.get("label3").vw.setHeight((int)((40d * scale)));

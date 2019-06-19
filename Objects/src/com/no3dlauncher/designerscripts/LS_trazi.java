@@ -6,18 +6,6 @@ import anywheresoftware.b4a.BA;
 
 public class LS_trazi{
 
-public static void LS_320x480_1(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
-anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
-views.get("edttrazi").vw.setLeft((int)(0d));
-views.get("edttrazi").vw.setTop((int)(0d));
-views.get("edttrazi").vw.setHeight((int)((40d * scale)));
-views.get("btntrazi").vw.setLeft((int)((views.get("edttrazi").vw.getLeft() + views.get("edttrazi").vw.getWidth())+(1d / 100 * width)));
-views.get("btntrazi").vw.setTop((int)((1d / 100 * width)));
-views.get("btntrazi").vw.setWidth((int)((11d / 100 * width)));
-views.get("btntrazi").vw.setHeight((int)((11d / 100 * width)));
-views.get("edttrazi").vw.setWidth((int)((100d / 100 * width)-(views.get("btntrazi").vw.getWidth())-(1d / 100 * width)));
-
-}
 public static void LS_general(java.util.LinkedHashMap<String, anywheresoftware.b4a.keywords.LayoutBuilder.ViewWrapperAndAnchor> views, int width, int height, float scale) {
 anywheresoftware.b4a.keywords.LayoutBuilder.setScaleRate(0.3);
 anywheresoftware.b4a.keywords.LayoutBuilder.scaleAll(views);
